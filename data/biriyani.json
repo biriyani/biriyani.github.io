@@ -1,0 +1,1583 @@
+[
+  {
+    "slug": "hyderabadi-dum",
+    "name": "Hyderabadi Dum Biriyani",
+    "region": "Telangana",
+    "style": "Dum",
+    "tagline": "Smoky saffron, sealed pot, no shortcuts.",
+    "origin": "This style took shape in the Asaf Jahi kitchens of Hyderabad in the 18th and 19th centuries, where Persian court technique met Deccan ingredients. The defining move is dum: a sealed handi with dough so steam can finish the dish gently.",
+    "distinct": "Layered basmati and marinated meat are cooked under seal so aroma builds inward instead of escaping. The texture contrast between fluffy top rice and masala-rich lower layer is the whole point.",
+    "rice": "Aged basmati, long grain",
+    "protein": "Mutton or chicken",
+    "spices": [
+      "saffron",
+      "fried onions",
+      "green cardamom",
+      "clove",
+      "ghee"
+    ],
+    "spots": [
+      {
+        "name": "Shadab",
+        "city": "Hyderabad"
+      },
+      {
+        "name": "Bawarchi",
+        "city": "Hyderabad"
+      }
+    ],
+    "image": "https://upload.wikimedia.org/wikipedia/commons/c/c8/Hyderabadi_egg_biryani.jpg",
+    "image_credit": "Photo via Wikimedia Commons (Hyderabadi_egg_biryani.jpg)",
+    "image_credit_url": "https://commons.wikimedia.org/wiki/File:Hyderabadi_egg_biryani.jpg"
+  },
+  {
+    "slug": "hyderabadi-kacchi",
+    "name": "Hyderabadi Kacchi Gosht Biriyani",
+    "region": "Telangana",
+    "style": "Kacchi",
+    "tagline": "Raw-marinated meat, one-shot precision.",
+    "origin": "Kacchi biriyani is associated with old Hyderabadi Muslim homes where raw, marinated gosht is layered directly with par-cooked rice. It became a badge of skill because timing had to be exact long before controlled commercial kitchens existed.",
+    "distinct": "The meat begins raw, so marinade depth matters more than brute spice. Done right, the rice takes on meat juices without turning greasy.",
+    "rice": "Aged basmati, long grain",
+    "protein": "Mostly mutton",
+    "spices": [
+      "yogurt",
+      "raw papaya",
+      "brown onion",
+      "mint",
+      "kewra"
+    ],
+    "spots": [
+      {
+        "name": "Cafe Bahar",
+        "city": "Hyderabad"
+      },
+      {
+        "name": "Shah Ghouse",
+        "city": "Hyderabad"
+      }
+    ],
+    "image": "https://upload.wikimedia.org/wikipedia/commons/c/c0/Chicken_Hyderabadi_Biryani.JPG",
+    "image_credit": "Photo via Wikimedia Commons (Chicken_Hyderabadi_Biryani.JPG)",
+    "image_credit_url": "https://commons.wikimedia.org/wiki/File:Chicken_Hyderabadi_Biryani.JPG"
+  },
+  {
+    "slug": "hyderabadi-pakki",
+    "name": "Hyderabadi Pakki Biriyani",
+    "region": "Telangana",
+    "style": "Pakki",
+    "tagline": "Cook meat first, then layer for elegance.",
+    "origin": "Pakki developed as the more controllable Hyderabadi approach in large feasts and hotels, where meat is first cooked in masala before dum layering. It spread fast in restaurant kitchens because consistency was easier at scale.",
+    "distinct": "Because the meat is pre-cooked, flavors are cleaner and less risky than kacchi. You get separate rice grains with a more predictable masala finish.",
+    "rice": "Aged basmati, long grain",
+    "protein": "Mutton or chicken",
+    "spices": [
+      "saffron milk",
+      "black cardamom",
+      "fried onions",
+      "coriander",
+      "mint"
+    ],
+    "spots": [
+      {
+        "name": "Paradise",
+        "city": "Hyderabad"
+      },
+      {
+        "name": "Pista House",
+        "city": "Hyderabad"
+      }
+    ],
+    "image": "https://upload.wikimedia.org/wikipedia/commons/c/c8/Hyderabadi_egg_biryani.jpg",
+    "image_credit": "Photo via Wikimedia Commons (Hyderabadi_egg_biryani.jpg; representative image)",
+    "image_credit_url": "https://commons.wikimedia.org/wiki/File:Hyderabadi_egg_biryani.jpg"
+  },
+  {
+    "slug": "kalyani-biriyani",
+    "name": "Kalyani Biriyani",
+    "region": "Telangana",
+    "style": "Cafe",
+    "tagline": "Irani-cafe biriyani with swagger and heat.",
+    "origin": "Kalyani biriyani is tied to Hyderabad's Irani cafe belt and Bidar-linked cooking lineages in the 20th century. It became the people's plate: filling, spicy, and priced for daily workers rather than only banquet tables.",
+    "distinct": "Often made with beef or buffalo in many old-school shops, it is punchier, darker, and less perfumed than royal dum styles. Gravy cling and chili warmth define it.",
+    "rice": "Basmati or local long-grain",
+    "protein": "Beef, buffalo, or mutton",
+    "spices": [
+      "red chili",
+      "cumin",
+      "garam masala",
+      "fried onion",
+      "coriander"
+    ],
+    "spots": [
+      {
+        "name": "New Alhamdulillah Hotel",
+        "city": "Hyderabad"
+      },
+      {
+        "name": "Rumaan Hotel",
+        "city": "Hyderabad"
+      }
+    ],
+    "image": "https://upload.wikimedia.org/wikipedia/commons/4/49/Kalyani_Biriyani.jpg",
+    "image_credit": "Photo via Wikimedia Commons (Kalyani_Biriyani.jpg)",
+    "image_credit_url": "https://commons.wikimedia.org/wiki/File:Kalyani_Biriyani.jpg"
+  },
+  {
+    "slug": "sofiyani-biriyani",
+    "name": "Sofiyani Biriyani",
+    "region": "Telangana",
+    "style": "Dum",
+    "tagline": "The quiet cousin in a loud family.",
+    "origin": "Sofiyani is an old Hyderabadi house style mentioned in wedding and festival menus where a gentler profile was preferred. It sits historically beside richer korma-heavy dishes in formal dastarkhwan spreads.",
+    "distinct": "Lighter masala, less chili aggression, and a fragrant but restrained finish. It tastes courtly rather than dramatic.",
+    "rice": "Aged basmati",
+    "protein": "Chicken or mutton",
+    "spices": [
+      "green cardamom",
+      "cinnamon",
+      "mint",
+      "ghee",
+      "rose water"
+    ],
+    "spots": [
+      {
+        "name": "Shah Ghouse",
+        "city": "Hyderabad"
+      },
+      {
+        "name": "Nimrah Cafe kitchens (seasonal)",
+        "city": "Hyderabad"
+      }
+    ],
+    "image": "https://upload.wikimedia.org/wikipedia/commons/2/22/Biryani.JPG",
+    "image_credit": "Photo via Wikimedia Commons (Biryani.JPG; representative image for Sofiyani)",
+    "image_credit_url": "https://commons.wikimedia.org/wiki/File:Biryani.JPG"
+  },
+  {
+    "slug": "ulavacharu-biriyani",
+    "name": "Ulavacharu Biriyani",
+    "region": "Andhra Pradesh",
+    "style": "Regional Fusion",
+    "tagline": "Smoky horsegram gravy meets rice.",
+    "origin": "Ulavacharu is a classic Andhra horsegram reduction, and restaurants in Vijayawada and Hyderabad popularized its biriyani crossover in the late 20th and early 21st century. It is a modern regional innovation rather than a nawabi relic.",
+    "distinct": "The horsegram base adds a deep earthy body and slight tang that standard dum gravies do not have. It eats darker and nuttier than most biriyanis.",
+    "rice": "Basmati",
+    "protein": "Chicken or mutton",
+    "spices": [
+      "ulavacharu reduction",
+      "black pepper",
+      "clove",
+      "coriander",
+      "ghee"
+    ],
+    "spots": [
+      {
+        "name": "Ulavacharu Restaurant",
+        "city": "Hyderabad"
+      },
+      {
+        "name": "Kritunga",
+        "city": "Vijayawada"
+      }
+    ],
+    "image": "https://upload.wikimedia.org/wikipedia/commons/a/a4/Biryani.jpg",
+    "image_credit": "Photo via Wikimedia Commons (Biryani.jpg; representative image for Ulavacharu biriyani)",
+    "image_credit_url": "https://commons.wikimedia.org/wiki/File:Biryani.jpg"
+  },
+  {
+    "slug": "gongura-mutton-biriyani",
+    "name": "Gongura Mutton Biriyani",
+    "region": "Andhra Pradesh",
+    "style": "Regional Fusion",
+    "tagline": "That unmistakable gongura hit.",
+    "origin": "As Andhra restaurants leaned into region-specific signatures, gongura mutton biriyani emerged as a crowd favorite in the 2000s. It borrows from the long-standing gongura-meat pairing common in Telugu home cooking.",
+    "distinct": "Sorrel leaves cut through mutton fat with sharp acidity, so each bite lands brighter than a typical rich dum. It is bold, tangy, and unapologetically Andhra.",
+    "rice": "Basmati",
+    "protein": "Mutton",
+    "spices": [
+      "gongura",
+      "green chili",
+      "garlic",
+      "coriander seed",
+      "fried onion"
+    ],
+    "spots": [
+      {
+        "name": "Rayalaseema Ruchulu",
+        "city": "Hyderabad"
+      },
+      {
+        "name": "Palamuru Grill",
+        "city": "Hyderabad"
+      }
+    ],
+    "image": "https://upload.wikimedia.org/wikipedia/commons/b/b9/Mutton_biryani.JPG",
+    "image_credit": "Photo via Wikimedia Commons (Mutton_biryani.JPG; representative image for Gongura style)",
+    "image_credit_url": "https://commons.wikimedia.org/wiki/File:Mutton_biryani.JPG"
+  },
+  {
+    "slug": "ambur-biriyani",
+    "name": "Ambur Biriyani",
+    "region": "Tamil Nadu",
+    "style": "Seeraga Samba",
+    "tagline": "Seeraga samba, red masala, old highway legend.",
+    "origin": "Ambur biriyani developed in the Arcot belt, shaped by cooks linked to the Nawabs of Arcot and later by eateries on the Chennai-Bengaluru route. By the mid-20th century, Ambur had become a mandatory stop for biriyani pilgrims.",
+    "distinct": "Seeraga samba rice, restrained whole-spice profile, and a chili-forward meat gravy that coats rather than floods. It is served with brinjal dalcha and onion pachadi for balance.",
+    "rice": "Seeraga samba",
+    "protein": "Mutton or chicken",
+    "spices": [
+      "dry red chili paste",
+      "curd",
+      "cinnamon",
+      "clove",
+      "mint"
+    ],
+    "spots": [
+      {
+        "name": "Star Ambur Biryani",
+        "city": "Ambur"
+      },
+      {
+        "name": "Rahmaniya Hotel",
+        "city": "Ambur"
+      }
+    ],
+    "image": "https://upload.wikimedia.org/wikipedia/commons/9/95/Ambur_Briyani.jpg",
+    "image_credit": "Photo via Wikimedia Commons (Ambur_Briyani.jpg)",
+    "image_credit_url": "https://commons.wikimedia.org/wiki/File:Ambur_Briyani.jpg"
+  },
+  {
+    "slug": "vaniyambadi-biriyani",
+    "name": "Vaniyambadi Biriyani",
+    "region": "Tamil Nadu",
+    "style": "Seeraga Samba",
+    "tagline": "Arcot lineage, slightly sharper edge.",
+    "origin": "Vaniyambadi sits on the same Arcot biriyani corridor as Ambur, but built its own identity through Muslim family kitchens and hotel craft. The style expanded with transport-town dining culture along NH routes.",
+    "distinct": "Usually lighter in oil than many city biriyanis, with a focused chili note and seeraga samba aroma. Side dishes matter: dalcha and raita complete the plate.",
+    "rice": "Seeraga samba",
+    "protein": "Mutton or chicken",
+    "spices": [
+      "red chili",
+      "fennel",
+      "curd",
+      "mint",
+      "fried onion"
+    ],
+    "spots": [
+      {
+        "name": "Azeezia Biryani",
+        "city": "Vaniyambadi"
+      },
+      {
+        "name": "Khadar Biryani",
+        "city": "Vaniyambadi"
+      }
+    ],
+    "image": "https://upload.wikimedia.org/wikipedia/commons/5/5a/Chicken_biriyani_@_Star_Ambur_Biriyani_(7519153014).jpg",
+    "image_credit": "Photo via Wikimedia Commons (Chicken_biriyani_@_Star_Ambur_Biriyani_(7519153014).jpg; representative image for Vaniyambadi)",
+    "image_credit_url": "https://commons.wikimedia.org/wiki/File:Chicken_biriyani_@_Star_Ambur_Biriyani_(7519153014).jpg"
+  },
+  {
+    "slug": "dindigul-thalappakatti",
+    "name": "Dindigul Thalappakatti Biriyani",
+    "region": "Tamil Nadu",
+    "style": "Seeraga Samba",
+    "tagline": "Peppery, compact rice, zero fluff.",
+    "origin": "Popularized in Dindigul by Nagasamy Naidu's shop started in 1957, this style became synonymous with the Thalappakatti name. It reflects inland Tamil preferences for punch and acidity over perfume.",
+    "distinct": "Seeraga samba grains absorb masala fast, giving a dense flavor in every spoon. Lemony tang, black pepper, and curd-led meat cooking set it apart from Arcot styles.",
+    "rice": "Seeraga samba",
+    "protein": "Mutton or chicken",
+    "spices": [
+      "black pepper",
+      "fennel",
+      "curd",
+      "lemon",
+      "bay leaf"
+    ],
+    "spots": [
+      {
+        "name": "Dindigul Thalappakatti",
+        "city": "Dindigul"
+      },
+      {
+        "name": "Ponram Biriyani",
+        "city": "Dindigul"
+      }
+    ],
+    "image": "https://upload.wikimedia.org/wikipedia/commons/1/15/Dindigul_Thalappakatti_Biryani.jpg",
+    "image_credit": "Photo via Wikimedia Commons (Dindigul_Thalappakatti_Biryani.jpg)",
+    "image_credit_url": "https://commons.wikimedia.org/wiki/File:Dindigul_Thalappakatti_Biryani.jpg"
+  },
+  {
+    "slug": "chettinad-biriyani",
+    "name": "Chettinad Biriyani",
+    "region": "Tamil Nadu",
+    "style": "Seeraga Samba",
+    "tagline": "Dry-roasted spice logic, not perfume theatre.",
+    "origin": "Chettinad cooking from the Sivaganga-Pudukottai belt is known for deep-roasted masalas and bold meat gravies. Its biriyani expression borrows that pantry discipline rather than courtly dum theatrics.",
+    "distinct": "Expect toasted spice depth, curry leaf warmth, and a darker masala body. It feels rustic and assertive compared with Arcot's cleaner profile.",
+    "rice": "Seeraga samba or basmati",
+    "protein": "Chicken or mutton",
+    "spices": [
+      "kalpasi",
+      "fennel",
+      "black pepper",
+      "curry leaves",
+      "star anise"
+    ],
+    "spots": [
+      {
+        "name": "Anjappar",
+        "city": "Chennai"
+      },
+      {
+        "name": "Muthu Mess",
+        "city": "Karaikudi"
+      }
+    ],
+    "image": "https://upload.wikimedia.org/wikipedia/commons/4/42/Mutton-Biryani.jpg",
+    "image_credit": "Photo via Wikimedia Commons (Mutton-Biryani.jpg; representative image for Chettinad style)",
+    "image_credit_url": "https://commons.wikimedia.org/wiki/File:Mutton-Biryani.jpg"
+  },
+  {
+    "slug": "kayalpattinam-biriyani",
+    "name": "Kayalpattinam Biriyani",
+    "region": "Tamil Nadu",
+    "style": "Seeraga Samba",
+    "tagline": "Port-town biriyani with old Arabian echoes.",
+    "origin": "Kayalpattinam's Muslim food culture grew around Indian Ocean trade routes that connected the Tamil coast with Arabia. Community feasts kept this biriyani tradition alive through mosques, weddings, and Ramadan kitchens.",
+    "distinct": "Usually gentler in heat than interior Tamil styles, with aromatic fat and layered meat stock character. The flavor aims for depth, not raw spice aggression.",
+    "rice": "Seeraga samba",
+    "protein": "Mutton or chicken",
+    "spices": [
+      "cinnamon",
+      "clove",
+      "mint",
+      "fried onion",
+      "ghee"
+    ],
+    "spots": [
+      {
+        "name": "Noor Biryani",
+        "city": "Kayalpattinam"
+      },
+      {
+        "name": "Mubarak Hotel",
+        "city": "Thoothukudi"
+      }
+    ],
+    "image": "https://upload.wikimedia.org/wikipedia/commons/f/fe/Chicken_Biryani.jpg",
+    "image_credit": "Photo via Wikimedia Commons (Chicken_Biryani.jpg; representative image for Kayalpattinam biriyani)",
+    "image_credit_url": "https://commons.wikimedia.org/wiki/File:Chicken_Biryani.jpg"
+  },
+  {
+    "slug": "thalassery-biriyani",
+    "name": "Thalassery Biriyani",
+    "region": "Kerala",
+    "style": "Malabar",
+    "tagline": "Jeerakasala rice and sweet-spice finesse.",
+    "origin": "In North Kerala's old spice ports, Mappila Muslim kitchens fused Arab-influenced festive cooking with local ingredients. Thalassery became the style's cultural shorthand, especially for wedding tables.",
+    "distinct": "Uses short-grain jeerakasala (kaima) rice instead of basmati. Fried onion, raisins, and cashews add a sweet counterpoint to warm whole spices.",
+    "rice": "Jeerakasala (kaima)",
+    "protein": "Chicken or mutton",
+    "spices": [
+      "ghee",
+      "raisins",
+      "cashew",
+      "cinnamon",
+      "cardamom"
+    ],
+    "spots": [
+      {
+        "name": "Paris Restaurant",
+        "city": "Thalassery"
+      },
+      {
+        "name": "Paragon",
+        "city": "Kozhikode"
+      }
+    ],
+    "image": "https://upload.wikimedia.org/wikipedia/commons/c/c5/Thalassery_biryani_-1.jpg",
+    "image_credit": "Photo via Wikimedia Commons (Thalassery_biryani_-1.jpg)",
+    "image_credit_url": "https://commons.wikimedia.org/wiki/File:Thalassery_biryani_-1.jpg"
+  },
+  {
+    "slug": "kozhikode-biriyani",
+    "name": "Kozhikode Biriyani",
+    "region": "Kerala",
+    "style": "Malabar",
+    "tagline": "Market-city biriyani built for appetite.",
+    "origin": "Kozhikode's biriyani scene grew with trade-city canteens and legacy restaurants feeding workers, travelers, and families. It overlaps with Malabar technique but has its own city-specific serving traditions.",
+    "distinct": "Short-grain rice, generous ghee aroma, and a richer restaurant-style meat layer. Often served with date pickle and pappadam.",
+    "rice": "Jeerakasala (kaima)",
+    "protein": "Chicken or mutton",
+    "spices": [
+      "ghee",
+      "fried onion",
+      "pepper",
+      "cardamom",
+      "cashew"
+    ],
+    "spots": [
+      {
+        "name": "Rahmath Hotel",
+        "city": "Kozhikode"
+      },
+      {
+        "name": "Topform",
+        "city": "Kozhikode"
+      }
+    ],
+    "image": "https://upload.wikimedia.org/wikipedia/commons/2/22/Biryani.JPG",
+    "image_credit": "Photo via Wikimedia Commons (Biryani.JPG; representative image for Kozhikode biriyani)",
+    "image_credit_url": "https://commons.wikimedia.org/wiki/File:Biryani.JPG"
+  },
+  {
+    "slug": "mapilla-biriyani",
+    "name": "Mapilla Biriyani",
+    "region": "Kerala",
+    "style": "Malabar",
+    "tagline": "Festive Malabar biriyani from community tables.",
+    "origin": "Mapilla biriyani is rooted in Kerala Muslim household feasts, especially around Eid and wedding seasons. Written records and oral memory tie the tradition to centuries of Arab-Malabar contact along the coast.",
+    "distinct": "Balanced sweet-savory profile with dry fruits, ghee, and aromatic short-grain rice. It is celebratory food that leans elegant rather than fiery.",
+    "rice": "Jeerakasala",
+    "protein": "Chicken, mutton, or fish",
+    "spices": [
+      "ghee",
+      "raisins",
+      "cashew",
+      "clove",
+      "cinnamon"
+    ],
+    "spots": [
+      {
+        "name": "Kuttichira Biriyani Centre",
+        "city": "Kozhikode"
+      },
+      {
+        "name": "Bombay Hotel",
+        "city": "Kannur"
+      }
+    ],
+    "image": "https://upload.wikimedia.org/wikipedia/commons/d/d4/A_Biryani.jpg",
+    "image_credit": "Photo via Wikimedia Commons (A_Biryani.jpg; representative image for Mapilla biriyani)",
+    "image_credit_url": "https://commons.wikimedia.org/wiki/File:A_Biryani.jpg"
+  },
+  {
+    "slug": "kochi-kayees-biriyani",
+    "name": "Kochi Kayees Biriyani",
+    "region": "Kerala",
+    "style": "Malabar",
+    "tagline": "One old hotel, one city, one obsession.",
+    "origin": "Rahmathulla Hotel in Mattancherry (popularly Kayees) became a Kochi institution in the mid-20th century and helped define this city-style biriyani. Port-city cosmopolitanism and Muslim family cooking lineages shaped its profile.",
+    "distinct": "Soft, aromatic rice with gently spiced meat and a clean finish that keeps locals fiercely loyal. It is subtle, not showy.",
+    "rice": "Jeerakasala",
+    "protein": "Chicken or mutton",
+    "spices": [
+      "ghee",
+      "cardamom",
+      "clove",
+      "fried onion",
+      "mint"
+    ],
+    "spots": [
+      {
+        "name": "Rahmathulla Hotel (Kayees)",
+        "city": "Kochi"
+      },
+      {
+        "name": "B4B",
+        "city": "Kochi"
+      }
+    ],
+    "image": "https://upload.wikimedia.org/wikipedia/commons/8/8a/Homemade_Biryani.jpg",
+    "image_credit": "Photo via Wikimedia Commons (Homemade_Biryani.jpg; representative image for Kochi city style)",
+    "image_credit_url": "https://commons.wikimedia.org/wiki/File:Homemade_Biryani.jpg"
+  },
+  {
+    "slug": "kizhi-biriyani",
+    "name": "Kizhi Biriyani",
+    "region": "Kerala",
+    "style": "Leaf-Wrapped",
+    "tagline": "Banana-leaf parcel, trapped aroma.",
+    "origin": "Kizhi biriyani is a contemporary Kerala restaurant innovation that wraps cooked biriyani in banana leaf and reheats it sealed. It grew popular in the 2010s as a high-impact serving style.",
+    "distinct": "Leaf steaming infuses a grassy aroma and keeps moisture locked in. It is as much texture and fragrance engineering as it is recipe.",
+    "rice": "Basmati or jeerakasala",
+    "protein": "Chicken or mutton",
+    "spices": [
+      "banana leaf aroma",
+      "pepper",
+      "clove",
+      "ghee",
+      "fried onion"
+    ],
+    "spots": [
+      {
+        "name": "Alibaba & 41 Dishes",
+        "city": "Kottayam"
+      },
+      {
+        "name": "The Biriyani Store",
+        "city": "Kochi"
+      }
+    ],
+    "image": "https://upload.wikimedia.org/wikipedia/commons/1/10/Vegetable_biryani.JPG",
+    "image_credit": "Photo via Wikimedia Commons (Vegetable_biryani.JPG; representative image for Kizhi biriyani)",
+    "image_credit_url": "https://commons.wikimedia.org/wiki/File:Vegetable_biryani.JPG"
+  },
+  {
+    "slug": "donne-biriyani",
+    "name": "Donne Biriyani",
+    "region": "Karnataka",
+    "style": "Military",
+    "tagline": "Green masala and that leaf-cup finish.",
+    "origin": "Donne biriyani emerged from Bengaluru's military hotel tradition that served workers and soldiers in the cantonment era. The name comes from the dried leaf cup (donnae) it is often served in.",
+    "distinct": "Shorter rice, mint-coriander green masala, and a juicy, almost pulao-like body. It is herbaceous and comforting, not heavily layered dum.",
+    "rice": "Short-grain jeera rice or sona masoori",
+    "protein": "Chicken or mutton",
+    "spices": [
+      "mint",
+      "coriander",
+      "green chili",
+      "cinnamon",
+      "clove"
+    ],
+    "spots": [
+      {
+        "name": "Shivaji Military Hotel",
+        "city": "Bengaluru"
+      },
+      {
+        "name": "RNR Donne Biryani",
+        "city": "Bengaluru"
+      }
+    ],
+    "image": "https://upload.wikimedia.org/wikipedia/commons/2/27/Chicken_Donne_Biriyani.jpg",
+    "image_credit": "Photo via Wikimedia Commons (Chicken_Donne_Biriyani.jpg)",
+    "image_credit_url": "https://commons.wikimedia.org/wiki/File:Chicken_Donne_Biriyani.jpg"
+  },
+  {
+    "slug": "bhatkali-navayathi-biriyani",
+    "name": "Bhatkali Navayathi Biriyani",
+    "region": "Karnataka",
+    "style": "Coastal Muslim",
+    "tagline": "Onion-chili base, coast-town depth.",
+    "origin": "From Bhatkal's Nawayath Muslim community, this biriyani reflects Arab-seafaring links and coastal Karnataka spice habits. Family recipes spread from home feasts to restaurants in Bhatkal and Bengaluru.",
+    "distinct": "A deep onion-tomato-green chili masala drives the dish, often richer than Donne and less sweet than Malabar styles. It has a signature heat-memory that lingers.",
+    "rice": "Basmati",
+    "protein": "Chicken or mutton",
+    "spices": [
+      "onion",
+      "tomato",
+      "green chili",
+      "black pepper",
+      "mint"
+    ],
+    "spots": [
+      {
+        "name": "Bhatkal Biryani House",
+        "city": "Bengaluru"
+      },
+      {
+        "name": "Nawayath Biryani Centre",
+        "city": "Bhatkal"
+      }
+    ],
+    "image": "https://upload.wikimedia.org/wikipedia/commons/b/b9/Mutton_biryani.JPG",
+    "image_credit": "Photo via Wikimedia Commons (Mutton_biryani.JPG; representative image for Bhatkali style)",
+    "image_credit_url": "https://commons.wikimedia.org/wiki/File:Mutton_biryani.JPG"
+  },
+  {
+    "slug": "beary-biriyani",
+    "name": "Beary Biriyani",
+    "region": "Karnataka",
+    "style": "Coastal Muslim",
+    "tagline": "Mangaluru Muslim feast rice, soft but intense.",
+    "origin": "Beary cuisine from coastal Karnataka has long-standing Muslim community roots and a distinct festive table culture. Its biriyani style developed through home-wedding cooking and coastal spice trade influences.",
+    "distinct": "Usually aromatic and moist, with measured whole spices and community-specific masala blends. It sits between Malabar elegance and Karnataka warmth.",
+    "rice": "Jeerakasala or basmati",
+    "protein": "Chicken or mutton",
+    "spices": [
+      "ghee",
+      "fennel",
+      "pepper",
+      "cardamom",
+      "fried onion"
+    ],
+    "spots": [
+      {
+        "name": "Jai Hind Lunch Home",
+        "city": "Mangaluru"
+      },
+      {
+        "name": "Bismillah Biryani",
+        "city": "Mangaluru"
+      }
+    ],
+    "image": "https://upload.wikimedia.org/wikipedia/commons/a/a4/Biryani.jpg",
+    "image_credit": "Photo via Wikimedia Commons (Biryani.jpg; representative image for Beary biriyani)",
+    "image_credit_url": "https://commons.wikimedia.org/wiki/File:Biryani.jpg"
+  },
+  {
+    "slug": "military-hotel-mutton-biriyani",
+    "name": "Military Hotel Mutton Biriyani",
+    "region": "Karnataka",
+    "style": "Military",
+    "tagline": "Workday biriyani that still tastes like Sunday.",
+    "origin": "Military hotels in old Mysore and Bengaluru fed laborers and soldiers with robust meat meals through the early to mid-20th century. Their biriyani style favored practicality, flavor density, and value.",
+    "distinct": "Less ornamental than nawabi forms; more direct meat stock flavor, spice warmth, and portion generosity. It's built to satisfy, not impress on ceremony.",
+    "rice": "Short-grain rice",
+    "protein": "Mutton",
+    "spices": [
+      "black pepper",
+      "coriander",
+      "clove",
+      "cinnamon",
+      "mint"
+    ],
+    "spots": [
+      {
+        "name": "Ranganna Military Hotel",
+        "city": "Mysuru"
+      },
+      {
+        "name": "Nagarjuna Military Hotel",
+        "city": "Bengaluru"
+      }
+    ],
+    "image": "https://upload.wikimedia.org/wikipedia/commons/7/7d/Mutton_Biryani.jpg",
+    "image_credit": "Photo via Wikimedia Commons (Mutton_Biryani.jpg; representative image for military hotel style)",
+    "image_credit_url": "https://commons.wikimedia.org/wiki/File:Mutton_Biryani.jpg"
+  },
+  {
+    "slug": "bombay-biriyani",
+    "name": "Bombay Biriyani",
+    "region": "Maharashtra",
+    "style": "Urban",
+    "tagline": "Sweet-spice, potato, and old city hybridity.",
+    "origin": "Bombay biriyani grew in a port city where Muslim, Parsi, Bohra, and North Indian foodways constantly overlapped. By the 20th century it had become a restaurant staple with a distinct khatta-meetha edge.",
+    "distinct": "Potato appears often, dried fruits are common, and masala leans sweeter than many northern styles. It is unmistakably city-blend food.",
+    "rice": "Basmati",
+    "protein": "Mutton or chicken",
+    "spices": [
+      "potato",
+      "dried plum",
+      "kewra",
+      "fried onion",
+      "saffron"
+    ],
+    "spots": [
+      {
+        "name": "Jaffer Bhai's Delhi Darbar",
+        "city": "Mumbai"
+      },
+      {
+        "name": "Lucky Restaurant",
+        "city": "Mumbai"
+      }
+    ],
+    "image": "https://upload.wikimedia.org/wikipedia/commons/3/35/Bombay_Biryani..JPG",
+    "image_credit": "Photo via Wikimedia Commons (Bombay_Biryani..JPG)",
+    "image_credit_url": "https://commons.wikimedia.org/wiki/File:Bombay_Biryani..JPG"
+  },
+  {
+    "slug": "bohri-biriyani",
+    "name": "Bohri Biriyani",
+    "region": "Maharashtra",
+    "style": "Community",
+    "tagline": "Community thaal biriyani with tang and comfort.",
+    "origin": "Dawoodi Bohra community feasts center around shared thaal dining, and biriyani became one of its defining mains in western India. Mumbai and Surat kept this style alive through family kitchens and community caterers.",
+    "distinct": "Often includes potato and tomato-led tang, with softer chili than Memoni variants. It is built for communal eating and repeat servings.",
+    "rice": "Basmati",
+    "protein": "Mutton or chicken",
+    "spices": [
+      "tomato",
+      "potato",
+      "mint",
+      "clove",
+      "cinnamon"
+    ],
+    "spots": [
+      {
+        "name": "The Bohri Kitchen",
+        "city": "Mumbai"
+      },
+      {
+        "name": "Saifee Caterers",
+        "city": "Mumbai"
+      }
+    ],
+    "image": "https://upload.wikimedia.org/wikipedia/commons/2/22/Biryani.JPG",
+    "image_credit": "Photo via Wikimedia Commons (Biryani.JPG; representative image for Bohri biriyani)",
+    "image_credit_url": "https://commons.wikimedia.org/wiki/File:Biryani.JPG"
+  },
+  {
+    "slug": "memoni-biriyani",
+    "name": "Memoni Biriyani",
+    "region": "Maharashtra",
+    "style": "Community",
+    "tagline": "Less perfume, more firepower.",
+    "origin": "Memoni biriyani traces to Kutchi Memon Muslim communities who moved through Gujarat, Sindh, and Mumbai trade circuits. The style became known in city food culture for direct chili heat and meaty depth.",
+    "distinct": "Spicier and less sweet than Bombay-Bohri styles, usually with little to no potato. Meat flavor leads, garnishes follow.",
+    "rice": "Basmati",
+    "protein": "Mutton, beef, or chicken",
+    "spices": [
+      "green chili",
+      "black pepper",
+      "coriander",
+      "fried onion",
+      "lemon"
+    ],
+    "spots": [
+      {
+        "name": "Noor Mohammadi Hotel",
+        "city": "Mumbai"
+      },
+      {
+        "name": "Jamaatkhana community caterers",
+        "city": "Mumbai"
+      }
+    ],
+    "image": "https://upload.wikimedia.org/wikipedia/commons/8/8a/Homemade_Biryani.jpg",
+    "image_credit": "Photo via Wikimedia Commons (Homemade_Biryani.jpg; representative image for Memoni biriyani)",
+    "image_credit_url": "https://commons.wikimedia.org/wiki/File:Homemade_Biryani.jpg"
+  },
+  {
+    "slug": "kolhapuri-biriyani",
+    "name": "Kolhapuri Biriyani",
+    "region": "Maharashtra",
+    "style": "Regional Spicy",
+    "tagline": "Red masala that does not negotiate.",
+    "origin": "Kolhapur's chili-forward meat traditions and tambda-rassa palate shaped this modern regional biriyani identity. It rose through local khanavals and city eateries as demand for spicier profiles grew.",
+    "distinct": "Expect aggressive red chili character, roasted coconut notes in some versions, and a robust oily finish. It is heat-forward by design.",
+    "rice": "Basmati",
+    "protein": "Mutton or chicken",
+    "spices": [
+      "Kolhapuri chili",
+      "dry coconut",
+      "garlic",
+      "fennel",
+      "black pepper"
+    ],
+    "spots": [
+      {
+        "name": "Hotel Parakh",
+        "city": "Kolhapur"
+      },
+      {
+        "name": "Opal Biryani House",
+        "city": "Kolhapur"
+      }
+    ],
+    "image": "https://upload.wikimedia.org/wikipedia/commons/f/fe/Chicken_Biryani.jpg",
+    "image_credit": "Photo via Wikimedia Commons (Chicken_Biryani.jpg; representative image for Kolhapuri biriyani)",
+    "image_credit_url": "https://commons.wikimedia.org/wiki/File:Chicken_Biryani.jpg"
+  },
+  {
+    "slug": "malvani-biriyani",
+    "name": "Malvani Coastal Biriyani",
+    "region": "Maharashtra",
+    "style": "Coastal",
+    "tagline": "Konkan coast in biriyani form.",
+    "origin": "Malvani cuisine from the Konkan coast is built on coconut, pepper, and marine produce, and its biriyani adaptations reflect that pantry. Restaurant versions grew in Mumbai and coastal towns through migrant demand.",
+    "distinct": "Can include fish or prawn variations, with coconut and kokum-like brightness in some masalas. It tastes coastal first, biriyani second.",
+    "rice": "Basmati",
+    "protein": "Fish, prawn, or chicken",
+    "spices": [
+      "coconut",
+      "black pepper",
+      "fennel",
+      "turmeric",
+      "coastal chili"
+    ],
+    "spots": [
+      {
+        "name": "Jai Hind Lunch Home",
+        "city": "Mumbai"
+      },
+      {
+        "name": "Hotel Chaitanya",
+        "city": "Malvan"
+      }
+    ],
+    "image": "https://upload.wikimedia.org/wikipedia/commons/d/d4/A_Biryani.jpg",
+    "image_credit": "Photo via Wikimedia Commons (A_Biryani.jpg; representative image for Malvani biriyani)",
+    "image_credit_url": "https://commons.wikimedia.org/wiki/File:A_Biryani.jpg"
+  },
+  {
+    "slug": "kolkata-biriyani",
+    "name": "Kolkata Biriyani",
+    "region": "West Bengal",
+    "style": "Kolkata",
+    "tagline": "Fragrant rice, tender meat, and that iconic potato.",
+    "origin": "Kolkata biriyani is linked to the exile court of Nawab Wajid Ali Shah, who moved to Metiabruz after 1856. Awadhi technique adapted to local economics and taste, and potato became a defining marker.",
+    "distinct": "It is lighter in masala, aromatic, and elegant, with aloo often treated as carefully as the meat. The flavor arc is subtle and layered.",
+    "rice": "Basmati",
+    "protein": "Mutton or chicken",
+    "spices": [
+      "potato",
+      "kewra",
+      "rose water",
+      "nutmeg",
+      "mace"
+    ],
+    "spots": [
+      {
+        "name": "Arsalan",
+        "city": "Kolkata"
+      },
+      {
+        "name": "Royal Indian Hotel",
+        "city": "Kolkata"
+      }
+    ],
+    "image": "https://upload.wikimedia.org/wikipedia/commons/5/54/Biryani_from_kolkata.jpg",
+    "image_credit": "Photo via Wikimedia Commons (Biryani_from_kolkata.jpg)",
+    "image_credit_url": "https://commons.wikimedia.org/wiki/File:Biryani_from_kolkata.jpg"
+  },
+  {
+    "slug": "metiabruz-biriyani",
+    "name": "Metiabruz Royal Biriyani",
+    "region": "West Bengal",
+    "style": "Kolkata",
+    "tagline": "Where Kolkata biriyani remembers its court roots.",
+    "origin": "Metiabruz was the cultural center of Wajid Ali Shah's transplanted court, and biriyani traditions persisted in family and neighborhood kitchens there. This is the closest living bridge to old Lucknow-Calcutta culinary memory.",
+    "distinct": "Delicate attar-like aroma, controlled spice, and careful potato integration. Richness is present, but never noisy.",
+    "rice": "Basmati",
+    "protein": "Mutton",
+    "spices": [
+      "kewra",
+      "mace",
+      "potato",
+      "ghee",
+      "fried onion"
+    ],
+    "spots": [
+      {
+        "name": "Sufia",
+        "city": "Kolkata"
+      },
+      {
+        "name": "India Restaurant",
+        "city": "Kolkata"
+      }
+    ],
+    "image": "https://upload.wikimedia.org/wikipedia/commons/1/1a/Kolkata_mutton_biryani.jpg",
+    "image_credit": "Photo via Wikimedia Commons (Kolkata_mutton_biryani.jpg)",
+    "image_credit_url": "https://commons.wikimedia.org/wiki/File:Kolkata_mutton_biryani.jpg"
+  },
+  {
+    "slug": "ilish-biriyani",
+    "name": "Ilish Biriyani",
+    "region": "West Bengal",
+    "style": "Kolkata",
+    "tagline": "Monsoon hilsa, biriyani grammar.",
+    "origin": "Ilish biriyani is a newer Bengali restaurant and home adaptation that applies biriyani layering to prized monsoon hilsa. It reflects Bengal's fish-first identity meeting Kolkata biriyani technique.",
+    "distinct": "Fish oil and mustard-toned richness replace red-meat depth. Timing is crucial so hilsa stays intact and silky.",
+    "rice": "Basmati",
+    "protein": "Hilsa",
+    "spices": [
+      "hilsa fat",
+      "green chili",
+      "mustard oil",
+      "fried onion",
+      "ghee"
+    ],
+    "spots": [
+      {
+        "name": "6 Ballygunge Place",
+        "city": "Kolkata"
+      },
+      {
+        "name": "Oh! Calcutta",
+        "city": "Kolkata"
+      }
+    ],
+    "image": "https://upload.wikimedia.org/wikipedia/commons/1/18/Veg-Biryani.jpg",
+    "image_credit": "Photo via Wikimedia Commons (Veg-Biryani.jpg; representative image for seasonal Ilish biriyani)",
+    "image_credit_url": "https://commons.wikimedia.org/wiki/File:Veg-Biryani.jpg"
+  },
+  {
+    "slug": "lucknowi-awadhi-biriyani",
+    "name": "Lucknowi Awadhi Biriyani",
+    "region": "Uttar Pradesh",
+    "style": "Awadhi",
+    "tagline": "Refined heat, perfume, and patience.",
+    "origin": "Awadhi biriyani matured in Lucknow's 18th-19th century nawabi kitchens under codified court cooking systems. Dum pukht philosophy prized aroma retention, grain texture, and measured spice over raw intensity.",
+    "distinct": "Yakhni influence, subtle fragrance, and graceful masala distribution. It is designed to unfold slowly, not shock.",
+    "rice": "Aged basmati",
+    "protein": "Mutton or chicken",
+    "spices": [
+      "mace",
+      "nutmeg",
+      "kewra",
+      "saffron",
+      "yakhni stock"
+    ],
+    "spots": [
+      {
+        "name": "Idris Ki Biryani",
+        "city": "Lucknow"
+      },
+      {
+        "name": "Wahid Biryani",
+        "city": "Lucknow"
+      }
+    ],
+    "image": "https://upload.wikimedia.org/wikipedia/commons/3/30/Lucknowi%27s_Famous_Dum_Biryani.jpg",
+    "image_credit": "Photo via Wikimedia Commons (Lucknowi%27s_Famous_Dum_Biryani.jpg)",
+    "image_credit_url": "https://commons.wikimedia.org/wiki/File:Lucknowi%27s_Famous_Dum_Biryani.jpg"
+  },
+  {
+    "slug": "moradabadi-biriyani",
+    "name": "Moradabadi Biriyani",
+    "region": "Uttar Pradesh",
+    "style": "North Indian",
+    "tagline": "Minimal masala, maximum clarity.",
+    "origin": "Moradabadi biriyani became famous through 20th-century street and market vendors in Moradabad, especially around labor and transit hubs. Its lean profile made it affordable, repeatable, and easy to eat daily.",
+    "distinct": "Very light color, whole pepper and green chili notes, often finished with lemon and fresh herbs. It is the anti-greasy biriyani.",
+    "rice": "Long-grain rice",
+    "protein": "Chicken or mutton",
+    "spices": [
+      "black pepper",
+      "green chili",
+      "lemon",
+      "coriander",
+      "whole garam masala"
+    ],
+    "spots": [
+      {
+        "name": "Haji Biryani",
+        "city": "Moradabad"
+      },
+      {
+        "name": "Sultan Biryani",
+        "city": "Moradabad"
+      }
+    ],
+    "image": "https://upload.wikimedia.org/wikipedia/commons/c/c8/MORADABADI_BIRYANI.jpg",
+    "image_credit": "Photo via Wikimedia Commons (MORADABADI_BIRYANI.jpg)",
+    "image_credit_url": "https://commons.wikimedia.org/wiki/File:MORADABADI_BIRYANI.jpg"
+  },
+  {
+    "slug": "rampuri-biriyani",
+    "name": "Rampuri Biriyani",
+    "region": "Uttar Pradesh",
+    "style": "Awadhi",
+    "tagline": "Nawabi restraint with a dry-fruit whisper.",
+    "origin": "Rampur's royal kitchens absorbed Awadhi influence but evolved their own meat and rice repertoire under the Nawabs of Rampur. The biriyani idiom reflects that courtly but slightly earthier lineage.",
+    "distinct": "Often drier than Lucknowi versions, with nuanced aromatics and less overt sweet perfume. It feels intimate, not ceremonial.",
+    "rice": "Basmati",
+    "protein": "Mutton",
+    "spices": [
+      "mace",
+      "cardamom",
+      "black pepper",
+      "fried onion",
+      "kewra"
+    ],
+    "spots": [
+      {
+        "name": "Rampur Kitchen",
+        "city": "Rampur"
+      },
+      {
+        "name": "Nawab Food Court",
+        "city": "Rampur"
+      }
+    ],
+    "image": "https://upload.wikimedia.org/wikipedia/commons/7/7d/Mutton_Biryani.jpg",
+    "image_credit": "Photo via Wikimedia Commons (Mutton_Biryani.jpg; representative image for Rampuri biriyani)",
+    "image_credit_url": "https://commons.wikimedia.org/wiki/File:Mutton_Biryani.jpg"
+  },
+  {
+    "slug": "tehri-biriyani",
+    "name": "Tehri (Awadhi Vegetarian Biriyani)",
+    "region": "Uttar Pradesh",
+    "style": "Tehri",
+    "tagline": "No meat, still unmistakably biriyani-adjacent.",
+    "origin": "Tehri grew in north Indian Hindu homes and military-era economies where meat was limited or avoided but layered rice technique remained. In Awadh and Banaras belts it became an everyday celebratory rice.",
+    "distinct": "Vegetable-forward masala rice with biriyani method cues but lighter stock depth. Potato often becomes the hero component.",
+    "rice": "Basmati",
+    "protein": "None (vegetarian)",
+    "spices": [
+      "potato",
+      "turmeric",
+      "bay leaf",
+      "clove",
+      "cumin"
+    ],
+    "spots": [
+      {
+        "name": "Moti Mahal Veg Tehri Counter",
+        "city": "Lucknow"
+      },
+      {
+        "name": "Kashi Chat Bhandar (seasonal tehri)",
+        "city": "Varanasi"
+      }
+    ],
+    "image": "https://upload.wikimedia.org/wikipedia/commons/1/10/Vegetable_biryani.JPG",
+    "image_credit": "Photo via Wikimedia Commons (Vegetable_biryani.JPG)",
+    "image_credit_url": "https://commons.wikimedia.org/wiki/File:Vegetable_biryani.JPG"
+  },
+  {
+    "slug": "old-delhi-biriyani",
+    "name": "Old Delhi Biriyani",
+    "region": "Delhi",
+    "style": "North Indian",
+    "tagline": "Bazaar biriyani with masala muscle.",
+    "origin": "Old Delhi's biriyani culture formed around Jama Masjid lanes and Mughlai eateries feeding dense market traffic. Over decades, the style leaned practical and flavor-heavy for fast-moving service.",
+    "distinct": "Deeper masala, bolder chili, and stronger fried-onion character than most Awadhi styles. It is meant to hit quickly and satisfy immediately.",
+    "rice": "Basmati",
+    "protein": "Mutton or chicken",
+    "spices": [
+      "brown onion",
+      "black cardamom",
+      "red chili",
+      "coriander",
+      "ghee"
+    ],
+    "spots": [
+      {
+        "name": "Karim's",
+        "city": "Delhi"
+      },
+      {
+        "name": "Al Jawahar",
+        "city": "Delhi"
+      }
+    ],
+    "image": "https://upload.wikimedia.org/wikipedia/commons/f/fe/Chicken_Biryani.jpg",
+    "image_credit": "Photo via Wikimedia Commons (Chicken_Biryani.jpg; representative image for Old Delhi style)",
+    "image_credit_url": "https://commons.wikimedia.org/wiki/File:Chicken_Biryani.jpg"
+  },
+  {
+    "slug": "nizamuddin-biriyani",
+    "name": "Nizamuddin Biriyani",
+    "region": "Delhi",
+    "style": "North Indian",
+    "tagline": "Deg-cooked comfort from shrine-side lanes.",
+    "origin": "Around Hazrat Nizamuddin dargah, large-deg cooking traditions fed devotees, locals, and travelers for decades. Neighborhood biriyani stalls developed a recognizable moist, spice-forward profile tied to this service rhythm.",
+    "distinct": "Soft rice, generous masala cling, and heavily aromatic stock from bulk-pot cooking. It tastes communal and immediate.",
+    "rice": "Basmati",
+    "protein": "Chicken or mutton",
+    "spices": [
+      "black pepper",
+      "green chili",
+      "clove",
+      "fried onion",
+      "mint"
+    ],
+    "spots": [
+      {
+        "name": "Ghalib Kabab Corner",
+        "city": "Delhi"
+      },
+      {
+        "name": "Javed's Nizamuddin Biryani",
+        "city": "Delhi"
+      }
+    ],
+    "image": "https://upload.wikimedia.org/wikipedia/commons/d/d4/A_Biryani.jpg",
+    "image_credit": "Photo via Wikimedia Commons (A_Biryani.jpg; representative image for Nizamuddin biriyani)",
+    "image_credit_url": "https://commons.wikimedia.org/wiki/File:A_Biryani.jpg"
+  },
+  {
+    "slug": "patna-biriyani",
+    "name": "Patna Biriyani",
+    "region": "Bihar",
+    "style": "Eastern",
+    "tagline": "Mustard-oil memory with Calcutta echoes.",
+    "origin": "Patna's biriyani profile evolved through migration links with Kolkata and local Bihari spice habits. Shops in the city adapted the potato-inclusive format while keeping a sharper, oil-forward seasoning.",
+    "distinct": "Often spicier and more rustic than Kolkata's refined aroma game. Mustard-oil accents and heavier masala can show up depending on the cook.",
+    "rice": "Basmati",
+    "protein": "Mutton or chicken",
+    "spices": [
+      "potato",
+      "mustard oil",
+      "black pepper",
+      "cinnamon",
+      "fried onion"
+    ],
+    "spots": [
+      {
+        "name": "Biryani Mahal",
+        "city": "Patna"
+      },
+      {
+        "name": "Bawarchi Restaurant",
+        "city": "Patna"
+      }
+    ],
+    "image": "https://upload.wikimedia.org/wikipedia/commons/b/b9/Mutton_biryani.JPG",
+    "image_credit": "Photo via Wikimedia Commons (Mutton_biryani.JPG; representative image for Patna biriyani)",
+    "image_credit_url": "https://commons.wikimedia.org/wiki/File:Mutton_biryani.JPG"
+  },
+  {
+    "slug": "cuttack-biriyani",
+    "name": "Cuttack Biriyani",
+    "region": "Odisha",
+    "style": "Eastern",
+    "tagline": "Odia city style with Kolkata influence.",
+    "origin": "Cuttack's biriyani scene rose through old city Muslim neighborhoods and Kolkata-connected food trade routes. The style became a local favorite in the late 20th century with mutton and potato-heavy plates.",
+    "distinct": "Closer to eastern biriyani family profiles: aromatic rice, potato inclusion, and medium spice. Rich but not overpowering.",
+    "rice": "Basmati",
+    "protein": "Mutton or chicken",
+    "spices": [
+      "potato",
+      "kewra",
+      "mace",
+      "fried onion",
+      "ghee"
+    ],
+    "spots": [
+      {
+        "name": "Biryani Box",
+        "city": "Cuttack"
+      },
+      {
+        "name": "Shahi Darbar",
+        "city": "Cuttack"
+      }
+    ],
+    "image": "https://upload.wikimedia.org/wikipedia/commons/2/22/Biryani.JPG",
+    "image_credit": "Photo via Wikimedia Commons (Biryani.JPG; representative image for Cuttack biriyani)",
+    "image_credit_url": "https://commons.wikimedia.org/wiki/File:Biryani.JPG"
+  },
+  {
+    "slug": "kampuri-biriyani",
+    "name": "Kampuri Biriyani",
+    "region": "Assam",
+    "style": "Eastern",
+    "tagline": "Assam's quieter, home-style biriyani voice.",
+    "origin": "Kampuri biriyani is associated with Assamese Muslim households, especially in and around Kamrup and Guwahati. It reflects local rice familiarity and eastern biriyani influence rather than heavy nawabi layering.",
+    "distinct": "Gentler masala, herb-bright finish, and lighter fat than many metro styles. It feels homemade even when served outside.",
+    "rice": "Local aromatic long-grain or basmati",
+    "protein": "Chicken or mutton",
+    "spices": [
+      "green chili",
+      "coriander",
+      "clove",
+      "bay leaf",
+      "fried onion"
+    ],
+    "spots": [
+      {
+        "name": "Paradise Restaurant",
+        "city": "Guwahati"
+      },
+      {
+        "name": "Biryani by Kilo",
+        "city": "Guwahati"
+      }
+    ],
+    "image": "https://upload.wikimedia.org/wikipedia/commons/8/8a/Homemade_Biryani.jpg",
+    "image_credit": "Photo via Wikimedia Commons (Homemade_Biryani.jpg; representative image for Kampuri biriyani)",
+    "image_credit_url": "https://commons.wikimedia.org/wiki/File:Homemade_Biryani.jpg"
+  },
+  {
+    "slug": "kashmiri-yakhni-biriyani",
+    "name": "Kashmiri Yakhni Biriyani",
+    "region": "Jammu and Kashmir",
+    "style": "Yakhni",
+    "tagline": "Fennel-ginger perfume over brute heat.",
+    "origin": "Kashmiri Muslim meat-rice traditions and yakhni gravies influenced this biriyani variant served in festive homes and specialty kitchens. The profile mirrors broader Kashmiri spice logic: aromatic, warming, and composed.",
+    "distinct": "Fennel and dry ginger notes are prominent, while chili remains controlled. It is fragrant and broth-led, not masala-heavy.",
+    "rice": "Basmati",
+    "protein": "Mutton",
+    "spices": [
+      "fennel",
+      "dry ginger",
+      "cardamom",
+      "saffron",
+      "ghee"
+    ],
+    "spots": [
+      {
+        "name": "Ahdoos",
+        "city": "Srinagar"
+      },
+      {
+        "name": "Mughal Darbar",
+        "city": "Srinagar"
+      }
+    ],
+    "image": "https://upload.wikimedia.org/wikipedia/commons/4/42/Mutton-Biryani.jpg",
+    "image_credit": "Photo via Wikimedia Commons (Mutton-Biryani.jpg; representative image for Kashmiri yakhni biriyani)",
+    "image_credit_url": "https://commons.wikimedia.org/wiki/File:Mutton-Biryani.jpg"
+  },
+  {
+    "slug": "goan-fish-biriyani",
+    "name": "Goan Fish Biriyani",
+    "region": "Goa",
+    "style": "Coastal",
+    "tagline": "Seafood biriyani with a Goan accent.",
+    "origin": "Goa's Muslim and coastal Catholic kitchens adapted biriyani methods to seafood-rich local markets. Restaurant menus in Panaji and coastal belts helped normalize fish-forward biriyani variants.",
+    "distinct": "Lighter cooking time, seafood sweetness, and occasional vinegar-tang in masala logic. It is breezier than red-meat biriyani forms.",
+    "rice": "Basmati",
+    "protein": "Fish or prawn",
+    "spices": [
+      "fish stock",
+      "green chili",
+      "coconut oil",
+      "clove",
+      "coriander"
+    ],
+    "spots": [
+      {
+        "name": "Mum's Kitchen",
+        "city": "Panaji"
+      },
+      {
+        "name": "Sahib Sindh Sultan",
+        "city": "Panaji"
+      }
+    ],
+    "image": "https://upload.wikimedia.org/wikipedia/commons/1/18/Veg-Biryani.jpg",
+    "image_credit": "Photo via Wikimedia Commons (Veg-Biryani.jpg; representative image for Goan fish biriyani)",
+    "image_credit_url": "https://commons.wikimedia.org/wiki/File:Veg-Biryani.jpg"
+  },
+  {
+    "slug": "sindhi-biriyani",
+    "name": "Sindhi Biriyani (Indian Sindhi Kitchens)",
+    "region": "Maharashtra",
+    "style": "Community",
+    "tagline": "Tangy, spicy, and proudly maximalist.",
+    "origin": "After Partition, Sindhi communities rebuilt food traditions in Indian cities like Mumbai, Ulhasnagar, Ahmedabad, and Pune. Sindhi biriyani remained a major celebratory dish in those transplanted family kitchens.",
+    "distinct": "Tart yogurt-tomato base, stronger chili, and often potato and dried plum accents. It is vibrant, layered, and intentionally loud.",
+    "rice": "Basmati",
+    "protein": "Mutton or chicken",
+    "spices": [
+      "tomato",
+      "yogurt",
+      "green chili",
+      "dried plum",
+      "potato"
+    ],
+    "spots": [
+      {
+        "name": "Khyber Restaurant",
+        "city": "Mumbai"
+      },
+      {
+        "name": "Sindhful",
+        "city": "Mumbai"
+      }
+    ],
+    "image": "https://upload.wikimedia.org/wikipedia/commons/b/bd/Sindhi_Biryani.JPG",
+    "image_credit": "Photo via Wikimedia Commons (Sindhi_Biryani.JPG)",
+    "image_credit_url": "https://commons.wikimedia.org/wiki/File:Sindhi_Biryani.JPG"
+  },
+  {
+    "slug": "surti-bohri-biriyani",
+    "name": "Surti Bohri Biriyani",
+    "region": "Gujarat",
+    "style": "Community",
+    "tagline": "Surat thaal comfort with sweet-tang balance.",
+    "origin": "In Surat's Dawoodi Bohra community food culture, biriyani remains central to shared thaal meals and religious gatherings. Local palate shifts gave it a slightly sweeter and softer profile than some Mumbai variants.",
+    "distinct": "Mild heat, potato presence, and rounded tomato-onion sweetness. It is built for community meals where harmony beats heat.",
+    "rice": "Basmati",
+    "protein": "Mutton or chicken",
+    "spices": [
+      "potato",
+      "tomato",
+      "cinnamon",
+      "clove",
+      "mint"
+    ],
+    "spots": [
+      {
+        "name": "Zampa Bazaar Bohri Kitchens",
+        "city": "Surat"
+      },
+      {
+        "name": "Memon Caterers",
+        "city": "Surat"
+      }
+    ],
+    "image": "https://upload.wikimedia.org/wikipedia/commons/2/22/Biryani.JPG",
+    "image_credit": "Photo via Wikimedia Commons (Biryani.JPG; representative image for Surti Bohri biriyani)",
+    "image_credit_url": "https://commons.wikimedia.org/wiki/File:Biryani.JPG"
+  },
+  {
+    "slug": "travancore-biriyani",
+    "name": "Travancore Biriyani",
+    "region": "Kerala",
+    "style": "Travancore Pukka",
+    "tagline": "Ghee, cashews, and a southern Kerala nostalgia hit.",
+    "origin": "In southern Kerala's Travancore region, a distinct biriyani tradition developed around comparatively gentle whole-spice seasoning, generous ghee (or sometimes coconut oil), and rich garnishes like fried cashews and raisins. In Thiruvananthapuram, the Azad group popularized the style as 'Azad Pukka Travancore Biriyani,' tracing it to the early 1940s and positioning it as a local heritage dish rather than a Hyderabad offshoot.",
+    "distinct": "Compared with hotter, masala-heavy biriyanis, Travancore biriyani is typically lighter on chilli heat and more about fragrance: whole spices, ghee richness, and sweet-nutty garnish. It is often served with signature sides in the region - pappadam and pickle - and many versions center a boiled egg on top.",
+    "rice": "Long-grain basmati",
+    "protein": "Mutton or chicken (beef also found regionally)",
+    "spices": [
+      "clove",
+      "cinnamon",
+      "bay leaf",
+      "ghee",
+      "fried cashews"
+    ],
+    "spots": [
+      {
+        "name": "Azad Restaurant",
+        "city": "Thiruvananthapuram"
+      },
+      {
+        "name": "Azad Star",
+        "city": "Kochi"
+      }
+    ],
+    "image": "https://upload.wikimedia.org/wikipedia/commons/5/5c/Biriyani_from_thiruvananthapuram.jpg",
+    "image_credit": "Photo via Wikimedia Commons (Biriyani_from_thiruvananthapuram.jpg)",
+    "image_credit_url": "https://commons.wikimedia.org/wiki/File:Biriyani_from_thiruvananthapuram.jpg"
+  },
+  {
+    "slug": "bamboo-biriyani",
+    "name": "Bamboo Biriyani",
+    "region": "Andhra Pradesh",
+    "style": "Bamboo roast",
+    "tagline": "Rice and chicken roasted inside bamboo - forest pressure-cooker magic.",
+    "origin": "Bamboo biriyani is rooted in Adivasi cooking traditions in the forests of Araku Valley, where bamboo shoots function as a practical cooking vessel over open flame. In the late 2010s, Andhra Pradesh's tourism machinery began promoting the dish as a hyperlocal signature to highlight the state's own biriyani identity after the 2014 state bifurcation that left Hyderabad in Telangana.",
+    "distinct": "Instead of a metal handi, the rice and chicken (and spices) are packed into a hollow bamboo shoot, capped, and roasted over fire until the bamboo chars. The bamboo holds moisture like a natural pressure cooker, creating a smoky, sealed-cook profile that feels closer to dum than to a stirred rice dish.",
+    "rice": "White rice (local, short/medium grain varies by cook)",
+    "protein": "Chicken",
+    "spices": [
+      "chilli powder",
+      "coriander powder",
+      "clove",
+      "cinnamon",
+      "mace"
+    ],
+    "spots": [
+      {
+        "name": "Chaparai Waterfall Bamboo Biriyani Stalls",
+        "city": "Araku Valley"
+      },
+      {
+        "name": "Dombo's Bamboo Biriyani Stall",
+        "city": "Araku"
+      }
+    ],
+    "image": "https://upload.wikimedia.org/wikipedia/commons/6/60/Bamboo_Biriyani_served_with_Sauce_and_Salads.jpg",
+    "image_credit": "Photo via Wikimedia Commons (Bamboo_Biriyani_served_with_Sauce_and_Salads.jpg)",
+    "image_credit_url": "https://commons.wikimedia.org/wiki/File:Bamboo_Biriyani_served_with_Sauce_and_Salads.jpg"
+  },
+  {
+    "slug": "degh-ki-biriyani",
+    "name": "Degh Ki Biriyani",
+    "region": "Maharashtra",
+    "style": "Deghchi dum",
+    "tagline": "Parbhani's wedding biriyani: big pot, small meat cubes, deep dum aroma.",
+    "origin": "Degh ki biriyani is closely associated with Parbhani and nearby areas in Maharashtra's Marathwada region, where it is traditionally cooked in a large vessel (deghchi) and commonly served at weddings. The 'type' name comes directly from the cooking vessel, reflecting a bulk-cook tradition designed to feed crowds.",
+    "distinct": "This style emphasizes tight, large-batch dum cooking - meat marinated with yogurt, fried onions, and spice powders cooks alongside rice so the pot's steam finishes everything together. The signature is its wedding-scale intensity: aroma and richness built through quantity and careful sealing, rather than delicate garnishing.",
+    "rice": "Long-grain rice (often basmati or sella in bulk cooking)",
+    "protein": "Mutton (beef also reported in some traditions)",
+    "spices": [
+      "ginger",
+      "garlic",
+      "red chilli powder",
+      "cumin powder",
+      "fried onions"
+    ],
+    "spots": [
+      {
+        "name": "Kesar Mahal Biryani And Stay",
+        "city": "Parbhani"
+      },
+      {
+        "name": "Madani Palace",
+        "city": "Parbhani"
+      }
+    ],
+    "image": "https://upload.wikimedia.org/wikipedia/commons/5/59/Degh_ki.jpg",
+    "image_credit": "Photo via Wikimedia Commons (Degh_ki.jpg)",
+    "image_credit_url": "https://commons.wikimedia.org/wiki/File:Degh_ki.jpg"
+  },
+  {
+    "slug": "mla-potlam-biriyani",
+    "name": "MLA Potlam Biriyani",
+    "region": "Telangana",
+    "style": "Potlam",
+    "tagline": "Omelette-wrapped biriyani - Hyderabad's viral parcel.",
+    "origin": "MLA Potlam biriyani is a modern Hyderabad invention that's widely traced to The Spicy Venue. It became known as a visually distinctive potlam (parcel): biriyani wrapped inside a thin, seasoned omelette, turning plating into the signature move.",
+    "distinct": "The biriyani is cooked separately and then enclosed in an omelette (omurice-like), so you cut through egg first and hit a mixed core of rice and meat. Many tellings emphasize a combo filling - commonly mutton keema and prawns - making it feel richer and more snackable than a standard dum pot.",
+    "rice": "Long-grain basmati",
+    "protein": "Mutton keema and prawns",
+    "spices": [
+      "red chilli",
+      "fried onions",
+      "mint",
+      "coriander",
+      "ghee"
+    ],
+    "spots": [
+      {
+        "name": "The Spicy Venue",
+        "city": "Hyderabad"
+      },
+      {
+        "name": "The Spicy Venue",
+        "city": "Gachibowli"
+      }
+    ],
+    "image": "https://upload.wikimedia.org/wikipedia/commons/9/90/Chicken_Biryani_in_plate.jpg",
+    "image_credit": "Photo via Wikimedia Commons (Chicken_Biryani_in_plate.jpg)",
+    "image_credit_url": "https://commons.wikimedia.org/wiki/File:Chicken_Biryani_in_plate.jpg"
+  },
+  {
+    "slug": "matka-peer-biriyani",
+    "name": "Matka Peer Biriyani",
+    "region": "Delhi",
+    "style": "Shrine-side degh",
+    "tagline": "Kilo biriyani by a dargah - ghee-forward, pragmatic, legendary.",
+    "origin": "At the Matka Peer Dargah near Pragati Maidan in Delhi, Babu Shahi Bawarchi has become closely associated with Matka Peer biriyani - a bulk-cooked, takeaway-forward biriyani culture where people routinely order by the kilogram. Food writing around the spot frames it as a long-running Old Delhi/Delhi institution tied to the dargah complex.",
+    "distinct": "This is biriyani optimized for scale and takeaway: big deghs, steady daily volume, and a profile often described as comparatively dry and delicately flavoured rather than gravy-heavy. Generous ghee and a meat-forward masala are central, with the dargah setting shaping both the mythology and the steady footfall.",
+    "rice": "Long-grain basmati",
+    "protein": "Mutton or chicken",
+    "spices": [
+      "ghee",
+      "green chillies",
+      "coriander",
+      "garlic",
+      "ginger"
+    ],
+    "spots": [
+      {
+        "name": "Babu Shahi Bawarchi",
+        "city": "New Delhi"
+      },
+      {
+        "name": "Matka Peer Golden Biryani",
+        "city": "New Delhi"
+      }
+    ],
+    "image": "https://upload.wikimedia.org/wikipedia/commons/9/9a/Matka_Biryani_-_Habib5232787.jpg",
+    "image_credit": "Photo via Wikimedia Commons (Matka_Biryani_-_Habib5232787.jpg)",
+    "image_credit_url": "https://commons.wikimedia.org/wiki/File:Matka_Biryani_-_Habib5232787.jpg"
+  },
+  {
+    "slug": "achaari-biriyani",
+    "name": "Achaari Biriyani",
+    "region": "Delhi",
+    "style": "Achaari",
+    "tagline": "Pickle tang in the rice - sharp, mustardy, and unmistakably Dilli.",
+    "origin": "Achaari biriyani is a Delhi-associated biriyani variant that introduces achaar (pickles) or pickle-spice logic into the layering, producing a tangy, punchy profile. Contemporary food writing treats it as part of the wider Delhi biriyani landscape, alongside dargah-area traditions and Mughlai lineages.",
+    "distinct": "The defining move is acidity and pickle perfume - often from green chilli pickle and achar spice blends (mustard, fennel, nigella, etc.). Instead of only warm whole spices, you get a bright, briny edge that cuts through ghee and meat, making the biriyani taste sharper and more snackable.",
+    "rice": "Long-grain basmati",
+    "protein": "Chicken or mutton",
+    "spices": [
+      "green chilli pickle",
+      "nigella seed",
+      "mustard seeds",
+      "fennel seed",
+      "mustard oil"
+    ],
+    "spots": [
+      {
+        "name": "Al Jawahar",
+        "city": "New Delhi"
+      },
+      {
+        "name": "The Biryani Wallas",
+        "city": "Delhi"
+      }
+    ],
+    "image": "https://upload.wikimedia.org/wikipedia/commons/c/c6/Achari_Biryani.JPG",
+    "image_credit": "Photo via Wikimedia Commons (Achari_Biryani.JPG)",
+    "image_credit_url": "https://commons.wikimedia.org/wiki/File:Achari_Biryani.JPG"
+  },
+  {
+    "slug": "santare-ki-biriyani",
+    "name": "Santare Ki Biriyani",
+    "region": "Delhi",
+    "style": "Citrus-infused",
+    "tagline": "Orange zest meets mutton - sweet-tart Mughlai eccentricity.",
+    "origin": "Santare ki biriyani (literally, orange biriyani) is a documented Delhi recipe tradition in which oranges play a starring role - used not only as juice but also via rind/zest - creating a sweet-tart, aromatic biriyani variant. It appears in Indian food writing and in modern biriyani map businesses that market rare regional recipes.",
+    "distinct": "Unlike most biriyanis where brightness comes mainly from herbs or lemon, this style builds its identity around orange: citrus oil in the rind, juice acidity, and a gentle sweetness that can read almost perfumed when paired with warm spices like cinnamon and cardamom. It is best thought of as a festive, Mughlai-leaning oddity rather than a daily staple.",
+    "rice": "Long-grain basmati",
+    "protein": "Mutton",
+    "spices": [
+      "orange rind",
+      "orange juice",
+      "bay leaf",
+      "black cardamom",
+      "cinnamon"
+    ],
+    "spots": [
+      {
+        "name": "The Biryani Wallas",
+        "city": "Delhi"
+      },
+      {
+        "name": "Home-style Santare Biriyani",
+        "city": "Delhi"
+      }
+    ],
+    "image": "https://upload.wikimedia.org/wikipedia/commons/6/67/Mughlai_Platter.jpg",
+    "image_credit": "Photo via Wikimedia Commons (Mughlai_Platter.jpg)",
+    "image_credit_url": "https://commons.wikimedia.org/wiki/File:Mughlai_Platter.jpg"
+  },
+  {
+    "slug": "bhopali-yakhni-biriyani",
+    "name": "Bhopali Yakhni Biriyani",
+    "region": "Madhya Pradesh",
+    "style": "Yakhni-forward",
+    "tagline": "Bhopal's royal rice: broth-led, aromatic, and lighter on masala.",
+    "origin": "Bhopal's Nawabi food culture is often described as pulao-forward, with yakhni (meat-broth) rice preparations taking center stage - yet contemporary recipe and food media also frame Bhopali mutton biriyani as a distinct local preparation. The shared core is yakhni: stock-driven flavour, whole spices, and restraint compared with hotter biriyani traditions.",
+    "distinct": "Expect the perfume of stock and whole spices more than aggressive chilli heat. The rice takes on a rounded meat-broth character, while garnishes tend to be minimal - this is about depth-by-simmer rather than a high-contrast masala layer. In practice the biriyani/pulao boundary blurs here, which is part of what makes counting types difficult.",
+    "rice": "Long-grain basmati",
+    "protein": "Mutton",
+    "spices": [
+      "black cardamom",
+      "clove",
+      "black peppercorn",
+      "mace",
+      "ghee"
+    ],
+    "spots": [
+      {
+        "name": "Zam Zam",
+        "city": "Bhopal"
+      },
+      {
+        "name": "Lazeez Hakeem",
+        "city": "Bhopal"
+      }
+    ],
+    "image": "https://upload.wikimedia.org/wikipedia/commons/1/10/Plate_of_food%2C_biryani_20150405.jpg",
+    "image_credit": "Photo via Wikimedia Commons (Plate_of_food, biryani 20150405.jpg)",
+    "image_credit_url": "https://commons.wikimedia.org/wiki/File:Plate_of_food,_biryani_20150405.jpg"
+  },
+  {
+    "slug": "lalla-ki-biriyani",
+    "name": "Lalla Ki Biriyani",
+    "region": "Uttar Pradesh",
+    "style": "Chowk street-style",
+    "tagline": "Lucknow's old-lane mutton biriyani - icon shop, pure obsession.",
+    "origin": "In Lucknow's Chowk area, Lalla Biryani is a widely cited old-city address for mutton biriyani, frequently mentioned alongside other iconic Lucknow biriyani stops. The shop's popularity has helped turn an individual vendor name into a recognizable type for travellers: simple, aromatic, and queue-driven.",
+    "distinct": "Think of this as Lucknow biriyani with a street DNA: fast service, consistent taste, and an emphasis on aroma and meat tenderness. It is typically presented with raita, and the appeal is its repeatability - less about complexity, more about that singular Lucknow balance of fragrance and restraint.",
+    "rice": "Long-grain basmati",
+    "protein": "Mutton",
+    "spices": [
+      "fried onions",
+      "green cardamom",
+      "clove",
+      "ghee",
+      "kewra water"
+    ],
+    "spots": [
+      {
+        "name": "Lalla Biryani - Since 1985",
+        "city": "Lucknow"
+      },
+      {
+        "name": "Wahid's",
+        "city": "Lucknow"
+      }
+    ],
+    "image": "https://upload.wikimedia.org/wikipedia/commons/6/62/Lallaji_ki_Biryani%2C_Lucknow.jpg",
+    "image_credit": "Photo via Wikimedia Commons (Lallaji_ki_Biryani, Lucknow.jpg)",
+    "image_credit_url": "https://commons.wikimedia.org/wiki/File:Lallaji_ki_Biryani,_Lucknow.jpg"
+  }
+]
