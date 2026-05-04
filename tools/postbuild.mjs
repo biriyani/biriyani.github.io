@@ -17,7 +17,7 @@ import sharp from 'sharp'
 const __dirname = dirname(fileURLToPath(import.meta.url))
 const ROOT = join(__dirname, '..')
 const DIST = join(ROOT, 'dist')
-const SITE_URL = process.env.SITE_URL ?? 'https://biriyani.pages.dev'
+const SITE_URL = process.env.SITE_URL ?? 'https://biriyani.github.io'
 
 const data = JSON.parse(await readFile(join(ROOT, 'src', 'data', 'biriyani.json'), 'utf8'))
 const shell = await readFile(join(DIST, 'index.html'), 'utf8')
@@ -83,7 +83,9 @@ for (const e of data) {
     image,
     type: 'article',
   })
-  await writeHtml(`b/${e.slug}.html`, html)
+  // Directory-style route so GitHub Pages (and any static host) serves
+  // /b/<slug> without a trailing .html.
+  await writeHtml(`b/${e.slug}/index.html`, html)
   count++
 }
 
@@ -100,7 +102,7 @@ const home = injectMeta(shell, {
 await writeFile(join(DIST, 'index.html'), home)
 
 await writeHtml(
-  'about.html',
+  'about/index.html',
   injectMeta(shell, {
     title: 'About — Biriyani Atlas',
     description:
@@ -111,7 +113,7 @@ await writeHtml(
 )
 
 await writeHtml(
-  'compare.html',
+  'compare/index.html',
   injectMeta(shell, {
     title: 'Compare biriyanis — Biriyani Atlas',
     description:
@@ -121,6 +123,8 @@ await writeHtml(
   }),
 )
 
+// 404 — GitHub Pages serves /404.html for any unknown path. Use the SPA shell
+// so React's <NotFound> renders, but with 404-appropriate metadata for crawlers.
 await writeHtml(
   '404.html',
   injectMeta(shell, {
@@ -128,6 +132,7 @@ await writeHtml(
     description:
       "We haven't catalogued this slug yet. The Atlas covers 51 dialects of biriyani across 16 Indian states — pick one.",
     url: SITE_URL + '/404',
+    image: SITE_URL + '/og-cover.png',
   }),
 )
 
@@ -159,13 +164,17 @@ Sitemap: ${SITE_URL}/sitemap.xml
 `,
 )
 
-// 4) Cloudflare Pages SPA fallback for unknown paths.
-//    (Known routes already have static HTML, but this catches typos and future routes.)
+// 4) SPA fallbacks.
+//    - GitHub Pages: serves /404.html for unknown paths (already written above).
+//    - Cloudflare Pages: _redirects rewrites everything to /index.html.
+//    Both are harmless on either host.
 await writeFile(
   join(DIST, '_redirects'),
   `/*    /index.html   200
 `,
 )
+// .nojekyll prevents GitHub Pages' Jekyll filter from skipping files starting with _.
+await writeFile(join(DIST, '.nojekyll'), '')
 
 // 5) Copy the source TopoJSON if it didn't make it via public/ (Vite handles this,
 //    but include as belt-and-suspenders).

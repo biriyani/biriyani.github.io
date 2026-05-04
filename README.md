@@ -94,17 +94,19 @@ auto-rebuild.
 
 ## Deploying
 
-**Cloudflare Pages** (recommended): connect this repo in the dashboard, set
-build command `npm run build`, output directory `dist`. Pushes to
-`claude/finish-biryani-project-h7jQN` get a preview URL; pushes to `main`
-become production. Custom domain comes free with auto-SSL.
+**GitHub Pages** (current). Repo Settings → Pages → "Build and deployment"
+source = `GitHub Actions`. The workflow at
+`.github/workflows/deploy.yml` builds on push to `main` and publishes `dist/`
+to `https://biriyani.github.io/`. No further setup needed.
 
-The `_redirects` rule is a defence-in-depth fallback for the SPA — every
-known route already has a static HTML file, so direct hits get correct OG
-tags without depending on the rewrite.
+Routes are served from directory-style paths: `/`, `/b/<slug>`, `/compare`,
+`/about`. Each has a real `index.html` with per-page OG/Twitter tags so
+direct links preview correctly when shared. Unknown paths fall through to
+`/404.html`, which is the SPA shell — React's `<NotFound>` renders.
 
-GitHub Pages also works (publish `dist/` to a `gh-pages` branch via a small
-workflow); the codebase is identical for either.
+**Cloudflare Pages** (also supported, drop-in). Connect the repo in the
+Cloudflare dashboard, build command `npm run build`, output dir `dist`. The
+`_redirects` file written by `postbuild.mjs` handles the SPA fallback there.
 
 ## Credits
 
