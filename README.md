@@ -1,32 +1,123 @@
-# Biriyani
+# Biriyani Atlas
 
-Most people outside India know one biriyani. India cooks in dozens of dialects.
+> Most of the world knows one biriyani. India knows hundreds.
 
-**Biriyani** is a visual archive of regional, community, and city-specific biriyani traditions across India, built to be browsed like an editorial atlas, not a spreadsheet.
+A visual archive of India's biriyani dialects — the saffron-laced Awadhi dum,
+the black-pepper Dindigul, the kokum-tinged Konkan fish biriyani, the bamboo
+roast in coastal Andhra. Each is a parallel dish that happens to share a name
+and a love of long-grained rice. This site catalogues them: where they came
+from, what makes each unmistakable, the spices and rice and technique, and
+which restaurants are still cooking them the way they're supposed to be cooked.
 
-## Run locally
+51 varieties · 16 regions · 3 cooking traditions intersecting all of them.
 
-1. Clone this repo.
-2. Start any static server from the project root:
-   ```bash
-   python3 -m http.server 8000
-   ```
-3. Open `http://localhost:8000`.
+## Stack
 
-No build step. No framework. Just HTML, CSS, JS, and a single JSON dataset.
+- Vite + React 19 + TypeScript
+- Tailwind CSS v4 (editorial type system, regional accent palette)
+- React Router (`/`, `/b/:slug`, `/compare`, `/about`, `*` 404)
+- mapcn / MapLibre GL — the India-by-states hero map
+- TopoJSON via `topojson-client` for the state geometry
+- `sharp` for build-time OG image generation
 
-## Structure
+Static-only output (no server). Code-split on the heavy MapLibre bundle so
+detail/compare/about pages stay lightweight.
 
-- `index.html` — manifesto + filterable visual index
-- `biriyani.html` — slug-driven detail view
-- `about.html` — why this project exists
-- `data/biriyani.json` — the archive dataset
-- `css/style.css` — visual system
-- `js/main.js` — index rendering + filters
-- `js/detail.js` — detail rendering
+## Develop
 
-## Notes
+```bash
+npm install
+npm run dev          # Vite dev server on http://localhost:5173
+npm run build        # tsc → vite build → tools/postbuild.mjs
+npm run preview      # serve the production build locally
+```
 
-- All pages are static and GitHub Pages-friendly.
-- Images are sourced from Wikimedia Commons with attribution in the dataset.
-- Where a variety lacked a precise free image, a clearly marked representative proxy is used.
+The build pipeline:
+
+1. `tsc -b` type-check
+2. `vite build` → `dist/`
+3. `tools/postbuild.mjs` — generates one `dist/b/<slug>.html` per entry with
+   per-page OG/Twitter meta tags, renders a per-entry OG cover PNG for each
+   `image_needs_replacement: true` entry, writes `sitemap.xml`, `robots.txt`,
+   `_redirects`, and a site-wide `og-cover.png`.
+
+## Data
+
+`src/data/biriyani.json` is the single source of truth. Each entry:
+
+```jsonc
+{
+  "slug": "hyderabadi-dum",
+  "name": "Hyderabadi Dum Biriyani",
+  "region": "Telangana",
+  "style": "Dum",
+  "tagline": "Smoky saffron, sealed pot, no shortcuts.",
+  "origin": "...",
+  "distinct": "...",
+  "rice": "Aged basmati, long grain",
+  "protein": "Mutton or chicken",
+  "spices": ["saffron", "fried onions", "..."],
+  "spots": [{ "name": "Shadab", "city": "Hyderabad" }],
+  "image": "https://...",
+  "image_credit": "...",
+  "image_credit_url": "...",
+  "accent": "#c25a17",
+  "motifs": ["saffron", "mutton", "rice"],
+  "lineage": ["hyderabadi-kacchi", "kalyani-biriyani"],
+  "pull_quote": "Aroma builds inward instead of escaping.",
+  "image_needs_replacement": false
+}
+```
+
+`tools/extend_data.py` is the one-shot script that seeded `accent`, `motifs`,
+`lineage`, `pull_quote`, and `image_needs_replacement` across all 51 entries.
+
+## Contributing an image
+
+`IMAGES_TO_REPLACE.md` lists the 33 entries currently using a generic / shared
+photo. They render an illustrated motif card on the site (so nothing looks
+duplicated), and a per-entry motif PNG for share-previews.
+
+To swap a real photo in, paste the URL into the block under that entry — any
+source is fine: Google Maps, TripAdvisor, Zomato, restaurant Instagram, indie
+food blogs. We always credit with a hyperlink.
+
+```
+- image: <full URL to image>
+- image_credit: Photo by <photographer> via <site>
+- image_credit_url: <link to the page where the image was sourced>
+```
+
+Then merge into `src/data/biriyani.json` and flip `image_needs_replacement` to
+`false` for that slug. Re-run `npm run build` and the per-entry OG card will
+auto-rebuild.
+
+## Deploying
+
+**Cloudflare Pages** (recommended): connect this repo in the dashboard, set
+build command `npm run build`, output directory `dist`. Pushes to
+`claude/finish-biryani-project-h7jQN` get a preview URL; pushes to `main`
+become production. Custom domain comes free with auto-SSL.
+
+The `_redirects` rule is a defence-in-depth fallback for the SPA — every
+known route already has a static HTML file, so direct hits get correct OG
+tags without depending on the rewrite.
+
+GitHub Pages also works (publish `dist/` to a `gh-pages` branch via a small
+workflow); the codebase is identical for either.
+
+## Credits
+
+State boundaries: [DataMeet](https://github.com/datameet/maps) and Anuj Arya's
+[bubble_maps](https://github.com/Anujarya300/bubble_maps) — CC-BY 4.0.
+
+Per-entry food photographs: credited inline on each detail page via the
+`image_credit` and `image_credit_url` fields.
+
+Map runtime: [mapcn](https://github.com/AnmolSaini16/mapcn) (MIT) wrapping
+[MapLibre GL](https://maplibre.org/) (BSD-3-Clause).
+
+## Licence
+
+Code: MIT. Editorial copy and curation: CC-BY 4.0 — credit "Biriyani Atlas".
+Photographs are licensed individually by source; see each entry's credit line.

@@ -28,7 +28,20 @@
     ],
     "image": "https://upload.wikimedia.org/wikipedia/commons/c/c8/Hyderabadi_egg_biryani.jpg",
     "image_credit": "Photo via Wikimedia Commons (Hyderabadi_egg_biryani.jpg)",
-    "image_credit_url": "https://commons.wikimedia.org/wiki/File:Hyderabadi_egg_biryani.jpg"
+    "image_credit_url": "https://commons.wikimedia.org/wiki/File:Hyderabadi_egg_biryani.jpg",
+    "accent": "#c25a17",
+    "motifs": [
+      "saffron",
+      "mutton",
+      "rice"
+    ],
+    "lineage": [
+      "hyderabadi-kacchi",
+      "hyderabadi-pakki",
+      "kalyani-biriyani"
+    ],
+    "pull_quote": "Aroma builds inward instead of escaping.",
+    "image_needs_replacement": true
   },
   {
     "slug": "hyderabadi-kacchi",
@@ -59,7 +72,19 @@
     ],
     "image": "https://upload.wikimedia.org/wikipedia/commons/c/c0/Chicken_Hyderabadi_Biryani.JPG",
     "image_credit": "Photo via Wikimedia Commons (Chicken_Hyderabadi_Biryani.JPG)",
-    "image_credit_url": "https://commons.wikimedia.org/wiki/File:Chicken_Hyderabadi_Biryani.JPG"
+    "image_credit_url": "https://commons.wikimedia.org/wiki/File:Chicken_Hyderabadi_Biryani.JPG",
+    "accent": "#c25a17",
+    "motifs": [
+      "saffron",
+      "mutton",
+      "rice"
+    ],
+    "lineage": [
+      "hyderabadi-dum",
+      "hyderabadi-pakki"
+    ],
+    "pull_quote": "Timing had to be exact, long before commercial kitchens.",
+    "image_needs_replacement": false
   },
   {
     "slug": "hyderabadi-pakki",
@@ -90,7 +115,19 @@
     ],
     "image": "https://upload.wikimedia.org/wikipedia/commons/c/c8/Hyderabadi_egg_biryani.jpg",
     "image_credit": "Photo via Wikimedia Commons (Hyderabadi_egg_biryani.jpg; representative image)",
-    "image_credit_url": "https://commons.wikimedia.org/wiki/File:Hyderabadi_egg_biryani.jpg"
+    "image_credit_url": "https://commons.wikimedia.org/wiki/File:Hyderabadi_egg_biryani.jpg",
+    "accent": "#c25a17",
+    "motifs": [
+      "saffron",
+      "chicken",
+      "rice"
+    ],
+    "lineage": [
+      "hyderabadi-dum",
+      "hyderabadi-kacchi"
+    ],
+    "pull_quote": "Cooked rice meets cooked meat — a measured, dignified sealing.",
+    "image_needs_replacement": true
   },
   {
     "slug": "kalyani-biriyani",
@@ -121,7 +158,18 @@
     ],
     "image": "https://upload.wikimedia.org/wikipedia/commons/4/49/Kalyani_Biriyani.jpg",
     "image_credit": "Photo via Wikimedia Commons (Kalyani_Biriyani.jpg)",
-    "image_credit_url": "https://commons.wikimedia.org/wiki/File:Kalyani_Biriyani.jpg"
+    "image_credit_url": "https://commons.wikimedia.org/wiki/File:Kalyani_Biriyani.jpg",
+    "accent": "#c25a17",
+    "motifs": [
+      "mutton",
+      "rice",
+      "tamarind"
+    ],
+    "lineage": [
+      "hyderabadi-dum"
+    ],
+    "pull_quote": "The bachelor's biriyani — buffalo, tomato, and the rush of a Hyderabadi café morning.",
+    "image_needs_replacement": false
   },
   {
     "slug": "sofiyani-biriyani",
@@ -152,7 +200,18 @@
     ],
     "image": "https://upload.wikimedia.org/wikipedia/commons/2/22/Biryani.JPG",
     "image_credit": "Photo via Wikimedia Commons (Biryani.JPG; representative image for Sofiyani)",
-    "image_credit_url": "https://commons.wikimedia.org/wiki/File:Biryani.JPG"
+    "image_credit_url": "https://commons.wikimedia.org/wiki/File:Biryani.JPG",
+    "accent": "#c25a17",
+    "motifs": [
+      "saffron",
+      "chicken",
+      "rice"
+    ],
+    "lineage": [
+      "hyderabadi-dum"
+    ],
+    "pull_quote": "Pale, perfumed, almost ghostly — a biriyani that whispers.",
+    "image_needs_replacement": true
   },
   {
     "slug": "ulavacharu-biriyani",
@@ -183,7 +242,18 @@
     ],
     "image": "https://upload.wikimedia.org/wikipedia/commons/a/a4/Biryani.jpg",
     "image_credit": "Photo via Wikimedia Commons (Biryani.jpg; representative image for Ulavacharu biriyani)",
-    "image_credit_url": "https://commons.wikimedia.org/wiki/File:Biryani.jpg"
+    "image_credit_url": "https://commons.wikimedia.org/wiki/File:Biryani.jpg",
+    "accent": "#b03828",
+    "motifs": [
+      "rice",
+      "mutton",
+      "tamarind"
+    ],
+    "lineage": [
+      "gongura-mutton-biriyani"
+    ],
+    "pull_quote": "Horse gram broth turns the rice the colour of dark monsoon earth.",
+    "image_needs_replacement": true
   },
   {
     "slug": "gongura-mutton-biriyani",
@@ -214,7 +284,18 @@
     ],
     "image": "https://upload.wikimedia.org/wikipedia/commons/b/b9/Mutton_biryani.JPG",
     "image_credit": "Photo via Wikimedia Commons (Mutton_biryani.JPG; representative image for Gongura style)",
-    "image_credit_url": "https://commons.wikimedia.org/wiki/File:Mutton_biryani.JPG"
+    "image_credit_url": "https://commons.wikimedia.org/wiki/File:Mutton_biryani.JPG",
+    "accent": "#b03828",
+    "motifs": [
+      "gongura-leaf",
+      "mutton",
+      "rice"
+    ],
+    "lineage": [
+      "ulavacharu-biriyani"
+    ],
+    "pull_quote": "Sour gongura cuts into the mutton like a slap of summer.",
+    "image_needs_replacement": true
   },
   {
     "slug": "ambur-biriyani",
@@ -245,7 +326,19 @@
     ],
     "image": "https://upload.wikimedia.org/wikipedia/commons/9/95/Ambur_Briyani.jpg",
     "image_credit": "Photo via Wikimedia Commons (Ambur_Briyani.jpg)",
-    "image_credit_url": "https://commons.wikimedia.org/wiki/File:Ambur_Briyani.jpg"
+    "image_credit_url": "https://commons.wikimedia.org/wiki/File:Ambur_Briyani.jpg",
+    "accent": "#c98c1a",
+    "motifs": [
+      "seeraga",
+      "rice",
+      "mutton"
+    ],
+    "lineage": [
+      "vaniyambadi-biriyani",
+      "dindigul-thalappakatti"
+    ],
+    "pull_quote": "Short-grain seeraga samba carries spice the way long grain never can.",
+    "image_needs_replacement": false
   },
   {
     "slug": "vaniyambadi-biriyani",
@@ -276,7 +369,18 @@
     ],
     "image": "https://upload.wikimedia.org/wikipedia/commons/5/5a/Chicken_biriyani_@_Star_Ambur_Biriyani_(7519153014).jpg",
     "image_credit": "Photo via Wikimedia Commons (Chicken_biriyani_@_Star_Ambur_Biriyani_(7519153014).jpg; representative image for Vaniyambadi)",
-    "image_credit_url": "https://commons.wikimedia.org/wiki/File:Chicken_biriyani_@_Star_Ambur_Biriyani_(7519153014).jpg"
+    "image_credit_url": "https://commons.wikimedia.org/wiki/File:Chicken_biriyani_@_Star_Ambur_Biriyani_(7519153014).jpg",
+    "accent": "#c98c1a",
+    "motifs": [
+      "seeraga",
+      "rice",
+      "mutton"
+    ],
+    "lineage": [
+      "ambur-biriyani"
+    ],
+    "pull_quote": "Born in tanneries, perfected in roadside dhabas.",
+    "image_needs_replacement": false
   },
   {
     "slug": "dindigul-thalappakatti",
@@ -307,7 +411,19 @@
     ],
     "image": "https://upload.wikimedia.org/wikipedia/commons/1/15/Dindigul_Thalappakatti_Biryani.jpg",
     "image_credit": "Photo via Wikimedia Commons (Dindigul_Thalappakatti_Biryani.jpg)",
-    "image_credit_url": "https://commons.wikimedia.org/wiki/File:Dindigul_Thalappakatti_Biryani.jpg"
+    "image_credit_url": "https://commons.wikimedia.org/wiki/File:Dindigul_Thalappakatti_Biryani.jpg",
+    "accent": "#c98c1a",
+    "motifs": [
+      "seeraga",
+      "rice",
+      "mutton"
+    ],
+    "lineage": [
+      "ambur-biriyani",
+      "vaniyambadi-biriyani"
+    ],
+    "pull_quote": "Black peppercorns where you'd expect chilli.",
+    "image_needs_replacement": false
   },
   {
     "slug": "chettinad-biriyani",
@@ -338,7 +454,16 @@
     ],
     "image": "https://upload.wikimedia.org/wikipedia/commons/4/42/Mutton-Biryani.jpg",
     "image_credit": "Photo via Wikimedia Commons (Mutton-Biryani.jpg; representative image for Chettinad style)",
-    "image_credit_url": "https://commons.wikimedia.org/wiki/File:Mutton-Biryani.jpg"
+    "image_credit_url": "https://commons.wikimedia.org/wiki/File:Mutton-Biryani.jpg",
+    "accent": "#c98c1a",
+    "motifs": [
+      "seeraga",
+      "rice",
+      "chicken"
+    ],
+    "lineage": [],
+    "pull_quote": "Stone-ground spice paste, no pretence of subtlety.",
+    "image_needs_replacement": true
   },
   {
     "slug": "kayalpattinam-biriyani",
@@ -369,7 +494,16 @@
     ],
     "image": "https://upload.wikimedia.org/wikipedia/commons/f/fe/Chicken_Biryani.jpg",
     "image_credit": "Photo via Wikimedia Commons (Chicken_Biryani.jpg; representative image for Kayalpattinam biriyani)",
-    "image_credit_url": "https://commons.wikimedia.org/wiki/File:Chicken_Biryani.jpg"
+    "image_credit_url": "https://commons.wikimedia.org/wiki/File:Chicken_Biryani.jpg",
+    "accent": "#c98c1a",
+    "motifs": [
+      "seeraga",
+      "rice",
+      "chicken"
+    ],
+    "lineage": [],
+    "pull_quote": "Tamil Nadu's coastal Muslim style — coconut, seeraga, sea breeze.",
+    "image_needs_replacement": true
   },
   {
     "slug": "thalassery-biriyani",
@@ -400,7 +534,19 @@
     ],
     "image": "https://upload.wikimedia.org/wikipedia/commons/c/c5/Thalassery_biryani_-1.jpg",
     "image_credit": "Photo via Wikimedia Commons (Thalassery_biryani_-1.jpg)",
-    "image_credit_url": "https://commons.wikimedia.org/wiki/File:Thalassery_biryani_-1.jpg"
+    "image_credit_url": "https://commons.wikimedia.org/wiki/File:Thalassery_biryani_-1.jpg",
+    "accent": "#1d6e4a",
+    "motifs": [
+      "rice",
+      "chicken",
+      "saffron"
+    ],
+    "lineage": [
+      "kozhikode-biriyani",
+      "mapilla-biriyani"
+    ],
+    "pull_quote": "Khyma rice, fried cashews, raisins — Malabar's coastal opulence.",
+    "image_needs_replacement": true
   },
   {
     "slug": "kozhikode-biriyani",
@@ -431,7 +577,19 @@
     ],
     "image": "https://upload.wikimedia.org/wikipedia/commons/2/22/Biryani.JPG",
     "image_credit": "Photo via Wikimedia Commons (Biryani.JPG; representative image for Kozhikode biriyani)",
-    "image_credit_url": "https://commons.wikimedia.org/wiki/File:Biryani.JPG"
+    "image_credit_url": "https://commons.wikimedia.org/wiki/File:Biryani.JPG",
+    "accent": "#1d6e4a",
+    "motifs": [
+      "rice",
+      "chicken",
+      "saffron"
+    ],
+    "lineage": [
+      "thalassery-biriyani",
+      "mapilla-biriyani"
+    ],
+    "pull_quote": "Built on a Sayyid lineage and Calicut's spice-trader nose.",
+    "image_needs_replacement": true
   },
   {
     "slug": "mapilla-biriyani",
@@ -462,7 +620,19 @@
     ],
     "image": "https://upload.wikimedia.org/wikipedia/commons/d/d4/A_Biryani.jpg",
     "image_credit": "Photo via Wikimedia Commons (A_Biryani.jpg; representative image for Mapilla biriyani)",
-    "image_credit_url": "https://commons.wikimedia.org/wiki/File:A_Biryani.jpg"
+    "image_credit_url": "https://commons.wikimedia.org/wiki/File:A_Biryani.jpg",
+    "accent": "#1d6e4a",
+    "motifs": [
+      "rice",
+      "chicken",
+      "saffron"
+    ],
+    "lineage": [
+      "thalassery-biriyani",
+      "kozhikode-biriyani"
+    ],
+    "pull_quote": "The Mappila community's house style — softer rice, softer spice.",
+    "image_needs_replacement": true
   },
   {
     "slug": "kochi-kayees-biriyani",
@@ -493,7 +663,18 @@
     ],
     "image": "https://upload.wikimedia.org/wikipedia/commons/8/8a/Homemade_Biryani.jpg",
     "image_credit": "Photo via Wikimedia Commons (Homemade_Biryani.jpg; representative image for Kochi city style)",
-    "image_credit_url": "https://commons.wikimedia.org/wiki/File:Homemade_Biryani.jpg"
+    "image_credit_url": "https://commons.wikimedia.org/wiki/File:Homemade_Biryani.jpg",
+    "accent": "#1d6e4a",
+    "motifs": [
+      "rice",
+      "chicken",
+      "saffron"
+    ],
+    "lineage": [
+      "thalassery-biriyani"
+    ],
+    "pull_quote": "A 1957 hotel in Mattancherry built a city's lunchtime habit.",
+    "image_needs_replacement": true
   },
   {
     "slug": "kizhi-biriyani",
@@ -524,7 +705,16 @@
     ],
     "image": "https://upload.wikimedia.org/wikipedia/commons/1/10/Vegetable_biryani.JPG",
     "image_credit": "Photo via Wikimedia Commons (Vegetable_biryani.JPG; representative image for Kizhi biriyani)",
-    "image_credit_url": "https://commons.wikimedia.org/wiki/File:Vegetable_biryani.JPG"
+    "image_credit_url": "https://commons.wikimedia.org/wiki/File:Vegetable_biryani.JPG",
+    "accent": "#1d6e4a",
+    "motifs": [
+      "banana-leaf",
+      "rice",
+      "chicken"
+    ],
+    "lineage": [],
+    "pull_quote": "Wrapped, knotted, opened at the table like a gift.",
+    "image_needs_replacement": true
   },
   {
     "slug": "donne-biriyani",
@@ -555,7 +745,16 @@
     ],
     "image": "https://upload.wikimedia.org/wikipedia/commons/2/27/Chicken_Donne_Biriyani.jpg",
     "image_credit": "Photo via Wikimedia Commons (Chicken_Donne_Biriyani.jpg)",
-    "image_credit_url": "https://commons.wikimedia.org/wiki/File:Chicken_Donne_Biriyani.jpg"
+    "image_credit_url": "https://commons.wikimedia.org/wiki/File:Chicken_Donne_Biriyani.jpg",
+    "accent": "#b85a2a",
+    "motifs": [
+      "banana-leaf",
+      "rice",
+      "mutton"
+    ],
+    "lineage": [],
+    "pull_quote": "Served in palm-leaf cups; eaten by hand at military mess hours.",
+    "image_needs_replacement": false
   },
   {
     "slug": "bhatkali-navayathi-biriyani",
@@ -586,7 +785,18 @@
     ],
     "image": "https://upload.wikimedia.org/wikipedia/commons/b/b9/Mutton_biryani.JPG",
     "image_credit": "Photo via Wikimedia Commons (Mutton_biryani.JPG; representative image for Bhatkali style)",
-    "image_credit_url": "https://commons.wikimedia.org/wiki/File:Mutton_biryani.JPG"
+    "image_credit_url": "https://commons.wikimedia.org/wiki/File:Mutton_biryani.JPG",
+    "accent": "#b85a2a",
+    "motifs": [
+      "rice",
+      "chicken",
+      "saffron"
+    ],
+    "lineage": [
+      "beary-biriyani"
+    ],
+    "pull_quote": "Tomatoes, green chillies, no warm spices — a coastal kind of heat.",
+    "image_needs_replacement": true
   },
   {
     "slug": "beary-biriyani",
@@ -617,7 +827,18 @@
     ],
     "image": "https://upload.wikimedia.org/wikipedia/commons/a/a4/Biryani.jpg",
     "image_credit": "Photo via Wikimedia Commons (Biryani.jpg; representative image for Beary biriyani)",
-    "image_credit_url": "https://commons.wikimedia.org/wiki/File:Biryani.jpg"
+    "image_credit_url": "https://commons.wikimedia.org/wiki/File:Biryani.jpg",
+    "accent": "#b85a2a",
+    "motifs": [
+      "rice",
+      "chicken",
+      "lemon"
+    ],
+    "lineage": [
+      "bhatkali-navayathi-biriyani",
+      "thalassery-biriyani"
+    ],
+    "image_needs_replacement": true
   },
   {
     "slug": "military-hotel-mutton-biriyani",
@@ -648,7 +869,16 @@
     ],
     "image": "https://upload.wikimedia.org/wikipedia/commons/7/7d/Mutton_Biryani.jpg",
     "image_credit": "Photo via Wikimedia Commons (Mutton_Biryani.jpg; representative image for military hotel style)",
-    "image_credit_url": "https://commons.wikimedia.org/wiki/File:Mutton_Biryani.jpg"
+    "image_credit_url": "https://commons.wikimedia.org/wiki/File:Mutton_Biryani.jpg",
+    "accent": "#b85a2a",
+    "motifs": [
+      "mutton",
+      "rice",
+      "tamarind"
+    ],
+    "lineage": [],
+    "pull_quote": "Khaki-shirted cooks in Bangalore's lunchtime trenches.",
+    "image_needs_replacement": true
   },
   {
     "slug": "bombay-biriyani",
@@ -679,7 +909,16 @@
     ],
     "image": "https://upload.wikimedia.org/wikipedia/commons/3/35/Bombay_Biryani..JPG",
     "image_credit": "Photo via Wikimedia Commons (Bombay_Biryani..JPG)",
-    "image_credit_url": "https://commons.wikimedia.org/wiki/File:Bombay_Biryani..JPG"
+    "image_credit_url": "https://commons.wikimedia.org/wiki/File:Bombay_Biryani..JPG",
+    "accent": "#b04a26",
+    "motifs": [
+      "rice",
+      "chicken",
+      "tomato"
+    ],
+    "lineage": [],
+    "pull_quote": "Tomato, mint, potato, and the city's restless street energy.",
+    "image_needs_replacement": false
   },
   {
     "slug": "bohri-biriyani",
@@ -710,7 +949,19 @@
     ],
     "image": "https://upload.wikimedia.org/wikipedia/commons/2/22/Biryani.JPG",
     "image_credit": "Photo via Wikimedia Commons (Biryani.JPG; representative image for Bohri biriyani)",
-    "image_credit_url": "https://commons.wikimedia.org/wiki/File:Biryani.JPG"
+    "image_credit_url": "https://commons.wikimedia.org/wiki/File:Biryani.JPG",
+    "accent": "#b04a26",
+    "motifs": [
+      "rice",
+      "mutton",
+      "tomato"
+    ],
+    "lineage": [
+      "memoni-biriyani",
+      "surti-bohri-biriyani"
+    ],
+    "pull_quote": "Eaten from the thaal, communally, with the neighbourhood.",
+    "image_needs_replacement": true
   },
   {
     "slug": "memoni-biriyani",
@@ -741,7 +992,19 @@
     ],
     "image": "https://upload.wikimedia.org/wikipedia/commons/8/8a/Homemade_Biryani.jpg",
     "image_credit": "Photo via Wikimedia Commons (Homemade_Biryani.jpg; representative image for Memoni biriyani)",
-    "image_credit_url": "https://commons.wikimedia.org/wiki/File:Homemade_Biryani.jpg"
+    "image_credit_url": "https://commons.wikimedia.org/wiki/File:Homemade_Biryani.jpg",
+    "accent": "#b04a26",
+    "motifs": [
+      "rice",
+      "mutton",
+      "tomato"
+    ],
+    "lineage": [
+      "bohri-biriyani",
+      "sindhi-biriyani"
+    ],
+    "pull_quote": "Tomato-forward, fiery — the Memon community's Bombay-via-Karachi style.",
+    "image_needs_replacement": true
   },
   {
     "slug": "kolhapuri-biriyani",
@@ -772,7 +1035,16 @@
     ],
     "image": "https://upload.wikimedia.org/wikipedia/commons/f/fe/Chicken_Biryani.jpg",
     "image_credit": "Photo via Wikimedia Commons (Chicken_Biryani.jpg; representative image for Kolhapuri biriyani)",
-    "image_credit_url": "https://commons.wikimedia.org/wiki/File:Chicken_Biryani.jpg"
+    "image_credit_url": "https://commons.wikimedia.org/wiki/File:Chicken_Biryani.jpg",
+    "accent": "#b04a26",
+    "motifs": [
+      "mutton",
+      "rice",
+      "chili"
+    ],
+    "lineage": [],
+    "pull_quote": "Dark masala, scorched onions, the bite of Kolhapur's famous chillies.",
+    "image_needs_replacement": true
   },
   {
     "slug": "malvani-biriyani",
@@ -803,7 +1075,16 @@
     ],
     "image": "https://upload.wikimedia.org/wikipedia/commons/d/d4/A_Biryani.jpg",
     "image_credit": "Photo via Wikimedia Commons (A_Biryani.jpg; representative image for Malvani biriyani)",
-    "image_credit_url": "https://commons.wikimedia.org/wiki/File:A_Biryani.jpg"
+    "image_credit_url": "https://commons.wikimedia.org/wiki/File:A_Biryani.jpg",
+    "accent": "#b04a26",
+    "motifs": [
+      "hilsa",
+      "rice",
+      "lemon"
+    ],
+    "lineage": [],
+    "pull_quote": "Konkan coast: kokum, coconut, fish — biriyani by the sea.",
+    "image_needs_replacement": true
   },
   {
     "slug": "kolkata-biriyani",
@@ -834,7 +1115,19 @@
     ],
     "image": "https://upload.wikimedia.org/wikipedia/commons/5/54/Biryani_from_kolkata.jpg",
     "image_credit": "Photo via Wikimedia Commons (Biryani_from_kolkata.jpg)",
-    "image_credit_url": "https://commons.wikimedia.org/wiki/File:Biryani_from_kolkata.jpg"
+    "image_credit_url": "https://commons.wikimedia.org/wiki/File:Biryani_from_kolkata.jpg",
+    "accent": "#8b5a2b",
+    "motifs": [
+      "egg",
+      "rice",
+      "saffron"
+    ],
+    "lineage": [
+      "lucknowi-awadhi-biriyani",
+      "metiabruz-biriyani"
+    ],
+    "pull_quote": "The potato is not a substitute. It's the point.",
+    "image_needs_replacement": false
   },
   {
     "slug": "metiabruz-biriyani",
@@ -865,7 +1158,19 @@
     ],
     "image": "https://upload.wikimedia.org/wikipedia/commons/1/1a/Kolkata_mutton_biryani.jpg",
     "image_credit": "Photo via Wikimedia Commons (Kolkata_mutton_biryani.jpg)",
-    "image_credit_url": "https://commons.wikimedia.org/wiki/File:Kolkata_mutton_biryani.jpg"
+    "image_credit_url": "https://commons.wikimedia.org/wiki/File:Kolkata_mutton_biryani.jpg",
+    "accent": "#8b5a2b",
+    "motifs": [
+      "saffron",
+      "egg",
+      "rice"
+    ],
+    "lineage": [
+      "lucknowi-awadhi-biriyani",
+      "kolkata-biriyani"
+    ],
+    "pull_quote": "Cooked for an exiled king who refused to abandon his table.",
+    "image_needs_replacement": false
   },
   {
     "slug": "ilish-biriyani",
@@ -896,7 +1201,18 @@
     ],
     "image": "https://upload.wikimedia.org/wikipedia/commons/1/18/Veg-Biryani.jpg",
     "image_credit": "Photo via Wikimedia Commons (Veg-Biryani.jpg; representative image for seasonal Ilish biriyani)",
-    "image_credit_url": "https://commons.wikimedia.org/wiki/File:Veg-Biryani.jpg"
+    "image_credit_url": "https://commons.wikimedia.org/wiki/File:Veg-Biryani.jpg",
+    "accent": "#8b5a2b",
+    "motifs": [
+      "hilsa",
+      "rice",
+      "mustard"
+    ],
+    "lineage": [
+      "kolkata-biriyani"
+    ],
+    "pull_quote": "Hilsa and rice — the Bengali sacrament, layered.",
+    "image_needs_replacement": true
   },
   {
     "slug": "lucknowi-awadhi-biriyani",
@@ -927,7 +1243,19 @@
     ],
     "image": "https://upload.wikimedia.org/wikipedia/commons/3/30/Lucknowi%27s_Famous_Dum_Biryani.jpg",
     "image_credit": "Photo via Wikimedia Commons (Lucknowi%27s_Famous_Dum_Biryani.jpg)",
-    "image_credit_url": "https://commons.wikimedia.org/wiki/File:Lucknowi%27s_Famous_Dum_Biryani.jpg"
+    "image_credit_url": "https://commons.wikimedia.org/wiki/File:Lucknowi%27s_Famous_Dum_Biryani.jpg",
+    "accent": "#a04257",
+    "motifs": [
+      "saffron",
+      "rice",
+      "rosewater"
+    ],
+    "lineage": [
+      "rampuri-biriyani",
+      "kolkata-biriyani"
+    ],
+    "pull_quote": "Pulao masquerading as biriyani, in the gentlest possible way.",
+    "image_needs_replacement": false
   },
   {
     "slug": "moradabadi-biriyani",
@@ -958,7 +1286,18 @@
     ],
     "image": "https://upload.wikimedia.org/wikipedia/commons/c/c8/MORADABADI_BIRYANI.jpg",
     "image_credit": "Photo via Wikimedia Commons (MORADABADI_BIRYANI.jpg)",
-    "image_credit_url": "https://commons.wikimedia.org/wiki/File:MORADABADI_BIRYANI.jpg"
+    "image_credit_url": "https://commons.wikimedia.org/wiki/File:MORADABADI_BIRYANI.jpg",
+    "accent": "#a04257",
+    "motifs": [
+      "rice",
+      "chicken",
+      "saffron"
+    ],
+    "lineage": [
+      "lucknowi-awadhi-biriyani"
+    ],
+    "pull_quote": "Brass-shop alleys, pyaaz ka raita, no fuss.",
+    "image_needs_replacement": false
   },
   {
     "slug": "rampuri-biriyani",
@@ -989,7 +1328,18 @@
     ],
     "image": "https://upload.wikimedia.org/wikipedia/commons/7/7d/Mutton_Biryani.jpg",
     "image_credit": "Photo via Wikimedia Commons (Mutton_Biryani.jpg; representative image for Rampuri biriyani)",
-    "image_credit_url": "https://commons.wikimedia.org/wiki/File:Mutton_Biryani.jpg"
+    "image_credit_url": "https://commons.wikimedia.org/wiki/File:Mutton_Biryani.jpg",
+    "accent": "#a04257",
+    "motifs": [
+      "saffron",
+      "mutton",
+      "rice"
+    ],
+    "lineage": [
+      "lucknowi-awadhi-biriyani"
+    ],
+    "pull_quote": "The Rohilla court's slow dum — citrus-scented, almost transparent.",
+    "image_needs_replacement": true
   },
   {
     "slug": "tehri-biriyani",
@@ -1020,7 +1370,16 @@
     ],
     "image": "https://upload.wikimedia.org/wikipedia/commons/1/10/Vegetable_biryani.JPG",
     "image_credit": "Photo via Wikimedia Commons (Vegetable_biryani.JPG)",
-    "image_credit_url": "https://commons.wikimedia.org/wiki/File:Vegetable_biryani.JPG"
+    "image_credit_url": "https://commons.wikimedia.org/wiki/File:Vegetable_biryani.JPG",
+    "accent": "#a04257",
+    "motifs": [
+      "rice",
+      "turmeric",
+      "saffron"
+    ],
+    "lineage": [],
+    "pull_quote": "Vegetarian biriyani in the Awadhi register — quietly confident.",
+    "image_needs_replacement": true
   },
   {
     "slug": "old-delhi-biriyani",
@@ -1051,7 +1410,18 @@
     ],
     "image": "https://upload.wikimedia.org/wikipedia/commons/f/fe/Chicken_Biryani.jpg",
     "image_credit": "Photo via Wikimedia Commons (Chicken_Biryani.jpg; representative image for Old Delhi style)",
-    "image_credit_url": "https://commons.wikimedia.org/wiki/File:Chicken_Biryani.jpg"
+    "image_credit_url": "https://commons.wikimedia.org/wiki/File:Chicken_Biryani.jpg",
+    "accent": "#a8462e",
+    "motifs": [
+      "rice",
+      "chicken",
+      "saffron"
+    ],
+    "lineage": [
+      "nizamuddin-biriyani"
+    ],
+    "pull_quote": "Cooked through the night for the morning Friday rush.",
+    "image_needs_replacement": true
   },
   {
     "slug": "nizamuddin-biriyani",
@@ -1082,7 +1452,18 @@
     ],
     "image": "https://upload.wikimedia.org/wikipedia/commons/d/d4/A_Biryani.jpg",
     "image_credit": "Photo via Wikimedia Commons (A_Biryani.jpg; representative image for Nizamuddin biriyani)",
-    "image_credit_url": "https://commons.wikimedia.org/wiki/File:A_Biryani.jpg"
+    "image_credit_url": "https://commons.wikimedia.org/wiki/File:A_Biryani.jpg",
+    "accent": "#a8462e",
+    "motifs": [
+      "rice",
+      "chicken",
+      "saffron"
+    ],
+    "lineage": [
+      "old-delhi-biriyani"
+    ],
+    "pull_quote": "Plates pass over shrine walls — biriyani as offering.",
+    "image_needs_replacement": true
   },
   {
     "slug": "patna-biriyani",
@@ -1113,7 +1494,16 @@
     ],
     "image": "https://upload.wikimedia.org/wikipedia/commons/b/b9/Mutton_biryani.JPG",
     "image_credit": "Photo via Wikimedia Commons (Mutton_biryani.JPG; representative image for Patna biriyani)",
-    "image_credit_url": "https://commons.wikimedia.org/wiki/File:Mutton_biryani.JPG"
+    "image_credit_url": "https://commons.wikimedia.org/wiki/File:Mutton_biryani.JPG",
+    "accent": "#a87320",
+    "motifs": [
+      "rice",
+      "chicken",
+      "tamarind"
+    ],
+    "lineage": [],
+    "pull_quote": "Mughal lineage softened by Magadhi rice traditions.",
+    "image_needs_replacement": true
   },
   {
     "slug": "cuttack-biriyani",
@@ -1144,7 +1534,16 @@
     ],
     "image": "https://upload.wikimedia.org/wikipedia/commons/2/22/Biryani.JPG",
     "image_credit": "Photo via Wikimedia Commons (Biryani.JPG; representative image for Cuttack biriyani)",
-    "image_credit_url": "https://commons.wikimedia.org/wiki/File:Biryani.JPG"
+    "image_credit_url": "https://commons.wikimedia.org/wiki/File:Biryani.JPG",
+    "accent": "#8c4a1e",
+    "motifs": [
+      "rice",
+      "chicken",
+      "tamarind"
+    ],
+    "lineage": [],
+    "pull_quote": "Odisha's coastal Muslim kitchens, dialed down on spice.",
+    "image_needs_replacement": true
   },
   {
     "slug": "kampuri-biriyani",
@@ -1175,7 +1574,16 @@
     ],
     "image": "https://upload.wikimedia.org/wikipedia/commons/8/8a/Homemade_Biryani.jpg",
     "image_credit": "Photo via Wikimedia Commons (Homemade_Biryani.jpg; representative image for Kampuri biriyani)",
-    "image_credit_url": "https://commons.wikimedia.org/wiki/File:Homemade_Biryani.jpg"
+    "image_credit_url": "https://commons.wikimedia.org/wiki/File:Homemade_Biryani.jpg",
+    "accent": "#4a7340",
+    "motifs": [
+      "rice",
+      "chicken",
+      "tamarind"
+    ],
+    "lineage": [],
+    "pull_quote": "Assam's quiet variant — fewer spices, more rice, more rice.",
+    "image_needs_replacement": true
   },
   {
     "slug": "kashmiri-yakhni-biriyani",
@@ -1206,7 +1614,18 @@
     ],
     "image": "https://upload.wikimedia.org/wikipedia/commons/4/42/Mutton-Biryani.jpg",
     "image_credit": "Photo via Wikimedia Commons (Mutton-Biryani.jpg; representative image for Kashmiri yakhni biriyani)",
-    "image_credit_url": "https://commons.wikimedia.org/wiki/File:Mutton-Biryani.jpg"
+    "image_credit_url": "https://commons.wikimedia.org/wiki/File:Mutton-Biryani.jpg",
+    "accent": "#6e4566",
+    "motifs": [
+      "saffron",
+      "mutton",
+      "rice"
+    ],
+    "lineage": [
+      "bhopali-yakhni-biriyani"
+    ],
+    "pull_quote": "Yakhni stock instead of fried-onion masala — austere and aromatic.",
+    "image_needs_replacement": true
   },
   {
     "slug": "goan-fish-biriyani",
@@ -1237,7 +1656,16 @@
     ],
     "image": "https://upload.wikimedia.org/wikipedia/commons/1/18/Veg-Biryani.jpg",
     "image_credit": "Photo via Wikimedia Commons (Veg-Biryani.jpg; representative image for Goan fish biriyani)",
-    "image_credit_url": "https://commons.wikimedia.org/wiki/File:Veg-Biryani.jpg"
+    "image_credit_url": "https://commons.wikimedia.org/wiki/File:Veg-Biryani.jpg",
+    "accent": "#b56a2c",
+    "motifs": [
+      "hilsa",
+      "rice",
+      "lemon"
+    ],
+    "lineage": [],
+    "pull_quote": "Coconut, kokum, fish — a biriyani that tastes like the Konkan.",
+    "image_needs_replacement": true
   },
   {
     "slug": "sindhi-biriyani",
@@ -1268,7 +1696,18 @@
     ],
     "image": "https://upload.wikimedia.org/wikipedia/commons/b/bd/Sindhi_Biryani.JPG",
     "image_credit": "Photo via Wikimedia Commons (Sindhi_Biryani.JPG)",
-    "image_credit_url": "https://commons.wikimedia.org/wiki/File:Sindhi_Biryani.JPG"
+    "image_credit_url": "https://commons.wikimedia.org/wiki/File:Sindhi_Biryani.JPG",
+    "accent": "#b04a26",
+    "motifs": [
+      "rice",
+      "mutton",
+      "tomato"
+    ],
+    "lineage": [
+      "memoni-biriyani"
+    ],
+    "pull_quote": "Brought across the border, kept across generations.",
+    "image_needs_replacement": false
   },
   {
     "slug": "surti-bohri-biriyani",
@@ -1299,7 +1738,18 @@
     ],
     "image": "https://upload.wikimedia.org/wikipedia/commons/2/22/Biryani.JPG",
     "image_credit": "Photo via Wikimedia Commons (Biryani.JPG; representative image for Surti Bohri biriyani)",
-    "image_credit_url": "https://commons.wikimedia.org/wiki/File:Biryani.JPG"
+    "image_credit_url": "https://commons.wikimedia.org/wiki/File:Biryani.JPG",
+    "accent": "#b8364a",
+    "motifs": [
+      "rice",
+      "mutton",
+      "tomato"
+    ],
+    "lineage": [
+      "bohri-biriyani"
+    ],
+    "pull_quote": "Tangier than its Bombay cousin — Surat's tomato hand is heavier.",
+    "image_needs_replacement": true
   },
   {
     "slug": "travancore-biriyani",
@@ -1330,7 +1780,18 @@
     ],
     "image": "https://upload.wikimedia.org/wikipedia/commons/5/5c/Biriyani_from_thiruvananthapuram.jpg",
     "image_credit": "Photo via Wikimedia Commons (Biriyani_from_thiruvananthapuram.jpg)",
-    "image_credit_url": "https://commons.wikimedia.org/wiki/File:Biriyani_from_thiruvananthapuram.jpg"
+    "image_credit_url": "https://commons.wikimedia.org/wiki/File:Biriyani_from_thiruvananthapuram.jpg",
+    "accent": "#1d6e4a",
+    "motifs": [
+      "rice",
+      "chicken",
+      "saffron"
+    ],
+    "lineage": [
+      "thalassery-biriyani"
+    ],
+    "pull_quote": "Pukka style: meat and rice cooked separately, layered late.",
+    "image_needs_replacement": false
   },
   {
     "slug": "bamboo-biriyani",
@@ -1361,7 +1822,16 @@
     ],
     "image": "https://upload.wikimedia.org/wikipedia/commons/6/60/Bamboo_Biriyani_served_with_Sauce_and_Salads.jpg",
     "image_credit": "Photo via Wikimedia Commons (Bamboo_Biriyani_served_with_Sauce_and_Salads.jpg)",
-    "image_credit_url": "https://commons.wikimedia.org/wiki/File:Bamboo_Biriyani_served_with_Sauce_and_Salads.jpg"
+    "image_credit_url": "https://commons.wikimedia.org/wiki/File:Bamboo_Biriyani_served_with_Sauce_and_Salads.jpg",
+    "accent": "#b03828",
+    "motifs": [
+      "bamboo",
+      "rice",
+      "chicken"
+    ],
+    "lineage": [],
+    "pull_quote": "Cooked inside green bamboo over a wood fire.",
+    "image_needs_replacement": false
   },
   {
     "slug": "degh-ki-biriyani",
@@ -1392,7 +1862,16 @@
     ],
     "image": "https://upload.wikimedia.org/wikipedia/commons/5/59/Degh_ki.jpg",
     "image_credit": "Photo via Wikimedia Commons (Degh_ki.jpg)",
-    "image_credit_url": "https://commons.wikimedia.org/wiki/File:Degh_ki.jpg"
+    "image_credit_url": "https://commons.wikimedia.org/wiki/File:Degh_ki.jpg",
+    "accent": "#b04a26",
+    "motifs": [
+      "clay-pot",
+      "rice",
+      "saffron"
+    ],
+    "lineage": [],
+    "pull_quote": "Wedding deghs, a hundred plates at a time, slow heat under sealed lids.",
+    "image_needs_replacement": false
   },
   {
     "slug": "mla-potlam-biriyani",
@@ -1423,7 +1902,18 @@
     ],
     "image": "https://upload.wikimedia.org/wikipedia/commons/9/90/Chicken_Biryani_in_plate.jpg",
     "image_credit": "Photo via Wikimedia Commons (Chicken_Biryani_in_plate.jpg)",
-    "image_credit_url": "https://commons.wikimedia.org/wiki/File:Chicken_Biryani_in_plate.jpg"
+    "image_credit_url": "https://commons.wikimedia.org/wiki/File:Chicken_Biryani_in_plate.jpg",
+    "accent": "#c25a17",
+    "motifs": [
+      "clay-pot",
+      "rice",
+      "mutton"
+    ],
+    "lineage": [
+      "hyderabadi-dum"
+    ],
+    "pull_quote": "A muslin pouch holds raw spices over the rice as it cooks.",
+    "image_needs_replacement": false
   },
   {
     "slug": "matka-peer-biriyani",
@@ -1454,7 +1944,16 @@
     ],
     "image": "https://upload.wikimedia.org/wikipedia/commons/9/9a/Matka_Biryani_-_Habib5232787.jpg",
     "image_credit": "Photo via Wikimedia Commons (Matka_Biryani_-_Habib5232787.jpg)",
-    "image_credit_url": "https://commons.wikimedia.org/wiki/File:Matka_Biryani_-_Habib5232787.jpg"
+    "image_credit_url": "https://commons.wikimedia.org/wiki/File:Matka_Biryani_-_Habib5232787.jpg",
+    "accent": "#a8462e",
+    "motifs": [
+      "clay-pot",
+      "rice",
+      "saffron"
+    ],
+    "lineage": [],
+    "pull_quote": "Clay-pot biriyani sold at a Sufi shrine in Old Delhi.",
+    "image_needs_replacement": true
   },
   {
     "slug": "achaari-biriyani",
@@ -1485,7 +1984,16 @@
     ],
     "image": "https://upload.wikimedia.org/wikipedia/commons/c/c6/Achari_Biryani.JPG",
     "image_credit": "Photo via Wikimedia Commons (Achari_Biryani.JPG)",
-    "image_credit_url": "https://commons.wikimedia.org/wiki/File:Achari_Biryani.JPG"
+    "image_credit_url": "https://commons.wikimedia.org/wiki/File:Achari_Biryani.JPG",
+    "accent": "#a8462e",
+    "motifs": [
+      "lemon",
+      "rice",
+      "mutton"
+    ],
+    "lineage": [],
+    "pull_quote": "Pickle masala folded in — sharper and brighter than dum.",
+    "image_needs_replacement": false
   },
   {
     "slug": "santare-ki-biriyani",
@@ -1516,7 +2024,16 @@
     ],
     "image": "https://upload.wikimedia.org/wikipedia/commons/6/67/Mughlai_Platter.jpg",
     "image_credit": "Photo via Wikimedia Commons (Mughlai_Platter.jpg)",
-    "image_credit_url": "https://commons.wikimedia.org/wiki/File:Mughlai_Platter.jpg"
+    "image_credit_url": "https://commons.wikimedia.org/wiki/File:Mughlai_Platter.jpg",
+    "accent": "#a8462e",
+    "motifs": [
+      "lemon",
+      "rice",
+      "chicken"
+    ],
+    "lineage": [],
+    "pull_quote": "Orange peel and orange juice in the rice — Delhi winter, condensed.",
+    "image_needs_replacement": true
   },
   {
     "slug": "bhopali-yakhni-biriyani",
@@ -1547,7 +2064,19 @@
     ],
     "image": "https://upload.wikimedia.org/wikipedia/commons/1/10/Plate_of_food%2C_biryani_20150405.jpg",
     "image_credit": "Photo via Wikimedia Commons (Plate_of_food, biryani 20150405.jpg)",
-    "image_credit_url": "https://commons.wikimedia.org/wiki/File:Plate_of_food,_biryani_20150405.jpg"
+    "image_credit_url": "https://commons.wikimedia.org/wiki/File:Plate_of_food,_biryani_20150405.jpg",
+    "accent": "#97481c",
+    "motifs": [
+      "saffron",
+      "mutton",
+      "rice"
+    ],
+    "lineage": [
+      "kashmiri-yakhni-biriyani",
+      "lucknowi-awadhi-biriyani"
+    ],
+    "pull_quote": "Bhopal's begum kitchens: yakhni, kewra, an unhurried hand.",
+    "image_needs_replacement": false
   },
   {
     "slug": "lalla-ki-biriyani",
@@ -1578,6 +2107,15 @@
     ],
     "image": "https://upload.wikimedia.org/wikipedia/commons/6/62/Lallaji_ki_Biryani%2C_Lucknow.jpg",
     "image_credit": "Photo via Wikimedia Commons (Lallaji_ki_Biryani, Lucknow.jpg)",
-    "image_credit_url": "https://commons.wikimedia.org/wiki/File:Lallaji_ki_Biryani,_Lucknow.jpg"
+    "image_credit_url": "https://commons.wikimedia.org/wiki/File:Lallaji_ki_Biryani,_Lucknow.jpg",
+    "accent": "#a04257",
+    "motifs": [
+      "rice",
+      "mutton",
+      "saffron"
+    ],
+    "lineage": [],
+    "pull_quote": "Chowk Bazaar, Lucknow — the city's working-class lunch.",
+    "image_needs_replacement": true
   }
 ]
