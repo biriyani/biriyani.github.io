@@ -1,0 +1,130 @@
+@import "tailwindcss";
+
+@theme {
+  /* shadcn-compat tokens (used by mapcn's internal Loader / Popup / Marker) */
+  --color-background: #f6f1e7;
+  --color-foreground: #2b1c15;
+  --color-muted: #e9dfca;
+  --color-muted-foreground: #61473a;
+  --color-border: #d8c2a8;
+  --color-popover: #fbf8f2;
+  --color-popover-foreground: #2b1c15;
+  --color-primary: #bf6f24;
+  --color-primary-foreground: #fbf8f2;
+  --color-card: #fbf8f2;
+  --color-card-foreground: #2b1c15;
+  --color-accent: #e8b279;
+  --color-accent-foreground: #2b1c15;
+  --color-input: #d8c2a8;
+  --color-ring: #bf6f24;
+
+  --radius: 0.75rem;
+
+  --color-cream: #f6f1e7;
+  --color-cream-soft: #faf6ec;
+  --color-paper: #fbf8f2;
+  --color-bark: #2b1c15;
+  --color-bark-soft: #61473a;
+  --color-saffron: #bf6f24;
+  --color-saffron-soft: #e8b279;
+  --color-line: #d8c2a8;
+
+  /* Region-keyed accents — each state's signature colour. */
+  --color-telangana: #c25a17;
+  --color-andhra: #b03828;
+  --color-tamilnadu: #c98c1a;
+  --color-kerala: #1d6e4a;
+  --color-karnataka: #b85a2a;
+  --color-maharashtra: #b04a26;
+  --color-bengal: #8b5a2b;
+  --color-up: #a04257;
+  --color-delhi: #a8462e;
+  --color-bihar: #a87320;
+  --color-odisha: #8c4a1e;
+  --color-assam: #4a7340;
+  --color-kashmir: #6e4566;
+  --color-goa: #b56a2c;
+  --color-gujarat: #b8364a;
+  --color-mp: #97481c;
+
+  --font-serif: "Cormorant Garamond", "Iowan Old Style", Georgia, serif;
+  --font-sans: "Manrope", "Segoe UI", system-ui, sans-serif;
+
+  --shadow-paper: 0 16px 44px rgba(90, 54, 20, 0.11);
+  --shadow-card-hover: 0 22px 60px rgba(90, 54, 20, 0.18);
+}
+
+@layer base {
+  *, *::before, *::after { box-sizing: border-box; }
+
+  html, body { margin: 0; padding: 0; }
+
+  body {
+    min-height: 100vh;
+    font-family: var(--font-sans);
+    color: var(--color-bark);
+    line-height: 1.6;
+    background:
+      radial-gradient(circle at 90% 8%, rgba(232, 178, 121, 0.35), transparent 44%),
+      radial-gradient(circle at 10% 30%, rgba(191, 111, 36, 0.11), transparent 38%),
+      var(--color-cream);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  a { color: inherit; }
+  img { max-width: 100%; display: block; }
+
+  h1, h2, h3 {
+    font-family: var(--font-serif);
+    font-weight: 500;
+    color: var(--color-bark);
+    letter-spacing: -0.01em;
+  }
+  h1 { font-size: clamp(2.4rem, 1rem + 4vw, 4.4rem); line-height: 1.05; }
+  h2 { font-size: clamp(1.6rem, 0.8rem + 2vw, 2.4rem); line-height: 1.15; }
+  h3 { font-size: 1.4rem; line-height: 1.25; }
+
+  ::selection { background: var(--color-saffron-soft); color: var(--color-bark); }
+}
+
+@layer components {
+  .container-page {
+    width: min(1180px, 92vw);
+    margin-inline: auto;
+  }
+  .kicker {
+    font-family: var(--font-sans);
+    font-size: 0.78rem;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--color-saffron);
+    font-weight: 600;
+  }
+  .prose-editorial {
+    font-size: 1.06rem;
+    line-height: 1.7;
+    color: var(--color-bark-soft);
+  }
+  .prose-editorial p + p { margin-top: 1.1em; }
+  .drop-cap::first-letter {
+    font-family: var(--font-serif);
+    float: left;
+    font-size: 4.4rem;
+    line-height: 0.85;
+    padding: 0.2rem 0.6rem 0 0;
+    color: var(--color-saffron);
+    font-weight: 600;
+  }
+  .reveal {
+    opacity: 0;
+    transform: translateY(12px);
+    animation: rise 0.6s ease forwards;
+  }
+  @keyframes rise {
+    to { opacity: 1; transform: none; }
+  }
+  @media (prefers-reduced-motion: reduce) {
+    .reveal { animation: none; opacity: 1; transform: none; }
+  }
+}

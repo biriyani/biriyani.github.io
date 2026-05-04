@@ -1,71 +1,32 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Biriyani | An Index of India's Biriyanis</title>
+    <meta name="theme-color" content="#f6f1e7" />
+    <title>Biriyani Atlas — a visual archive of India's biriyanis</title>
     <meta
       name="description"
-      content="Biriyani is a visual index of India's biriyani traditions across regions, communities, and kitchen lineages."
+      content="A regional atlas of India's biriyani dialects — origin, technique, spice profile, and where to taste each one."
     />
+    <meta property="og:title" content="Biriyani Atlas — a visual archive of India's biriyanis" />
+    <meta
+      property="og:description"
+      content="India cooks biriyani in dozens of dialects. The Atlas maps them — region, technique, signature spice, the restaurants still doing it right."
+    />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Manrope:wght@400;500;600;700&display=swap"
       rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500;1,600&family=Manrope:wght@400;500;600;700&display=swap"
     />
-    <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
-    <header class="site-header">
-      <a class="wordmark" href="./index.html">Biriyani</a>
-      <nav>
-        <a href="./index.html" aria-current="page">Index</a>
-        <a href="./about.html">About</a>
-      </nav>
-    </header>
-
-    <main>
-      <section class="hero container reveal">
-        <p class="kicker">India, grain by grain</p>
-        <h1>
-          The visual archive of India's biriyanis: royal, roadside, wedding-pot,
-          and hyper-local.
-        </h1>
-        <p class="hero-note">
-          Filter by state or style. Click any card to open the full story.
-        </p>
-      </section>
-
-      <section class="controls container reveal" aria-label="Filters">
-        <div class="control">
-          <label for="regionFilter">Region (State)</label>
-          <select id="regionFilter">
-            <option value="all">All regions</option>
-          </select>
-        </div>
-        <div class="control">
-          <label for="styleFilter">Style</label>
-          <select id="styleFilter">
-            <option value="all">All styles</option>
-          </select>
-        </div>
-        <p id="resultCount" class="result-count" aria-live="polite"></p>
-      </section>
-
-      <section class="container reveal">
-        <div id="grid" class="card-grid" aria-live="polite"></div>
-      </section>
-    </main>
-
-    <footer class="site-footer">
-      <p>
-        An index of India's biriyanis. A project by
-        <a href="https://samooh.com" target="_blank" rel="noreferrer">Samooh</a>
-        — a community for Indian builders.
-      </p>
-    </footer>
-
-    <script src="./js/main.js" defer></script>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
   </body>
 </html>
