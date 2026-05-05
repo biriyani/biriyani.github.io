@@ -12,11 +12,13 @@ const NAME_NORMALIZE: Record<string, string> = {
   'NCT of Delhi': 'Delhi',
 }
 
-// Mainland India bounding box including J&K and the southern tip but trimming
-// the Andaman & Nicobar islands so the visual silhouette is the subcontinent.
+// India bounding box. Wide enough to include J&K's northern tip (~37°N),
+// Kanyakumari (~8°N), the Andaman & Nicobar dot (~93°E, off the eastern
+// coast), and Gujarat's western edge (~68°E). fitBounds respects the
+// canvas aspect ratio, so this guarantees the silhouette is never cropped.
 const INDIA_BOUNDS: maplibregl.LngLatBoundsLike = [
-  [67.0, 6.5],
-  [97.5, 36.5],
+  [67.0, 5.5],
+  [98.5, 37.6],
 ]
 
 type Props = {
@@ -126,7 +128,7 @@ export function IndiaMap({ selected, onSelect }: Props) {
 
     // Fit the whole subcontinent into the visible area on every layout change
     // so the silhouette never gets cropped at any breakpoint.
-    const refit = () => map.fitBounds(INDIA_BOUNDS, { padding: 16, animate: false })
+    const refit = () => map.fitBounds(INDIA_BOUNDS, { padding: 36, animate: false, linear: true })
     refit()
     map.on('resize', refit)
 
@@ -200,7 +202,6 @@ export function IndiaMap({ selected, onSelect }: Props) {
           theme="light"
           styles={{ light: style, dark: style }}
           viewport={{ center: [82.5, 22], zoom: 3.4, bearing: 0, pitch: 0 }}
-          maxBounds={INDIA_BOUNDS}
           dragRotate={false}
           touchPitch={false}
           attributionControl={false}
