@@ -77,7 +77,7 @@ for (const e of data) {
     ? `${SITE_URL}/og/${e.slug}.png`
     : e.image
   const html = injectMeta(shell, {
-    title: `${e.name} — Biriyani Atlas`,
+    title: `${e.name} — Biriyani`,
     description,
     url,
     image,
@@ -92,9 +92,9 @@ for (const e of data) {
 // 2) Static routes — overwrite dist/index.html with cleaner home metadata,
 //    then write about and compare with their own.
 const home = injectMeta(shell, {
-  title: "Biriyani Atlas — a visual archive of India's biriyanis",
+  title: "Biriyani — a visual archive of India's biriyanis",
   description:
-    "India cooks biriyani in dozens of dialects. The Atlas maps them — region, technique, signature spice, the restaurants still doing it right.",
+    "India cooks biriyani in dozens of dialects. This is the archive — region, technique, signature spice, the restaurants still doing it right.",
   url: SITE_URL + '/',
   image: SITE_URL + '/og-cover.png',
   type: 'website',
@@ -104,9 +104,9 @@ await writeFile(join(DIST, 'index.html'), home)
 await writeHtml(
   'about/index.html',
   injectMeta(shell, {
-    title: 'About — Biriyani Atlas',
+    title: 'About — Biriyani',
     description:
-      "Why this exists: most of the world knows one biriyani. India knows hundreds. The Atlas is an editorial archive of regional dialects.",
+      "Why this exists: most of the world knows one biriyani. India knows hundreds. This is an editorial archive of regional dialects.",
     url: SITE_URL + '/about',
     image: SITE_URL + '/og-cover.png',
   }),
@@ -115,7 +115,7 @@ await writeHtml(
 await writeHtml(
   'compare/index.html',
   injectMeta(shell, {
-    title: 'Compare biriyanis — Biriyani Atlas',
+    title: 'Compare biriyanis — Biriyani',
     description:
       'Pick up to three biriyanis and compare them side by side: rice, protein, technique, and which spices are unique to each dialect.',
     url: SITE_URL + '/compare',
@@ -128,9 +128,9 @@ await writeHtml(
 await writeHtml(
   '404.html',
   injectMeta(shell, {
-    title: 'Not found — Biriyani Atlas',
+    title: 'Not found — Biriyani',
     description:
-      "We haven't catalogued this slug yet. The Atlas covers 51 dialects of biriyani across 16 Indian states — pick one.",
+      "We haven't catalogued this slug yet. The archive covers 51 dialects of biriyani across 16 Indian states — pick one.",
     url: SITE_URL + '/404',
     image: SITE_URL + '/og-cover.png',
   }),
@@ -227,7 +227,7 @@ function entryOgSvg(e) {
     .map((m, i) => {
       const path = motifGlyph[m] ?? motifGlyph.rice
       const x = 80 + i * 130
-      return `<g transform="translate(${x} 380)" stroke="#fffaf0" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" fill="none"><path d="${path}"/></g>`
+      return `<g transform="translate(${x} 410)" stroke="#fffaf0" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" fill="none"><path d="${path}"/></g>`
     })
     .join('')
   const titleClean = e.name.replace(/\s*Biriyani\s*$/i, '')
@@ -239,28 +239,25 @@ function entryOgSvg(e) {
         return [words.slice(0, mid).join(' '), words.slice(mid).join(' ')]
       })()
     : [titleClean]
+  const baseY = lines.length === 1 ? 280 : 230
   const titleSvg = lines
     .map(
       (l, i) =>
-        `<text x="80" y="${250 + i * 95}" font-family="Cormorant Garamond, Georgia, serif" font-size="92" font-weight="500" fill="#fffaf0">${escapeAttr(l)}</text>`,
+        `<text x="80" y="${baseY + i * 100}" font-family="Cormorant Garamond, Georgia, serif" font-size="92" font-weight="500" fill="#fffaf0">${escapeAttr(l)}</text>`,
     )
     .join('')
 
   return `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630">
-  <defs>
-    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0%" stop-color="${e.accent}"/>
-      <stop offset="100%" stop-color="${e.accent}cc"/>
-    </linearGradient>
-  </defs>
-  <rect width="1200" height="630" fill="url(#bg)"/>
-  <rect width="1200" height="630" fill="#000" opacity="0.06"/>
-  <text x="80" y="170" font-family="Manrope, system-ui, sans-serif" font-size="22" font-weight="600" letter-spacing="6" fill="#fffaf0" opacity="0.85">
+  <rect width="1200" height="630" fill="${e.accent}"/>
+  <line x1="80" y1="100" x2="1120" y2="100" stroke="#fffaf0" stroke-width="1" opacity="0.4"/>
+  <text x="80" y="80" font-family="Manrope, system-ui, sans-serif" font-size="20" font-weight="600" letter-spacing="6" fill="#fffaf0" opacity="0.9">
     ${escapeAttr(e.region.toUpperCase())} · ${escapeAttr(e.style.toUpperCase())}
   </text>
   ${titleSvg}
   ${groups}
-  <text x="1120" y="570" font-family="Manrope, system-ui, sans-serif" font-size="22" font-weight="500" fill="#fffaf0" opacity="0.8" text-anchor="end">biriyani atlas</text>
+  <line x1="80" y1="540" x2="1120" y2="540" stroke="#fffaf0" stroke-width="1" opacity="0.4"/>
+  <text x="80" y="580" font-family="Manrope, system-ui, sans-serif" font-size="22" font-weight="500" fill="#fffaf0" opacity="0.85">biriyani</text>
+  <text x="1120" y="580" font-family="Manrope, system-ui, sans-serif" font-size="22" font-weight="500" fill="#fffaf0" opacity="0.85" text-anchor="end">${escapeAttr(e.name.replace(/\s*Biriyani\s*$/i, '').toLowerCase())}</text>
 </svg>`
 }
 

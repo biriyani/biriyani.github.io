@@ -12,6 +12,13 @@ const NAME_NORMALIZE: Record<string, string> = {
   'NCT of Delhi': 'Delhi',
 }
 
+// Mainland India bounding box including J&K and the southern tip but trimming
+// the Andaman & Nicobar islands so the visual silhouette is the subcontinent.
+const INDIA_BOUNDS: maplibregl.LngLatBoundsLike = [
+  [67.0, 6.5],
+  [97.5, 36.5],
+]
+
 type Props = {
   selected?: string
   onSelect: (region: string | null) => void
@@ -52,18 +59,15 @@ export function IndiaMap({ selected, onSelect }: Props) {
       })
   }, [counts])
 
+  // Empty MapLibre style — no basemap, no background. The state polygons we
+  // add programmatically are the only visible thing, so India floats over
+  // whatever page background is behind the canvas.
   const style = useMemo<maplibregl.StyleSpecification>(
     () => ({
       version: 8,
       glyphs: 'https://demotiles.maplibre.org/font/{fontstack}/{range}.pbf',
       sources: {},
-      layers: [
-        {
-          id: 'cream-bg',
-          type: 'background',
-          paint: { 'background-color': '#f6f1e7' },
-        },
-      ],
+      layers: [],
     }),
     [],
   )
@@ -79,7 +83,7 @@ export function IndiaMap({ selected, onSelect }: Props) {
         'fill-color': [
           'case',
           ['==', ['get', 'count'], 0],
-          '#efe4cd',
+          '#efe2c8',
           [
             'interpolate',
             ['linear'],
@@ -98,7 +102,7 @@ export function IndiaMap({ selected, onSelect }: Props) {
           1,
           ['boolean', ['feature-state', 'selected'], false],
           1,
-          0.92,
+          0.95,
         ],
       },
     })
@@ -114,11 +118,17 @@ export function IndiaMap({ selected, onSelect }: Props) {
           1.6,
           ['boolean', ['feature-state', 'selected'], false],
           2.2,
-          0.5,
+          0.6,
         ],
-        'line-opacity': 0.55,
+        'line-opacity': 0.5,
       },
     })
+
+    // Fit the whole subcontinent into the visible area on every layout change
+    // so the silhouette never gets cropped at any breakpoint.
+    const refit = () => map.fitBounds(INDIA_BOUNDS, { padding: 16, animate: false })
+    refit()
+    map.on('resize', refit)
 
     map.on('mousemove', 'states-fill', (e) => {
       if (!e.features?.length) return
@@ -149,13 +159,11 @@ export function IndiaMap({ selected, onSelect }: Props) {
     })
     map.on('click', 'states-fill', (e) => {
       if (!e.features?.length) return
-      const region = (e.features[0].properties as { region: string; count: number }).region
-      const count = (e.features[0].properties as { region: string; count: number }).count
-      if (count > 0) onSelect(region)
+      const props = e.features[0].properties as { region: string; count: number }
+      if (props.count > 0) onSelect(props.region)
     })
   }
 
-  // Init layers when both map and geojson are ready.
   useEffect(() => {
     const map = mapRef.current
     if (!map || !geojson) return
@@ -177,28 +185,31 @@ export function IndiaMap({ selected, onSelect }: Props) {
       try {
         map.setFeatureState({ source: 'states', id }, { selected: isSel })
       } catch {
-        /* style not ready yet */
+        /* style not ready */
       }
     })
   }, [selected, geojson])
 
   return (
-    <div className="relative w-full">
-      <div className="relative h-[420px] w-full overflow-hidden rounded-3xl border border-line bg-cream-soft shadow-paper md:h-[520px]">
+    <div className="india-map relative w-full">
+      <div className="relative aspect-[5/5] w-full sm:aspect-[6/5] md:aspect-[7/5]">
         <MapcnMap
           ref={(m) => {
             mapRef.current = m
           }}
           theme="light"
           styles={{ light: style, dark: style }}
-          viewport={{ center: [80.5, 22.5], zoom: 3.6, bearing: 0, pitch: 0 }}
-          maxBounds={[
-            [60, 5],
-            [100, 38],
-          ]}
+          viewport={{ center: [82.5, 22], zoom: 3.4, bearing: 0, pitch: 0 }}
+          maxBounds={INDIA_BOUNDS}
           dragRotate={false}
           touchPitch={false}
           attributionControl={false}
+          scrollZoom={false}
+          dragPan={false}
+          touchZoomRotate={false}
+          doubleClickZoom={false}
+          boxZoom={false}
+          keyboard={false}
           className="!h-full !w-full"
         />
         <div

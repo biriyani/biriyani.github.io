@@ -2,6 +2,7 @@ import { Link } from 'react-router-dom'
 import { useMemo } from 'react'
 import { BIRIYANIS } from '@/data/types'
 import { MotifCard } from '@/components/MotifCard'
+import { PageHead } from '@/components/PageHead'
 
 export function NotFound() {
   const picks = useMemo(() => {
@@ -10,6 +11,11 @@ export function NotFound() {
   }, [])
   return (
     <main className="container-page">
+      <PageHead
+        title="Not found — Biriyani"
+        description="We haven't catalogued this slug yet. The archive covers 51 dialects of biriyani across 16 Indian states — pick one."
+        url="https://biriyani.github.io/404"
+      />
       <section className="reveal mx-auto max-w-2xl pt-16 pb-12 text-center">
         <span className="kicker">404 — uncharted</span>
         <h1 className="mt-3 font-serif">No biriyani by that slug.</h1>

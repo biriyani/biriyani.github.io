@@ -11,7 +11,7 @@ export function Nav() {
   return (
     <header className="container-page flex items-center justify-between py-7">
       <Link to="/" className="font-serif text-2xl tracking-tight text-bark">
-        Biriyani <span className="text-saffron">Atlas</span>
+        Biri<span className="text-saffron">yani</span>
       </Link>
       <nav className="flex items-center gap-1 text-sm">
         <NavItem to="/">Index</NavItem>
@@ -52,7 +52,7 @@ export function Footer() {
     <footer className="container-page mt-24 border-t border-line py-8 text-xs text-bark-soft">
       <div className="flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
         <p>
-          Biriyani Atlas — a visual archive of India's biriyanis.{' '}
+          Biriyani — a visual archive of India's biriyanis.{' '}
           <Link to="/about" className="underline-offset-4 hover:underline">
             About the project
           </Link>

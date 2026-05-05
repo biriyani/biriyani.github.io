@@ -3,6 +3,7 @@ import { Link, useSearchParams } from 'react-router-dom'
 import { Plus, X } from 'lucide-react'
 import { BIRIYANIS, bySlug, type Biriyani } from '@/data/types'
 import { MotifCard } from '@/components/MotifCard'
+import { PageHead } from '@/components/PageHead'
 
 const MAX = 3
 
@@ -30,6 +31,11 @@ export function Compare() {
 
   return (
     <main className="container-page">
+      <PageHead
+        title="Compare biriyanis — Biriyani"
+        description="Pick up to three biriyanis and compare them side by side: rice, protein, technique, and which spices are unique to each dialect."
+        url="https://biriyani.github.io/compare"
+      />
       <section className="reveal pt-10 pb-8">
         <span className="kicker">The comparison view</span>
         <h1 className="mt-3 font-serif">Three biriyanis, side by side.</h1>

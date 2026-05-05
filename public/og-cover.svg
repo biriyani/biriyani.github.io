@@ -1,51 +1,30 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630">
-  <defs>
-    <radialGradient id="bgrad" cx="80%" cy="10%" r="80%">
-      <stop offset="0%" stop-color="#e8b279" stop-opacity="0.45"/>
-      <stop offset="100%" stop-color="#f6f1e7" stop-opacity="0"/>
-    </radialGradient>
-    <radialGradient id="bgrad2" cx="10%" cy="40%" r="60%">
-      <stop offset="0%" stop-color="#bf6f24" stop-opacity="0.16"/>
-      <stop offset="100%" stop-color="#f6f1e7" stop-opacity="0"/>
-    </radialGradient>
-    <radialGradient id="grain" cx="50%" cy="40%">
-      <stop offset="0%" stop-color="#f6c98e"/>
-      <stop offset="60%" stop-color="#bf6f24"/>
-      <stop offset="100%" stop-color="#7a3f10"/>
-    </radialGradient>
-  </defs>
   <rect width="1200" height="630" fill="#f6f1e7"/>
-  <rect width="1200" height="630" fill="url(#bgrad)"/>
-  <rect width="1200" height="630" fill="url(#bgrad2)"/>
 
-  <!-- Decorative grain motifs -->
-  <g opacity="0.85">
-    <ellipse cx="980" cy="180" rx="32" ry="58" transform="rotate(-22 980 180)" fill="url(#grain)"/>
-    <ellipse cx="1040" cy="260" rx="20" ry="40" transform="rotate(40 1040 260)" fill="#bf6f24" opacity=".55"/>
-    <ellipse cx="940" cy="280" rx="16" ry="32" transform="rotate(-50 940 280)" fill="#7a3f10" opacity=".55"/>
-  </g>
+  <!-- Top rule -->
+  <line x1="80" y1="100" x2="1120" y2="100" stroke="#2b1c15" stroke-width="1" opacity="0.18"/>
 
   <!-- Kicker -->
-  <text x="80" y="190" font-family="Manrope, system-ui, sans-serif" font-size="22" font-weight="600" letter-spacing="6" fill="#bf6f24">
+  <text x="80" y="80" font-family="Manrope, system-ui, sans-serif" font-size="20" font-weight="600" letter-spacing="6" fill="#bf6f24">
     INDIA, GRAIN BY GRAIN
   </text>
 
-  <!-- Headline -->
-  <text x="80" y="300" font-family="Cormorant Garamond, Georgia, serif" font-size="92" font-weight="500" fill="#2b1c15">
-    The visual archive of
+  <!-- Headline (flat, no italics, two lines) -->
+  <text x="80" y="280" font-family="Cormorant Garamond, Georgia, serif" font-size="100" font-weight="500" fill="#2b1c15">
+    A visual archive of
   </text>
-  <text x="80" y="395" font-family="Cormorant Garamond, Georgia, serif" font-size="92" font-weight="500" fill="#2b1c15">
-    India's biriyanis,
-  </text>
-  <text x="80" y="490" font-family="Cormorant Garamond, Georgia, serif" font-size="92" font-weight="600" font-style="italic" fill="#bf6f24">
-    dialect by dialect.
+  <text x="80" y="390" font-family="Cormorant Garamond, Georgia, serif" font-size="100" font-weight="500" fill="#2b1c15">
+    India's biriyanis.
   </text>
 
-  <!-- Footer URL -->
-  <text x="80" y="570" font-family="Manrope, system-ui, sans-serif" font-size="22" font-weight="500" fill="#61473a">
-    biriyani.atlas
+  <!-- Bottom rule -->
+  <line x1="80" y1="540" x2="1120" y2="540" stroke="#2b1c15" stroke-width="1" opacity="0.18"/>
+
+  <!-- Footer -->
+  <text x="80" y="580" font-family="Manrope, system-ui, sans-serif" font-size="22" font-weight="500" fill="#61473a">
+    biriyani
   </text>
-  <text x="1120" y="570" font-family="Manrope, system-ui, sans-serif" font-size="22" font-weight="500" fill="#61473a" text-anchor="end">
+  <text x="1120" y="580" font-family="Manrope, system-ui, sans-serif" font-size="22" font-weight="500" fill="#61473a" text-anchor="end">
     51 varieties · 16 regions
   </text>
 </svg>

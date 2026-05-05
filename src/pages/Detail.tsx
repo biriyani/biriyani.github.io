@@ -1,11 +1,12 @@
 import { Link, useParams } from 'react-router-dom'
 import { ArrowRight, Quote, Scale } from 'lucide-react'
 import { bySlug } from '@/data/types'
-import { MotifCard } from '@/components/MotifCard'
+import { MotifIcon } from '@/lib/motifs'
 import { Tag } from '@/components/Card'
 import { SpotsList } from '@/components/SpotsList'
 import { LineageChips } from '@/components/LineageChips'
 import { RelatedCards } from '@/components/RelatedCards'
+import { PageHead } from '@/components/PageHead'
 import { NotFound } from './NotFound'
 
 export function Detail() {
@@ -14,9 +15,20 @@ export function Detail() {
   if (!entry) return <NotFound />
 
   const showMotif = entry.image_needs_replacement
+  const ogImage = showMotif
+    ? `https://biriyani.github.io/og/${entry.slug}.png`
+    : entry.image
+  const description = `${entry.tagline} — ${entry.distinct.replace(/\s+/g, ' ').slice(0, 160)}`
 
   return (
     <article className="container-page">
+      <PageHead
+        title={`${entry.name} — Biriyani`}
+        description={description}
+        url={`https://biriyani.github.io/b/${entry.slug}`}
+        image={ogImage}
+        type="article"
+      />
       <header className="reveal pt-6 pb-8">
         <Link
           to="/"
@@ -30,38 +42,58 @@ export function Detail() {
         className="reveal relative overflow-hidden rounded-3xl shadow-paper"
         style={{ animationDelay: '120ms' }}
       >
-        <div className="relative aspect-[16/8] w-full overflow-hidden bg-cream-soft">
-          {showMotif ? (
-            <MotifCard entry={entry} variant="hero" className="!rounded-none h-full" />
-          ) : (
-            <img
-              src={entry.image}
-              alt={entry.name}
-              className="h-full w-full object-cover"
-              loading="eager"
-            />
-          )}
-          {!showMotif && (
-            <div
-              aria-hidden
-              className="absolute inset-0 pointer-events-none"
-              style={{
-                background: `linear-gradient(180deg, transparent 35%, ${entry.accent}66 100%)`,
-              }}
-            />
-          )}
-        </div>
-        <div className="absolute inset-x-0 bottom-0 px-6 pb-7 md:px-10 md:pb-10">
-          <div className="kicker" style={{ color: showMotif ? '#fffaf0' : '#fffaf0' }}>
-            {entry.region}
-          </div>
-          <h1
-            className="mt-2 max-w-3xl font-serif leading-[1.02]"
-            style={{ color: '#fffaf0', textShadow: '0 2px 18px rgba(0,0,0,0.35)' }}
+        {showMotif ? (
+          <div
+            className="relative aspect-[16/8] w-full p-8 md:p-12 flex flex-col justify-between"
+            style={{ background: entry.accent, color: '#fffaf0' }}
           >
-            {entry.name}
-          </h1>
-        </div>
+            <div className="flex items-end gap-6">
+              {entry.motifs.slice(0, 3).map((m) => (
+                <MotifIconBig key={m} slug={m} />
+              ))}
+            </div>
+            <div>
+              <div className="kicker" style={{ color: '#fffaf0', opacity: 0.85 }}>
+                {entry.region}
+              </div>
+              <h1
+                className="mt-2 max-w-3xl font-serif leading-[1.02]"
+                style={{ color: '#fffaf0' }}
+              >
+                {entry.name}
+              </h1>
+            </div>
+          </div>
+        ) : (
+          <>
+            <div className="relative aspect-[16/8] w-full overflow-hidden bg-cream-soft">
+              <img
+                src={entry.image}
+                alt={entry.name}
+                className="h-full w-full object-cover"
+                loading="eager"
+              />
+              <div
+                aria-hidden
+                className="absolute inset-0 pointer-events-none"
+                style={{
+                  background: `linear-gradient(180deg, transparent 35%, rgba(0,0,0,0.55) 100%)`,
+                }}
+              />
+            </div>
+            <div className="absolute inset-x-0 bottom-0 px-6 pb-7 md:px-10 md:pb-10">
+              <div className="kicker" style={{ color: '#fffaf0' }}>
+                {entry.region}
+              </div>
+              <h1
+                className="mt-2 max-w-3xl font-serif leading-[1.02]"
+                style={{ color: '#fffaf0', textShadow: '0 2px 18px rgba(0,0,0,0.35)' }}
+              >
+                {entry.name}
+              </h1>
+            </div>
+          </>
+        )}
       </section>
 
       {entry.pull_quote && (
@@ -160,5 +192,17 @@ function Field({ label, children }: { label: string; children: React.ReactNode }
       <div className="kicker !text-bark-soft mb-1">{label}</div>
       <div className="text-bark">{children}</div>
     </div>
+  )
+}
+
+function MotifIconBig({ slug }: { slug: string }) {
+  return (
+    <MotifIcon
+      slug={slug}
+      width={88}
+      height={88}
+      strokeWidth={1.4}
+      style={{ color: '#fffaf0' }}
+    />
   )
 }

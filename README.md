@@ -1,4 +1,4 @@
-# Biriyani Atlas
+# Biriyani
 
 > Most of the world knows one biriyani. India knows hundreds.
 
@@ -121,5 +121,5 @@ Map runtime: [mapcn](https://github.com/AnmolSaini16/mapcn) (MIT) wrapping
 
 ## Licence
 
-Code: MIT. Editorial copy and curation: CC-BY 4.0 — credit "Biriyani Atlas".
+Code: MIT. Editorial copy and curation: CC-BY 4.0 — credit "Biriyani".
 Photographs are licensed individually by source; see each entry's credit line.

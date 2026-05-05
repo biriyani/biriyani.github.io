@@ -2,6 +2,7 @@ import { lazy, Suspense, useEffect, useMemo, useRef, useState } from 'react'
 import { Search } from 'lucide-react'
 import { BIRIYANIS, REGIONS, STYLES } from '@/data/types'
 import { Card } from '@/components/Card'
+import { PageHead } from '@/components/PageHead'
 import { searchBiriyanis } from '@/lib/search'
 
 // MapLibre is heavy (~370KB gzipped). Lazy-load it so detail/compare/about pages
@@ -53,6 +54,11 @@ export function Index() {
 
   return (
     <main className="container-page">
+      <PageHead
+        title="Biriyani — a visual archive of India's biriyanis"
+        description="India cooks biriyani in dozens of dialects. This is the archive — region, technique, signature spice, the restaurants still doing it right."
+        url="https://biriyani.github.io/"
+      />
       <section className="reveal pt-10 pb-12 md:pt-16 md:pb-16">
         <span className="kicker">India, grain by grain</span>
         <h1 className="mt-3 max-w-4xl font-serif">

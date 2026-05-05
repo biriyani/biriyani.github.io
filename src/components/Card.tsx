@@ -9,10 +9,9 @@ export function Card({ entry, eager = false }: { entry: Biriyani; eager?: boolea
     <Link
       to={`/b/${entry.slug}`}
       className={cn(
-        'group relative flex flex-col overflow-hidden rounded-2xl bg-paper shadow-paper transition-all duration-300',
+        'group relative flex flex-col overflow-hidden rounded-2xl bg-paper shadow-paper transition-[transform,box-shadow] duration-300 isolate',
         'hover:-translate-y-1 hover:shadow-card-hover focus-visible:outline focus-visible:outline-2 focus-visible:outline-saffron focus-visible:outline-offset-4',
       )}
-      style={{ borderTop: `3px solid ${entry.accent}` }}
     >
       <div className="relative aspect-[4/3] overflow-hidden bg-cream-soft">
         {showMotif ? (
@@ -22,11 +21,16 @@ export function Card({ entry, eager = false }: { entry: Biriyani; eager?: boolea
             src={entry.image}
             alt={entry.name}
             loading={eager ? 'eager' : 'lazy'}
-            className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
+            className="h-full w-full object-cover"
           />
         )}
         {!showMotif && <MotifBadge motifs={entry.motifs} color={entry.accent} />}
       </div>
+      <span
+        aria-hidden
+        className="absolute left-0 right-0 top-0 h-[3px]"
+        style={{ background: entry.accent }}
+      />
       <div className="flex flex-1 flex-col gap-2 p-5">
         <div className="kicker" style={{ color: entry.accent }}>
           {entry.region}
