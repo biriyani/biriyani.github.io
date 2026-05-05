@@ -56,6 +56,8 @@ export function regionToken(region: string): string {
     'Goa': 'goa',
     'Gujarat': 'gujarat',
     'Madhya Pradesh': 'mp',
+    'Punjab': 'punjab',
+    'Rajasthan': 'rajasthan',
   }
   return map[region] ?? 'saffron'
 }

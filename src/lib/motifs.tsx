@@ -205,6 +205,29 @@ export function Seeraga(props: MotifProps) {
   )
 }
 
+export function Tapioca(props: MotifProps) {
+  // Stylised tapioca / cassava root.
+  return (
+    <svg {...base(props)}>
+      <path d="M9 4c-1 3 0 6 1.5 8 2 2.6 2 4.5 1 7-1.2 3 .5 5 3 4 2-.8 3-3 2.5-5.5-.5-2 .5-4 2-5.5 1.7-1.6 2-4 0-6-1.6-1.5-4-1.6-5.5-1.5-1.5.1-3.4-.5-4.5-.5Z" />
+      <path d="M11 9c1 1.5 1 3 0 4.5" opacity=".55" />
+      <path d="M14 16c1 .5 2 1 2.5 2" opacity=".55" />
+    </svg>
+  )
+}
+
+export function CurryLeaf(props: MotifProps) {
+  return (
+    <svg {...base(props)}>
+      <path d="M12 4 L12 21" />
+      <path d="M12 7 C 9 8 7 9 6 11 C 8 11.5 10 11 12 10" />
+      <path d="M12 10 C 15 9 17 9 18 11 C 16 11.5 14 11 12 12" />
+      <path d="M12 13 C 9 13.5 7.5 14 6.5 16 C 8.5 16.5 10 16 12 15" />
+      <path d="M12 15 C 15 14.5 16.5 15 17.5 17 C 15.5 17.5 14 17 12 17" />
+    </svg>
+  )
+}
+
 export const MOTIFS: Record<string, (p: MotifProps) => React.JSX.Element> = {
   rice: RiceGrain,
   saffron: Saffron,
@@ -225,6 +248,8 @@ export const MOTIFS: Record<string, (p: MotifProps) => React.JSX.Element> = {
   rosewater: Rosewater,
   turmeric: Turmeric,
   seeraga: Seeraga,
+  tapioca: Tapioca,
+  'curry-leaf': CurryLeaf,
 }
 
 export function MotifIcon({ slug, ...props }: { slug: string } & MotifProps) {

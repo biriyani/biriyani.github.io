@@ -24,6 +24,8 @@ REGION_ACCENTS = {
     "Goa":                "#b56a2c",
     "Gujarat":            "#b8364a",
     "Madhya Pradesh":     "#97481c",
+    "Punjab":             "#a85c2e",
+    "Rajasthan":          "#9d2a3a",
 }
 
 # Per-entry motif overrides for entries with distinctive ingredients/techniques.
