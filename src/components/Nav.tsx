@@ -11,7 +11,7 @@ export function Nav() {
   return (
     <header className="container-page flex items-center justify-between py-7">
       <Link to="/" className="font-serif text-2xl tracking-tight text-bark">
-        Biri<span className="text-saffron">yani</span>
+        Biriyani
       </Link>
       <nav className="flex items-center gap-1 text-sm">
         <NavItem to="/">Index</NavItem>
@@ -61,11 +61,7 @@ export function Footer() {
           >
             Samooh
           </a>{' '}
-          — a community for Indian builders.{' '}
-          <Link to="/about" className="underline-offset-4 hover:underline">
-            About the project
-          </Link>
-          .
+          — a community for Indian builders.
         </p>
         <p className="opacity-70">
           State boundaries:{' '}

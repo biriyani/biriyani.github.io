@@ -69,7 +69,7 @@ export function Index() {
         <span className="kicker">India, grain by grain</span>
         <h1 className="mt-3 max-w-4xl font-serif">
           The visual archive of India's biriyanis,
-          <span className="text-saffron"> dialect by dialect.</span>
+          <span className="text-saffron"> region by region.</span>
         </h1>
         <p className="mt-5 max-w-2xl text-lg text-bark-soft">
           Most people outside India know one biriyani. India cooks it in dozens —
