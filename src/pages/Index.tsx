@@ -45,10 +45,16 @@ export function Index() {
     [region, style, query],
   )
 
+  const mapRef = useRef<HTMLElement>(null)
+
   const handleRegionFromMap = (r: string | null) => {
     setRegion(r ?? '')
     requestAnimationFrame(() => {
-      gridRef.current?.scrollIntoView({ behavior: 'smooth', block: 'start' })
+      // When a state is picked, scroll to the grid so the user sees its
+      // varieties. When clearing, scroll back up to the map so the
+      // zoom-out animation is visible.
+      const target = r ? gridRef.current : mapRef.current
+      target?.scrollIntoView({ behavior: 'smooth', block: 'start' })
     })
   }
 
@@ -72,7 +78,7 @@ export function Index() {
         </p>
       </section>
 
-      <section className="reveal" style={{ animationDelay: '120ms' }}>
+      <section ref={mapRef} className="reveal scroll-mt-8" style={{ animationDelay: '120ms' }}>
         <Suspense fallback={<MapPlaceholder />}>
           <IndiaMap selected={region || undefined} onSelect={handleRegionFromMap} />
         </Suspense>

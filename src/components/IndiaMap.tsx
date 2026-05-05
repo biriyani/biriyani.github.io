@@ -2,7 +2,7 @@ import { useEffect, useMemo, useRef, useState } from 'react'
 import maplibregl from 'maplibre-gl'
 import * as topojson from 'topojson-client'
 import type { Topology } from 'topojson-specification'
-import type { FeatureCollection, Geometry } from 'geojson'
+import type { Feature, FeatureCollection, Geometry, Position } from 'geojson'
 import { Map as MapcnMap } from '@/registry/map'
 import { regionCounts } from '@/data/types'
 
@@ -21,25 +21,60 @@ const INDIA_BOUNDS: maplibregl.LngLatBoundsLike = [
   [98.5, 37.6],
 ]
 
+type EnrichedProps = { name: string; region: string; count: number }
+type EnrichedFC = FeatureCollection<Geometry, EnrichedProps>
+
 type Props = {
   selected?: string
   onSelect: (region: string | null) => void
 }
 
+function bboxOfFeatures(features: Feature<Geometry, EnrichedProps>[]): [[number, number], [number, number]] {
+  let w = Infinity
+  let s = Infinity
+  let e = -Infinity
+  let n = -Infinity
+  const visit = (coords: Position | Position[] | Position[][] | Position[][][]) => {
+    if (typeof coords[0] === 'number') {
+      const [lng, lat] = coords as Position
+      if (lng < w) w = lng
+      if (lat < s) s = lat
+      if (lng > e) e = lng
+      if (lat > n) n = lat
+    } else {
+      for (const c of coords as Position[] | Position[][] | Position[][][]) visit(c as never)
+    }
+  }
+  for (const f of features) {
+    const g = f.geometry as { coordinates?: Position | Position[] | Position[][] | Position[][][] }
+    if (g?.coordinates) visit(g.coordinates)
+  }
+  return [
+    [w, s],
+    [e, n],
+  ]
+}
+
 export function IndiaMap({ selected, onSelect }: Props) {
   const counts = useMemo(() => regionCounts(), [])
   const maxCount = useMemo(() => Math.max(...Object.values(counts)), [counts])
-  const [geojson, setGeojson] = useState<FeatureCollection<Geometry, { name: string; region: string; count: number }> | null>(null)
+  const [geojson, setGeojson] = useState<EnrichedFC | null>(null)
   const mapRef = useRef<maplibregl.Map | null>(null)
   const hoverIdRef = useRef<number | null>(null)
   const tooltipRef = useRef<HTMLDivElement>(null)
+  // Refs that callbacks bound at attach time read from — keeps them in sync
+  // without re-attaching listeners.
+  const onSelectRef = useRef(onSelect)
+  const geojsonRef = useRef<EnrichedFC | null>(null)
+  onSelectRef.current = onSelect
+  geojsonRef.current = geojson
 
   useEffect(() => {
     fetch('/india.topo.json')
       .then((r) => r.json())
       .then((topo: Topology) => {
         const fc = topojson.feature(topo, topo.objects.india) as FeatureCollection
-        const enriched: FeatureCollection<Geometry, { name: string; region: string; count: number }> = {
+        const enriched: EnrichedFC = {
           type: 'FeatureCollection',
           features: fc.features
             .filter((f) => f.properties && (f.properties as { name?: string }).name)
@@ -54,7 +89,7 @@ export function IndiaMap({ selected, onSelect }: Props) {
                   region,
                   count: counts[region] ?? 0,
                 },
-              }
+              } as Feature<Geometry, EnrichedProps>
             }),
         }
         setGeojson(enriched)
@@ -74,7 +109,7 @@ export function IndiaMap({ selected, onSelect }: Props) {
     [],
   )
 
-  function attachLayers(map: maplibregl.Map, fc: FeatureCollection) {
+  function attachLayers(map: maplibregl.Map, fc: EnrichedFC) {
     if (map.getSource('states')) return
     map.addSource('states', { type: 'geojson', data: fc, generateId: false })
     map.addLayer({
@@ -100,6 +135,9 @@ export function IndiaMap({ selected, onSelect }: Props) {
         ],
         'fill-opacity': [
           'case',
+          // When something else is selected, dim every other state.
+          ['boolean', ['feature-state', 'dimmed'], false],
+          0.18,
           ['boolean', ['feature-state', 'hover'], false],
           1,
           ['boolean', ['feature-state', 'selected'], false],
@@ -116,20 +154,37 @@ export function IndiaMap({ selected, onSelect }: Props) {
         'line-color': '#5a3818',
         'line-width': [
           'case',
+          ['boolean', ['feature-state', 'selected'], false],
+          2.4,
           ['boolean', ['feature-state', 'hover'], false],
           1.6,
-          ['boolean', ['feature-state', 'selected'], false],
-          2.2,
           0.6,
         ],
-        'line-opacity': 0.5,
+        'line-opacity': [
+          'case',
+          ['boolean', ['feature-state', 'dimmed'], false],
+          0.18,
+          0.5,
+        ],
       },
     })
 
-    // Fit the whole subcontinent into the visible area on every layout change
-    // so the silhouette never gets cropped at any breakpoint.
-    const refit = () => map.fitBounds(INDIA_BOUNDS, { padding: 36, animate: false, linear: true })
-    refit()
+    // Refit the whole subcontinent on resize so the silhouette never gets
+    // cropped at any breakpoint. (Skipped while a single state is selected —
+    // we don't want to undo the zoom-in on a window resize.)
+    const refit = () => {
+      if (!onSelectRef.current) return
+      // Read latest selected via ref-style (bound below via closure capture).
+      // Implemented as: just check whether any feature has dimmed=true.
+      const anyDimmed = (geojsonRef.current?.features ?? []).some((f) => {
+        const fs = map.getFeatureState({ source: 'states', id: f.id as number })
+        return fs?.dimmed === true || fs?.selected === true
+      })
+      if (!anyDimmed) {
+        map.fitBounds(INDIA_BOUNDS, { padding: 36, animate: false, linear: true })
+      }
+    }
+    map.fitBounds(INDIA_BOUNDS, { padding: 36, animate: false, linear: true })
     map.on('resize', refit)
 
     map.on('mousemove', 'states-fill', (e) => {
@@ -144,7 +199,7 @@ export function IndiaMap({ selected, onSelect }: Props) {
       map.setFeatureState({ source: 'states', id }, { hover: true })
       const tt = tooltipRef.current
       if (tt) {
-        const props = f.properties as { region: string; count: number }
+        const props = f.properties as EnrichedProps
         tt.style.opacity = '1'
         tt.style.left = `${e.point.x}px`
         tt.style.top = `${e.point.y - 12}px`
@@ -161,8 +216,8 @@ export function IndiaMap({ selected, onSelect }: Props) {
     })
     map.on('click', 'states-fill', (e) => {
       if (!e.features?.length) return
-      const props = e.features[0].properties as { region: string; count: number }
-      if (props.count > 0) onSelect(props.region)
+      const props = e.features[0].properties as EnrichedProps
+      if (props.count > 0) onSelectRef.current(props.region)
     })
   }
 
@@ -177,19 +232,41 @@ export function IndiaMap({ selected, onSelect }: Props) {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [geojson])
 
-  // Drive selected feature state.
+  // React to `selected` changes — both clicks on the map and external resets
+  // (e.g. from the "Clear filter" button) flow through this single effect.
   useEffect(() => {
     const map = mapRef.current
     if (!map || !geojson) return
-    geojson.features.forEach((f) => {
-      const id = f.id as number
-      const isSel = (f.properties as { region: string }).region === selected
-      try {
-        map.setFeatureState({ source: 'states', id }, { selected: isSel })
-      } catch {
-        /* style not ready */
+    const apply = () => {
+      // Update feature-state across all features.
+      let selectedFeatures: Feature<Geometry, EnrichedProps>[] = []
+      for (const f of geojson.features) {
+        const id = f.id as number
+        const isSel = f.properties.region === selected
+        const dimmed = !!selected && !isSel
+        try {
+          map.setFeatureState({ source: 'states', id }, { selected: isSel, dimmed })
+        } catch {
+          /* style not ready */
+        }
+        if (isSel) selectedFeatures.push(f)
       }
-    })
+
+      if (selectedFeatures.length) {
+        const bbox = bboxOfFeatures(selectedFeatures)
+        // maxZoom keeps tiny states (Delhi, Goa) from over-zooming into a
+        // pixelated polygon; padding leaves comfortable margin around the
+        // silhouette.
+        map.fitBounds(bbox, { padding: 60, maxZoom: 6, duration: 700, linear: false })
+      } else {
+        map.fitBounds(INDIA_BOUNDS, { padding: 36, duration: 600, linear: false })
+      }
+    }
+    if (map.isStyleLoaded() && map.getSource('states')) {
+      apply()
+    } else {
+      map.once('idle', apply)
+    }
   }, [selected, geojson])
 
   return (
@@ -223,14 +300,18 @@ export function IndiaMap({ selected, onSelect }: Props) {
         </div>
       </div>
       <div className="mt-3 flex flex-wrap items-center justify-between gap-3 px-1 text-xs text-bark-soft">
-        <span>Hover a state to see its varieties · click to filter the grid</span>
+        <span>
+          {selected
+            ? `Showing ${selected} · click another state to switch, or clear to see all of India`
+            : 'Hover a state to see its varieties · click to zoom in and filter the grid'}
+        </span>
         {selected && (
           <button
             type="button"
-            className="rounded-full bg-saffron px-3 py-1 text-cream"
+            className="rounded-full bg-saffron px-3 py-1 text-cream hover:bg-bark"
             onClick={() => onSelect(null)}
           >
-            Clear filter — {selected}
+            ← All of India
           </button>
         )}
       </div>
