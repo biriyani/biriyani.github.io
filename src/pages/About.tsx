@@ -5,8 +5,8 @@ export function About() {
     <main className="container-page">
       <PageHead
         title="About — Biriyani"
-        description="Why this exists: most of the world knows one biriyani. India knows hundreds. This is an editorial archive of regional dialects."
-        url="https://biriyani.github.io/about"
+        description="Why this exists: most of the world knows one biriyani. India knows hundreds. An editorial archive of regional dialects — what each one is, where it comes from, and what makes it unmistakable."
+        url="https://biriyani.wiki/about"
       />
       <section className="reveal mx-auto max-w-2xl pt-12 pb-24 md:pt-20">
         <span className="kicker">Why this exists</span>

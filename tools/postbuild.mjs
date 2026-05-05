@@ -1,12 +1,23 @@
 /**
- * Post-build:
- *  - Generates per-route HTML files in dist/ with proper <title>, description, and
- *    OpenGraph / Twitter card tags so detail URLs preview correctly when shared.
- *    Crawlers (Twitter, iMessage, WhatsApp, Facebook) read the head; users still
- *    get the SPA bundle which hydrates client-side.
- *  - Writes sitemap.xml and robots.txt.
- *  - Writes _redirects so Cloudflare Pages serves the SPA shell on unknown
- *    paths (defence-in-depth — we generate static files for every known route).
+ * Post-build SEO + AEO pipeline.
+ *
+ * For each route the site exposes, this writes a static HTML file under dist/
+ * with:
+ *   - canonical + per-page <title> / description
+ *   - OpenGraph + Twitter cards (rendered to PNG via sharp for share previews)
+ *   - one or more <script type="application/ld+json"> blocks of structured data
+ *     (WebSite / CollectionPage / Article / Recipe / AboutPage / BreadcrumbList /
+ *     Restaurant) so search engines and AI answer engines can ingest the
+ *     archive cleanly
+ *   - meta robots tuned for max-image-preview
+ *
+ * Also emits:
+ *   - sitemap.xml (with lastmod and image entries)
+ *   - robots.txt with explicit AI-crawler allowlist
+ *   - llms.txt (concise index, llmstxt.org spec)
+ *   - llms-full.txt (full archive content, single-fetch ingestion)
+ *   - .nojekyll for GitHub Pages
+ *   - _redirects as a Cloudflare-Pages safety net
  */
 
 import { readFile, writeFile, mkdir, copyFile } from 'node:fs/promises'
@@ -17,7 +28,9 @@ import sharp from 'sharp'
 const __dirname = dirname(fileURLToPath(import.meta.url))
 const ROOT = join(__dirname, '..')
 const DIST = join(ROOT, 'dist')
-const SITE_URL = process.env.SITE_URL ?? 'https://biriyani.github.io'
+const SITE_URL = (process.env.SITE_URL ?? 'https://biriyani.wiki').replace(/\/$/, '')
+const SITE_NAME = 'Biriyani'
+const TODAY = new Date().toISOString().slice(0, 10)
 
 const data = JSON.parse(await readFile(join(ROOT, 'src', 'data', 'biriyani.json'), 'utf8'))
 const shell = await readFile(join(DIST, 'index.html'), 'utf8')
@@ -30,33 +43,290 @@ function escapeAttr(s) {
     .replace(/>/g, '&gt;')
 }
 
-function injectMeta(shellHtml, { title, description, url, image, type = 'website' }) {
-  // Strip every existing meta tag we own — description, OpenGraph, Twitter — so each
-  // generated page has exactly one of each. Source index.html may have these
-  // tags split across multiple lines, hence the [\s\S]+? non-greedy match.
+function ogImageFor(e) {
+  return e.image_needs_replacement ? `${SITE_URL}/og/${e.slug}.png` : e.image
+}
+
+function entryDescription(e) {
+  const summary = e.distinct.replace(/\s+/g, ' ').trim()
+  return `${e.tagline} ${summary}`.slice(0, 300)
+}
+
+// ---------- Structured data builders ----------------------------------------
+
+const PUBLISHER = {
+  '@type': 'Organization',
+  '@id': SITE_URL + '/#publisher',
+  name: SITE_NAME,
+  url: SITE_URL,
+  logo: { '@type': 'ImageObject', url: SITE_URL + '/favicon.svg' },
+}
+
+function breadcrumb(crumbs) {
+  return {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    itemListElement: crumbs.map((c, i) => ({
+      '@type': 'ListItem',
+      position: i + 1,
+      name: c.name,
+      item: c.url,
+    })),
+  }
+}
+
+function siteJsonLd() {
+  return {
+    '@context': 'https://schema.org',
+    '@type': 'WebSite',
+    '@id': SITE_URL + '/#website',
+    name: SITE_NAME,
+    alternateName: "Biriyani — India's biriyani archive",
+    url: SITE_URL + '/',
+    description:
+      "A regional archive of India's biriyani dialects — origin, technique, signature spice, and where to taste each one.",
+    inLanguage: 'en',
+    publisher: PUBLISHER,
+    potentialAction: {
+      '@type': 'SearchAction',
+      target: {
+        '@type': 'EntryPoint',
+        urlTemplate: SITE_URL + '/?q={search_term_string}',
+      },
+      'query-input': 'required name=search_term_string',
+    },
+  }
+}
+
+function homeCollectionJsonLd() {
+  return {
+    '@context': 'https://schema.org',
+    '@type': 'CollectionPage',
+    '@id': SITE_URL + '/#collection',
+    name: "Biriyani — every regional dialect of India's most famous rice dish",
+    url: SITE_URL + '/',
+    isPartOf: { '@id': SITE_URL + '/#website' },
+    about: { '@type': 'Thing', name: 'Indian biriyani' },
+    inLanguage: 'en',
+    publisher: PUBLISHER,
+    mainEntity: {
+      '@type': 'ItemList',
+      numberOfItems: data.length,
+      itemListElement: data.map((e, i) => ({
+        '@type': 'ListItem',
+        position: i + 1,
+        url: `${SITE_URL}/b/${e.slug}`,
+        name: e.name,
+      })),
+    },
+  }
+}
+
+function homeFaqJsonLd() {
+  // AEO: structured FAQ helps answer-engines lift answers verbatim.
+  return {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    mainEntity: [
+      {
+        '@type': 'Question',
+        name: 'How many regional varieties of biriyani exist in India?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: `There is no single "Indian biriyani". This archive catalogues ${data.length} regionally distinct varieties across ${new Set(data.map((d) => d.region)).size} Indian states, each with its own rice grain, technique, protein and spice fingerprint — from saffron-laced Awadhi dum and black-pepper Dindigul to bamboo-roasted Andhra and kokum-tinged Konkan fish biriyani.`,
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'What is the difference between biriyani and pulao?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'Biriyani is layered — par-cooked rice and marinated meat are sealed and finished together under low heat (dum) so aromas build inward. Pulao is one-pot — rice and meat are cooked together from the start. Lucknowi Awadhi biriyani sits closest to pulao on this spectrum; Hyderabadi kacchi biriyani sits at the other end.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'Which rice is used for biriyani?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'Most northern and Deccan styles use long-grain aged basmati. Tamil Nadu varieties (Ambur, Vaniyambadi, Dindigul Thalappakatti, Chettinad, Kayalpattinam) use seeraga samba — a tiny short-grain rice that carries spice deeper than basmati. Donne biriyani uses short-grain jeerakasala, Kerala styles often use khyma rice, and Bengali Kolkata biriyani uses basmati cooked with potato.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'Is biriyani Indian or Persian in origin?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'The technique — layered rice and meat sealed under dum — has Persian origins, but the regional dialects we know today were shaped in Indian kitchens over centuries: the Asaf Jahi Hyderabadi style in the Deccan, Awadhi in the Mughal courts of Lucknow, the Kolkata variant born from Wajid Ali Shah\'s exile in Metiabruz, and dozens of community styles (Bohri, Memoni, Mappila, Bhatkali) layered on top. By the 19th century each was an Indian dish in its own right.',
+        },
+      },
+    ],
+  }
+}
+
+function entryRecipeJsonLd(e) {
+  const url = `${SITE_URL}/b/${e.slug}`
+  return {
+    '@context': 'https://schema.org',
+    '@type': 'Recipe',
+    '@id': url + '#recipe',
+    name: e.name,
+    url,
+    image: [ogImageFor(e)],
+    description: entryDescription(e),
+    keywords: [
+      e.region,
+      e.style,
+      'biriyani',
+      'biryani',
+      'Indian rice',
+      ...e.spices,
+    ].join(', '),
+    recipeCategory: 'Main course',
+    recipeCuisine: `Indian (${e.region})`,
+    suitableForDiet: /vegetarian|veg/i.test(e.protein) ? 'https://schema.org/VegetarianDiet' : undefined,
+    recipeIngredient: [
+      e.rice,
+      e.protein,
+      ...e.spices,
+    ],
+    author: PUBLISHER,
+    publisher: PUBLISHER,
+  }
+}
+
+function entryArticleJsonLd(e) {
+  const url = `${SITE_URL}/b/${e.slug}`
+  return {
+    '@context': 'https://schema.org',
+    '@type': 'Article',
+    '@id': url + '#article',
+    headline: `${e.name}: origin, technique, and where to taste it`,
+    name: e.name,
+    description: entryDescription(e),
+    url,
+    mainEntityOfPage: url,
+    datePublished: '2026-04-01',
+    dateModified: TODAY,
+    image: [ogImageFor(e)],
+    inLanguage: 'en',
+    articleSection: 'Indian biriyani',
+    keywords: [e.region, e.style, e.protein, ...e.spices].join(', '),
+    about: { '@type': 'Thing', name: e.name, sameAs: `https://en.wikipedia.org/wiki/Biryani` },
+    locationCreated: {
+      '@type': 'Place',
+      name: e.region,
+      address: { '@type': 'PostalAddress', addressRegion: e.region, addressCountry: 'IN' },
+    },
+    author: PUBLISHER,
+    publisher: PUBLISHER,
+  }
+}
+
+function spotsJsonLd(e) {
+  // Each "legendary spot" becomes a Restaurant entry — AEO surfaces them as
+  // local recommendations in answer engines that handle dining queries.
+  return e.spots.map((s) => ({
+    '@context': 'https://schema.org',
+    '@type': 'Restaurant',
+    name: s.name,
+    servesCuisine: `Indian (${e.region})`,
+    address: {
+      '@type': 'PostalAddress',
+      addressLocality: s.city,
+      addressCountry: 'IN',
+    },
+    knownFor: e.name,
+  }))
+}
+
+function aboutJsonLd() {
+  return {
+    '@context': 'https://schema.org',
+    '@type': 'AboutPage',
+    '@id': SITE_URL + '/about#aboutpage',
+    name: 'About — Biriyani',
+    url: SITE_URL + '/about',
+    isPartOf: { '@id': SITE_URL + '/#website' },
+    inLanguage: 'en',
+    publisher: PUBLISHER,
+    mainContentOfPage: {
+      '@type': 'WebPageElement',
+      cssSelector: 'main',
+    },
+  }
+}
+
+function comparePageJsonLd() {
+  return {
+    '@context': 'https://schema.org',
+    '@type': 'WebPage',
+    '@id': SITE_URL + '/compare#webpage',
+    name: 'Compare biriyanis',
+    url: SITE_URL + '/compare',
+    isPartOf: { '@id': SITE_URL + '/#website' },
+    inLanguage: 'en',
+    publisher: PUBLISHER,
+  }
+}
+
+// ---------- Head injector ---------------------------------------------------
+
+function injectHead(shellHtml, opts) {
+  const {
+    title,
+    description,
+    url,
+    image = SITE_URL + '/og-cover.png',
+    type = 'website',
+    noIndex = false,
+    ldBlocks = [],
+  } = opts
+
   let html = shellHtml
+    // Strip everything we own — we re-emit it deterministically below.
     .replace(/\n?\s*<meta\s+name="description"[\s\S]+?\/>\s*/g, '\n    ')
+    .replace(/\n?\s*<meta\s+name="robots"[\s\S]+?\/>\s*/g, '\n    ')
     .replace(/\n?\s*<meta\s+property="og:[^"]*"[\s\S]+?\/>\s*/g, '\n    ')
     .replace(/\n?\s*<meta\s+name="twitter:[^"]*"[\s\S]+?\/>\s*/g, '\n    ')
+    .replace(/\n?\s*<link\s+rel="canonical"[\s\S]+?\/?\s*>\s*/g, '\n    ')
 
   html = html.replace(/<title>[^<]*<\/title>/, `<title>${escapeAttr(title)}</title>`)
 
+  // data-rh="true" marks each tag as Helmet-managed so react-helmet-async
+  // replaces (rather than duplicates) them when the React tree hydrates and
+  // PageHead renders the same tags client-side.
+  const RH = 'data-rh="true"'
   const meta = [
-    `<meta name="description" content="${escapeAttr(description)}" />`,
-    `<meta property="og:title" content="${escapeAttr(title)}" />`,
-    `<meta property="og:description" content="${escapeAttr(description)}" />`,
-    `<meta property="og:type" content="${type}" />`,
-    `<meta property="og:url" content="${escapeAttr(url)}" />`,
-    image ? `<meta property="og:image" content="${escapeAttr(image)}" />` : '',
-    `<meta name="twitter:card" content="summary_large_image" />`,
-    `<meta name="twitter:title" content="${escapeAttr(title)}" />`,
-    `<meta name="twitter:description" content="${escapeAttr(description)}" />`,
-    image ? `<meta name="twitter:image" content="${escapeAttr(image)}" />` : '',
-  ]
-    .filter(Boolean)
+    `<meta ${RH} name="description" content="${escapeAttr(description)}" />`,
+    `<meta ${RH} name="robots" content="${noIndex ? 'noindex, follow' : 'index, follow, max-image-preview:large'}" />`,
+    `<link ${RH} rel="canonical" href="${escapeAttr(url)}" />`,
+    `<meta ${RH} property="og:site_name" content="${SITE_NAME}" />`,
+    `<meta ${RH} property="og:title" content="${escapeAttr(title)}" />`,
+    `<meta ${RH} property="og:description" content="${escapeAttr(description)}" />`,
+    `<meta ${RH} property="og:type" content="${type}" />`,
+    `<meta ${RH} property="og:url" content="${escapeAttr(url)}" />`,
+    `<meta ${RH} property="og:image" content="${escapeAttr(image)}" />`,
+    `<meta ${RH} property="og:image:width" content="1200" />`,
+    `<meta ${RH} property="og:image:height" content="630" />`,
+    `<meta ${RH} property="og:locale" content="en_IN" />`,
+    `<meta ${RH} name="twitter:card" content="summary_large_image" />`,
+    `<meta ${RH} name="twitter:title" content="${escapeAttr(title)}" />`,
+    `<meta ${RH} name="twitter:description" content="${escapeAttr(description)}" />`,
+    `<meta ${RH} name="twitter:image" content="${escapeAttr(image)}" />`,
+  ].join('\n    ')
+
+  // JSON-LD intentionally does NOT carry data-rh: it's prerender-only,
+  // never touched by client-side React, so it survives the SPA hydration
+  // cleanup in main.tsx.
+  const ld = ldBlocks
+    .map(
+      (block) =>
+        `<script type="application/ld+json">${JSON.stringify(block).replace(/</g, '\\u003c')}</script>`,
+    )
     .join('\n    ')
 
-  html = html.replace('</head>', `    ${meta}\n  </head>`)
+  html = html.replace('</head>', `    ${meta}\n    ${ld}\n  </head>`)
   return html
 }
 
@@ -66,108 +336,287 @@ async function writeHtml(relativePath, html) {
   await writeFile(out, html)
 }
 
-// 1) Per-entry detail pages.
+// ---------- Page generation -------------------------------------------------
+
+// Per-entry detail pages.
 let count = 0
 for (const e of data) {
   const url = `${SITE_URL}/b/${e.slug}`
-  const description = e.tagline + ' — ' + e.distinct.replace(/\s+/g, ' ').slice(0, 160)
-  // OG image: motif-card entries get a per-entry PNG rendered below; entries with
-  // their own photo use that directly.
-  const image = e.image_needs_replacement
-    ? `${SITE_URL}/og/${e.slug}.png`
-    : e.image
-  const html = injectMeta(shell, {
-    title: `${e.name} — Biriyani`,
-    description,
+  const html = injectHead(shell, {
+    title: `${e.name} — ${e.region}'s ${e.style.toLowerCase()} biriyani | ${SITE_NAME}`,
+    description: entryDescription(e),
     url,
-    image,
+    image: ogImageFor(e),
     type: 'article',
+    ldBlocks: [
+      entryArticleJsonLd(e),
+      entryRecipeJsonLd(e),
+      breadcrumb([
+        { name: 'Biriyani', url: SITE_URL + '/' },
+        { name: e.region, url: `${SITE_URL}/?region=${encodeURIComponent(e.region)}` },
+        { name: e.name, url },
+      ]),
+      ...spotsJsonLd(e),
+    ],
   })
-  // Directory-style route so GitHub Pages (and any static host) serves
-  // /b/<slug> without a trailing .html.
   await writeHtml(`b/${e.slug}/index.html`, html)
   count++
 }
 
-// 2) Static routes — overwrite dist/index.html with cleaner home metadata,
-//    then write about and compare with their own.
-const home = injectMeta(shell, {
-  title: "Biriyani — a visual archive of India's biriyanis",
-  description:
-    "India cooks biriyani in dozens of dialects. This is the archive — region, technique, signature spice, the restaurants still doing it right.",
+// Home.
+const homeHtml = injectHead(shell, {
+  title: "Biriyani — every regional dialect of India's most famous rice dish",
+  description: `${data.length} regional biriyani varieties from ${new Set(data.map((d) => d.region)).size} Indian states. Origin, technique, signature spice, and where to taste each one — Hyderabadi dum, Kolkata, Lucknowi, Ambur, Thalassery, Donne and more.`,
   url: SITE_URL + '/',
   image: SITE_URL + '/og-cover.png',
   type: 'website',
+  ldBlocks: [
+    siteJsonLd(),
+    homeCollectionJsonLd(),
+    homeFaqJsonLd(),
+    breadcrumb([{ name: 'Biriyani', url: SITE_URL + '/' }]),
+  ],
 })
-await writeFile(join(DIST, 'index.html'), home)
+await writeFile(join(DIST, 'index.html'), homeHtml)
 
 await writeHtml(
   'about/index.html',
-  injectMeta(shell, {
+  injectHead(shell, {
     title: 'About — Biriyani',
     description:
-      "Why this exists: most of the world knows one biriyani. India knows hundreds. This is an editorial archive of regional dialects.",
+      "Why this exists: most of the world knows one biriyani. India knows hundreds. An editorial archive of regional dialects — what each one is, where it comes from, and what makes it unmistakable.",
     url: SITE_URL + '/about',
     image: SITE_URL + '/og-cover.png',
+    ldBlocks: [
+      aboutJsonLd(),
+      breadcrumb([
+        { name: 'Biriyani', url: SITE_URL + '/' },
+        { name: 'About', url: SITE_URL + '/about' },
+      ]),
+    ],
   }),
 )
 
 await writeHtml(
   'compare/index.html',
-  injectMeta(shell, {
-    title: 'Compare biriyanis — Biriyani',
+  injectHead(shell, {
+    title: 'Compare biriyanis side by side — rice, protein, spices | Biriyani',
     description:
-      'Pick up to three biriyanis and compare them side by side: rice, protein, technique, and which spices are unique to each dialect.',
+      'Pick up to three biriyanis and compare their rice, protein, technique, and the spice fingerprints that make each one unmistakable.',
     url: SITE_URL + '/compare',
     image: SITE_URL + '/og-cover.png',
+    ldBlocks: [
+      comparePageJsonLd(),
+      breadcrumb([
+        { name: 'Biriyani', url: SITE_URL + '/' },
+        { name: 'Compare', url: SITE_URL + '/compare' },
+      ]),
+    ],
   }),
 )
 
-// 404 — GitHub Pages serves /404.html for any unknown path. Use the SPA shell
-// so React's <NotFound> renders, but with 404-appropriate metadata for crawlers.
 await writeHtml(
   '404.html',
-  injectMeta(shell, {
+  injectHead(shell, {
     title: 'Not found — Biriyani',
-    description:
-      "We haven't catalogued this slug yet. The archive covers 51 dialects of biriyani across 16 Indian states — pick one.",
+    description: `We haven't catalogued this slug yet. The archive covers ${data.length} dialects of biriyani across ${new Set(data.map((d) => d.region)).size} Indian states — pick one.`,
     url: SITE_URL + '/404',
     image: SITE_URL + '/og-cover.png',
+    noIndex: true,
   }),
 )
 
-// 3) sitemap.xml + robots.txt
-const urls = [
-  { loc: SITE_URL + '/', priority: '1.0' },
-  { loc: SITE_URL + '/about', priority: '0.5' },
-  { loc: SITE_URL + '/compare', priority: '0.6' },
-  ...data.map((e) => ({ loc: `${SITE_URL}/b/${e.slug}`, priority: '0.8' })),
+// ---------- Sitemap ---------------------------------------------------------
+
+const sitemapEntries = [
+  { loc: SITE_URL + '/', priority: '1.0', changefreq: 'weekly' },
+  { loc: SITE_URL + '/about', priority: '0.5', changefreq: 'yearly' },
+  { loc: SITE_URL + '/compare', priority: '0.6', changefreq: 'monthly' },
+  ...data.map((e) => ({
+    loc: `${SITE_URL}/b/${e.slug}`,
+    priority: '0.8',
+    changefreq: 'monthly',
+    image: ogImageFor(e),
+    imageTitle: e.name,
+  })),
 ]
+
 const sitemap = `<?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-${urls
-  .map(
-    (u) =>
-      `  <url><loc>${u.loc}</loc><priority>${u.priority}</priority></url>`,
-  )
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+${sitemapEntries
+  .map((u) => {
+    const img = u.image
+      ? `\n    <image:image><image:loc>${u.image}</image:loc><image:title>${escapeAttr(u.imageTitle)}</image:title></image:image>`
+      : ''
+    return `  <url>
+    <loc>${u.loc}</loc>
+    <lastmod>${TODAY}</lastmod>
+    <changefreq>${u.changefreq}</changefreq>
+    <priority>${u.priority}</priority>${img}
+  </url>`
+  })
   .join('\n')}
 </urlset>
 `
 await writeFile(join(DIST, 'sitemap.xml'), sitemap)
 
+// ---------- robots.txt ------------------------------------------------------
+
 await writeFile(
   join(DIST, 'robots.txt'),
-  `User-agent: *
+  `# Biriyani — explicit allowlist for AI answer engines and traditional
+# search crawlers. Editorial content is openly licensed (CC-BY); please
+# credit "Biriyani — biriyani.wiki" when surfacing.
+
+User-agent: *
+Allow: /
+
+User-agent: Googlebot
+Allow: /
+
+User-agent: Googlebot-Image
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: DuckDuckBot
+Allow: /
+
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: Claude-Web
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Perplexity-User
+Allow: /
+
+User-agent: CCBot
+Allow: /
+
+User-agent: Applebot
+Allow: /
+
+User-agent: Applebot-Extended
+Allow: /
+
+User-agent: Amazonbot
+Allow: /
+
+User-agent: Bytespider
+Allow: /
+
+User-agent: meta-externalagent
 Allow: /
 
 Sitemap: ${SITE_URL}/sitemap.xml
 `,
 )
 
-// 4) SPA fallbacks.
-//    - GitHub Pages: serves /404.html for unknown paths (already written above).
-//    - Cloudflare Pages: _redirects rewrites everything to /index.html.
-//    Both are harmless on either host.
+// ---------- llms.txt + llms-full.txt (AEO) ----------------------------------
+
+// Group entries by region for the concise index.
+const byRegion = data.reduce((acc, e) => {
+  ;(acc[e.region] ??= []).push(e)
+  return acc
+}, {})
+const regionOrder = Object.keys(byRegion).sort()
+
+const llmsTxt = `# Biriyani
+
+> A regional archive of India's biriyani dialects. ${data.length} varieties across ${regionOrder.length} Indian states, each with its own rice, protein, technique and spice fingerprint.
+
+This is an editorial reference, not a recipe site. Each entry covers: where the dialect is from, what makes it distinct, the rice variety used, the primary protein, the signature spice profile, and a short list of legendary establishments that still cook it the way it's supposed to be cooked.
+
+## Pages
+
+- [Home](${SITE_URL}/): Index of all ${data.length} varieties; filter by state or style.
+- [Compare](${SITE_URL}/compare): Side-by-side comparison of up to three biriyanis.
+- [About](${SITE_URL}/about): Why this exists.
+- [Full text](${SITE_URL}/llms-full.txt): Every entry in a single file, optimised for ingestion.
+
+## Varieties by region
+
+${regionOrder
+  .map(
+    (region) =>
+      `### ${region}\n\n${byRegion[region]
+        .map(
+          (e) =>
+            `- [${e.name}](${SITE_URL}/b/${e.slug}): ${e.tagline}`,
+        )
+        .join('\n')}`,
+  )
+  .join('\n\n')}
+
+## Source data
+
+The full dataset (JSON, MIT-licenced for code, CC-BY for content) is at https://github.com/biriyani/biriyani.github.io/blob/main/src/data/biriyani.json.
+`
+
+await writeFile(join(DIST, 'llms.txt'), llmsTxt)
+
+const llmsFullTxt = `# Biriyani — full archive
+
+A regional archive of India's biriyani dialects. ${data.length} varieties across ${regionOrder.length} Indian states.
+Source: ${SITE_URL}
+Licence: CC-BY 4.0 (content) — credit "Biriyani — biriyani.wiki".
+
+---
+
+${data
+  .map(
+    (e) => `## ${e.name}
+
+URL: ${SITE_URL}/b/${e.slug}
+Region: ${e.region}
+Style: ${e.style}
+Rice: ${e.rice}
+Protein: ${e.protein}
+Key spices: ${e.spices.join(', ')}
+Tagline: ${e.tagline}
+${e.pull_quote ? `Pull quote: ${e.pull_quote}\n` : ''}
+Origin
+${e.origin}
+
+What makes it distinct
+${e.distinct}
+
+Legendary spots
+${e.spots.map((s) => `- ${s.name} (${s.city})`).join('\n')}
+
+${e.lineage.length ? `Related lineage: ${e.lineage.map((slug) => data.find((d) => d.slug === slug)?.name).filter(Boolean).join(', ')}\n` : ''}---
+`,
+  )
+  .join('\n')}
+
+End of archive. ${data.length} entries.
+`
+
+await writeFile(join(DIST, 'llms-full.txt'), llmsFullTxt)
+
+// ---------- SPA fallbacks ---------------------------------------------------
+
 await writeFile(
   join(DIST, '_redirects'),
   `/*    /index.html   200
@@ -176,15 +625,15 @@ await writeFile(
 // .nojekyll prevents GitHub Pages' Jekyll filter from skipping files starting with _.
 await writeFile(join(DIST, '.nojekyll'), '')
 
-// 5) Copy the source TopoJSON if it didn't make it via public/ (Vite handles this,
-//    but include as belt-and-suspenders).
+// Belt-and-suspenders TopoJSON copy.
 try {
   await copyFile(join(ROOT, 'public', 'india.topo.json'), join(DIST, 'india.topo.json'))
 } catch {
   /* already in dist */
 }
 
-// 6) Render the site OG cover SVG → PNG (Twitter / iMessage need raster).
+// ---------- OG cover (raster) -----------------------------------------------
+
 try {
   const svg = await readFile(join(ROOT, 'public', 'og-cover.svg'))
   await sharp(svg, { density: 220 })
@@ -196,9 +645,8 @@ try {
   console.warn('  og-cover render failed:', err?.message)
 }
 
-// 7) Per-entry OG cards for entries that render as motif fallbacks (no real photo
-//    available yet). We render an SVG with the entry's accent + name + motifs to PNG
-//    so share-previews look distinctive even before a real photo is curated.
+// ---------- Per-entry OG covers (raster) ------------------------------------
+
 const motifGlyph = {
   rice: 'M 60 15 Q 50 25 60 60 Q 70 25 60 15',
   saffron: 'M 60 15 C 45 35 45 60 60 75 C 75 60 75 35 60 15 Z',
@@ -231,7 +679,6 @@ function entryOgSvg(e) {
     })
     .join('')
   const titleClean = e.name.replace(/\s*Biriyani\s*$/i, '')
-  // Wrap title across two lines if it's long.
   const lines = titleClean.length > 18
     ? (() => {
         const words = titleClean.split(' ')
@@ -256,7 +703,7 @@ function entryOgSvg(e) {
   ${titleSvg}
   ${groups}
   <line x1="80" y1="540" x2="1120" y2="540" stroke="#fffaf0" stroke-width="1" opacity="0.4"/>
-  <text x="80" y="580" font-family="Manrope, system-ui, sans-serif" font-size="22" font-weight="500" fill="#fffaf0" opacity="0.85">biriyani</text>
+  <text x="80" y="580" font-family="Manrope, system-ui, sans-serif" font-size="22" font-weight="500" fill="#fffaf0" opacity="0.85">biriyani.wiki</text>
   <text x="1120" y="580" font-family="Manrope, system-ui, sans-serif" font-size="22" font-weight="500" fill="#fffaf0" opacity="0.85" text-anchor="end">${escapeAttr(e.name.replace(/\s*Biriyani\s*$/i, '').toLowerCase())}</text>
 </svg>`
 }
@@ -278,4 +725,6 @@ for (const e of data) {
 }
 console.log(`  rendered ${ogCount} per-entry OG motif covers`)
 
-console.log(`postbuild: ${count} detail pages, sitemap with ${urls.length} URLs, _redirects, robots.txt`)
+console.log(
+  `postbuild: ${count} detail pages, sitemap (${sitemapEntries.length} URLs), llms.txt + llms-full.txt, robots, _redirects`,
+)

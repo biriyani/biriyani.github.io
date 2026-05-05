@@ -55,9 +55,9 @@ export function Index() {
   return (
     <main className="container-page">
       <PageHead
-        title="Biriyani — a visual archive of India's biriyanis"
-        description="India cooks biriyani in dozens of dialects. This is the archive — region, technique, signature spice, the restaurants still doing it right."
-        url="https://biriyani.github.io/"
+        title="Biriyani — every regional dialect of India's most famous rice dish"
+        description="51 regional biriyani varieties from 16 Indian states. Origin, technique, signature spice, and where to taste each one — Hyderabadi dum, Kolkata, Lucknowi, Ambur, Thalassery, Donne and more."
+        url="https://biriyani.wiki/"
       />
       <section className="reveal pt-10 pb-12 md:pt-16 md:pb-16">
         <span className="kicker">India, grain by grain</span>

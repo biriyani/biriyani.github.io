@@ -26,7 +26,7 @@ jobs:
       - run: npm ci
       - run: npm run build
         env:
-          SITE_URL: https://biriyani.github.io
+          SITE_URL: https://biriyani.wiki
       - uses: actions/configure-pages@v5
         with:
           enablement: true

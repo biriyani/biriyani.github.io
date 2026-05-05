@@ -94,19 +94,36 @@ auto-rebuild.
 
 ## Deploying
 
-**GitHub Pages** (current). Repo Settings → Pages → "Build and deployment"
-source = `GitHub Actions`. The workflow at
-`.github/workflows/deploy.yml` builds on push to `main` and publishes `dist/`
-to `https://biriyani.github.io/`. No further setup needed.
+**GitHub Pages with custom domain `biriyani.wiki`** (current). The workflow at
+`.github/workflows/deploy.yml` builds on push to `main` and publishes `dist/`.
+`public/CNAME` pins the custom domain. Repo Settings → Pages → "Build and
+deployment" source = `GitHub Actions`.
 
 Routes are served from directory-style paths: `/`, `/b/<slug>`, `/compare`,
-`/about`. Each has a real `index.html` with per-page OG/Twitter tags so
-direct links preview correctly when shared. Unknown paths fall through to
-`/404.html`, which is the SPA shell — React's `<NotFound>` renders.
+`/about`. Each has a real `index.html` with per-page canonical, OG/Twitter
+tags, and JSON-LD so direct links preview correctly when shared and rank
+cleanly in search. Unknown paths fall through to `/404.html`, which is the
+SPA shell — React's `<NotFound>` renders.
 
 **Cloudflare Pages** (also supported, drop-in). Connect the repo in the
 Cloudflare dashboard, build command `npm run build`, output dir `dist`. The
 `_redirects` file written by `postbuild.mjs` handles the SPA fallback there.
+
+## SEO / AEO
+
+The postbuild step bakes in:
+
+- canonical link + per-page meta description on every route
+- OpenGraph + Twitter card metadata; per-entry OG cover PNGs auto-rendered
+  via `sharp`
+- JSON-LD structured data: `WebSite`, `CollectionPage`, `FAQPage` on `/`;
+  `Article` + `Recipe` + `BreadcrumbList` + `Restaurant`(per spot) on
+  `/b/<slug>`; `AboutPage` on `/about`; `WebPage` on `/compare`
+- `sitemap.xml` with `lastmod`, `changefreq`, and image entries
+- `robots.txt` with explicit allowlist for AI answer-engines (GPTBot,
+  ClaudeBot, PerplexityBot, Google-Extended, Applebot-Extended, etc.)
+- `/llms.txt` (concise, llmstxt.org spec) and `/llms-full.txt` (full
+  archive content, single-fetch ingestion for LLMs)
 
 ## Credits
 

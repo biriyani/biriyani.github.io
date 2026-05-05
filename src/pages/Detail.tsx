@@ -16,16 +16,17 @@ export function Detail() {
 
   const showMotif = entry.image_needs_replacement
   const ogImage = showMotif
-    ? `https://biriyani.github.io/og/${entry.slug}.png`
+    ? `https://biriyani.wiki/og/${entry.slug}.png`
     : entry.image
-  const description = `${entry.tagline} — ${entry.distinct.replace(/\s+/g, ' ').slice(0, 160)}`
+  const summary = entry.distinct.replace(/\s+/g, ' ').trim()
+  const description = `${entry.tagline} ${summary}`.slice(0, 300)
 
   return (
     <article className="container-page">
       <PageHead
-        title={`${entry.name} — Biriyani`}
+        title={`${entry.name} — ${entry.region}'s ${entry.style.toLowerCase()} biriyani | Biriyani`}
         description={description}
-        url={`https://biriyani.github.io/b/${entry.slug}`}
+        url={`https://biriyani.wiki/b/${entry.slug}`}
         image={ogImage}
         type="article"
       />

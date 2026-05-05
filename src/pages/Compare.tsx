@@ -32,9 +32,9 @@ export function Compare() {
   return (
     <main className="container-page">
       <PageHead
-        title="Compare biriyanis — Biriyani"
-        description="Pick up to three biriyanis and compare them side by side: rice, protein, technique, and which spices are unique to each dialect."
-        url="https://biriyani.github.io/compare"
+        title="Compare biriyanis side by side — rice, protein, spices | Biriyani"
+        description="Pick up to three biriyanis and compare their rice, protein, technique, and the spice fingerprints that make each one unmistakable."
+        url="https://biriyani.wiki/compare"
       />
       <section className="reveal pt-10 pb-8">
         <span className="kicker">The comparison view</span>

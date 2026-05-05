@@ -14,7 +14,8 @@ export function NotFound() {
       <PageHead
         title="Not found — Biriyani"
         description="We haven't catalogued this slug yet. The archive covers 51 dialects of biriyani across 16 Indian states — pick one."
-        url="https://biriyani.github.io/404"
+        url="https://biriyani.wiki/404"
+        noIndex
       />
       <section className="reveal mx-auto max-w-2xl pt-16 pb-12 text-center">
         <span className="kicker">404 — uncharted</span>
