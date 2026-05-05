@@ -4,6 +4,8 @@ import { bySlug } from '@/data/types'
 import { MotifIcon } from '@/lib/motifs'
 import { Tag } from '@/components/Card'
 import { SpotsList } from '@/components/SpotsList'
+import { RecipesList } from '@/components/RecipesList'
+import { VideosList } from '@/components/VideosList'
 import { LineageChips } from '@/components/LineageChips'
 import { RelatedCards } from '@/components/RelatedCards'
 import { PageHead } from '@/components/PageHead'
@@ -165,6 +167,37 @@ export function Detail() {
         <h2 className="mt-1 mb-5 font-serif text-3xl">Where to taste it</h2>
         <SpotsList spots={entry.spots} accent={entry.accent} />
       </section>
+
+      {!!entry.recipes?.length && (
+        <section className="mt-14">
+          <span className="kicker">Cook it yourself</span>
+          <h2 className="mt-1 mb-5 font-serif text-3xl">Recipes worth following</h2>
+          <RecipesList recipes={entry.recipes} accent={entry.accent} />
+        </section>
+      )}
+
+      {!!entry.videos?.length && (
+        <section className="mt-14">
+          <span className="kicker">Watch</span>
+          <h2 className="mt-1 mb-5 font-serif text-3xl">Videos on this style</h2>
+          <VideosList videos={entry.videos} accent={entry.accent} />
+        </section>
+      )}
+
+      {!!entry.further_reading?.length && (
+        <section className="mt-14">
+          <span className="kicker">Read further</span>
+          <h2 className="mt-1 mb-5 font-serif text-3xl">More on this style</h2>
+          <RecipesList
+            recipes={entry.further_reading.map((r) => ({
+              title: r.title,
+              source: r.source,
+              url: r.url,
+            }))}
+            accent={entry.accent}
+          />
+        </section>
+      )}
 
       <LineageChips slugs={entry.lineage} />
 

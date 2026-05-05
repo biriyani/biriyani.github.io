@@ -92,6 +92,14 @@ Then merge into `src/data/biriyani.json` and flip `image_needs_replacement` to
 `false` for that slug. Re-run `npm run build` and the per-entry OG card will
 auto-rebuild.
 
+## Adding media (recipes, videos, restaurant URLs)
+
+Each entry can carry optional `recipes`, `videos`, `further_reading`, and
+URLs on `spots`. See [`MEDIA.md`](./MEDIA.md) for the schema + a copy-pastable
+example. Sections only render when the array has at least one item, so it's
+safe to leave them empty until you have something to add. YouTube thumbnails
+auto-extract from any standard URL shape — just paste the link.
+
 ## Deploying
 
 **GitHub Pages with custom domain `biriyani.wiki`** (current). The workflow at

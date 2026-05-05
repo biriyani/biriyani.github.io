@@ -230,6 +230,7 @@ function spotsJsonLd(e) {
     '@context': 'https://schema.org',
     '@type': 'Restaurant',
     name: s.name,
+    ...(s.url ? { url: s.url } : {}),
     servesCuisine: `Indian (${e.region})`,
     address: {
       '@type': 'PostalAddress',
@@ -237,6 +238,56 @@ function spotsJsonLd(e) {
       addressCountry: 'IN',
     },
     knownFor: e.name,
+  }))
+}
+
+function youtubeIdFromUrl(url) {
+  if (!url) return null
+  const m = String(url).match(
+    /(?:youtube\.com\/(?:watch\?v=|embed\/|v\/|shorts\/)|youtu\.be\/)([^&?#/]+)/,
+  )
+  return m ? m[1] : null
+}
+
+function videosJsonLd(e) {
+  // Emit one VideoObject per linked video so search and AI engines can pick
+  // them up. Skip uploadDate (we don't have it from user data) — the rest
+  // is enough for indexing and Perplexity-style citation surfacing.
+  if (!e.videos?.length) return []
+  const url = `${SITE_URL}/b/${e.slug}`
+  return e.videos.map((v) => {
+    const yid = youtubeIdFromUrl(v.url)
+    const out = {
+      '@context': 'https://schema.org',
+      '@type': 'VideoObject',
+      name: v.title,
+      description: `${v.title} — ${e.name}`,
+      contentUrl: v.url,
+      url: v.url,
+      mainEntityOfPage: url,
+      ...(v.channel ? { author: { '@type': 'Person', name: v.channel } } : {}),
+    }
+    if (yid) {
+      out.thumbnailUrl = `https://i.ytimg.com/vi/${yid}/hqdefault.jpg`
+      out.embedUrl = `https://www.youtube.com/embed/${yid}`
+    }
+    return out
+  })
+}
+
+function recipesJsonLd(e) {
+  // Each external recipe becomes a CreativeWork pointer — keeps the
+  // Article schema's "mentions" field clean and gives AI engines a list
+  // they can cite when answering "how do I cook this?" queries.
+  if (!e.recipes?.length) return []
+  return e.recipes.map((r) => ({
+    '@context': 'https://schema.org',
+    '@type': 'Recipe',
+    name: r.title,
+    url: r.url,
+    recipeCuisine: `Indian (${e.region})`,
+    about: { '@type': 'Thing', name: e.name },
+    ...(r.source ? { author: { '@type': 'Organization', name: r.source } } : {}),
   }))
 }
 
@@ -357,6 +408,8 @@ for (const e of data) {
         { name: e.name, url },
       ]),
       ...spotsJsonLd(e),
+      ...recipesJsonLd(e),
+      ...videosJsonLd(e),
     ],
   })
   await writeHtml(`b/${e.slug}/index.html`, html)
@@ -603,8 +656,8 @@ What makes it distinct
 ${e.distinct}
 
 Legendary spots
-${e.spots.map((s) => `- ${s.name} (${s.city})`).join('\n')}
-
+${e.spots.map((s) => `- ${s.name} (${s.city})${s.url ? ` — ${s.url}` : ''}`).join('\n')}
+${e.recipes?.length ? `\nRecipes\n${e.recipes.map((r) => `- ${r.title}${r.source ? ` (${r.source})` : ''} — ${r.url}`).join('\n')}\n` : ''}${e.videos?.length ? `\nVideos\n${e.videos.map((v) => `- ${v.title}${v.channel ? ` (${v.channel})` : ''} — ${v.url}`).join('\n')}\n` : ''}${e.further_reading?.length ? `\nFurther reading\n${e.further_reading.map((r) => `- ${r.title}${r.source ? ` (${r.source})` : ''} — ${r.url}`).join('\n')}\n` : ''}
 ${e.lineage.length ? `Related lineage: ${e.lineage.map((slug) => data.find((d) => d.slug === slug)?.name).filter(Boolean).join(', ')}\n` : ''}---
 `,
   )

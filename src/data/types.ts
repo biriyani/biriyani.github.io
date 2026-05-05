@@ -1,4 +1,7 @@
-export type Spot = { name: string; city: string }
+export type Spot = { name: string; city: string; url?: string }
+export type Recipe = { title: string; source?: string; url: string }
+export type Video = { title: string; channel?: string; url: string }
+export type Reading = { title: string; source?: string; url: string }
 
 export type Biriyani = {
   slug: string
@@ -12,6 +15,9 @@ export type Biriyani = {
   protein: string
   spices: string[]
   spots: Spot[]
+  recipes?: Recipe[]
+  videos?: Video[]
+  further_reading?: Reading[]
   image: string
   image_credit: string
   image_credit_url: string
