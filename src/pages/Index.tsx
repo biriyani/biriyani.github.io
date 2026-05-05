@@ -65,16 +65,21 @@ export function Index() {
         description="51 regional biriyani varieties from 16 Indian states. Origin, technique, signature spice, and where to taste each one — Hyderabadi dum, Kolkata, Lucknowi, Ambur, Thalassery, Donne and more."
         url="https://biriyani.wiki/"
       />
-      <section className="reveal pt-10 pb-12 md:pt-16 md:pb-16">
+      <section className="reveal pt-6 pb-4 md:pt-16 md:pb-16">
         <span className="kicker">India, grain by grain</span>
-        <h1 className="mt-3 max-w-4xl font-serif">
+        <h1 className="mt-3 max-w-4xl font-serif text-[2rem] leading-[1.05] sm:text-[2.6rem] md:text-[clamp(2.4rem,1rem+4vw,4.4rem)]">
           The visual archive of India's biriyanis,
           <span className="text-saffron"> region by region.</span>
         </h1>
-        <p className="mt-5 max-w-2xl text-lg text-bark-soft">
+        <p className="mt-4 max-w-2xl text-base text-bark-soft md:mt-5 md:text-lg">
           Most people outside India know one biriyani. India cooks it in dozens —
           smoky dum, citrus-lit pulao, leaf-wrapped parcels, bamboo-roasted, fish-laced.
-          Hover a state on the map, or type to find a variety.
+          <span className="hidden sm:inline">
+            {' '}Hover a state on the map, or type to find a variety.
+          </span>
+          <span className="sm:hidden">
+            {' '}Tap a state on the map, or type to find a variety.
+          </span>
         </p>
       </section>
 

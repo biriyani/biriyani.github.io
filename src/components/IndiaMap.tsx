@@ -301,11 +301,28 @@ export function IndiaMap({ selected, onSelect }: Props) {
           style={{ opacity: 0 }}
         ></div>
       </div>
-      <div className="mt-3 flex flex-wrap items-center justify-between gap-3 px-1 text-xs text-bark-soft">
+      <div className="mt-3 flex flex-wrap items-center justify-center gap-3 px-1 text-center text-xs text-bark-soft sm:justify-between sm:text-left">
         <span>
-          {selected
-            ? `Showing ${selected} · click another state to switch, or clear to see all of India`
-            : 'Hover a state to see its varieties · click to zoom in and filter the grid'}
+          {selected ? (
+            <>
+              Showing {selected}
+              <span className="hidden sm:inline">
+                {' '}· click another state to switch, or clear to see all of India
+              </span>
+              <span className="sm:hidden">
+                {' '}· tap another state to switch
+              </span>
+            </>
+          ) : (
+            <>
+              <span className="hidden sm:inline">
+                Hover a state to see its varieties · click to zoom in and filter the grid
+              </span>
+              <span className="sm:hidden">
+                Tap a state to zoom in and filter the grid
+              </span>
+            </>
+          )}
         </span>
         {selected && (
           <button
