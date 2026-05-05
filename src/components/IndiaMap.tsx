@@ -203,7 +203,10 @@ export function IndiaMap({ selected, onSelect }: Props) {
         tt.style.opacity = '1'
         tt.style.left = `${e.point.x}px`
         tt.style.top = `${e.point.y - 12}px`
-        tt.innerHTML = `<strong>${props.region}</strong><span>${props.count} ${props.count === 1 ? 'variety' : 'varieties'}</span>`
+        const label = props.count === 1 ? 'variety' : 'varieties'
+        tt.innerHTML =
+          `<div class="text-[0.7rem] font-semibold uppercase tracking-[0.16em] text-cream">${props.region}</div>` +
+          `<div class="mt-0.5 text-cream/70">${props.count} ${label}</div>`
       }
     })
     map.on('mouseleave', 'states-fill', () => {
@@ -292,12 +295,9 @@ export function IndiaMap({ selected, onSelect }: Props) {
         />
         <div
           ref={tooltipRef}
-          className="pointer-events-none absolute z-10 -translate-x-1/2 -translate-y-full rounded-md bg-bark/95 px-2.5 py-1.5 text-xs text-cream shadow-card-hover transition-opacity duration-150"
+          className="pointer-events-none absolute z-10 -translate-x-1/2 -translate-y-[calc(100%+8px)] whitespace-nowrap rounded-lg bg-bark/95 px-3 py-2 text-xs text-cream shadow-card-hover transition-opacity duration-150"
           style={{ opacity: 0 }}
-        >
-          <strong>state</strong>
-          <span></span>
-        </div>
+        ></div>
       </div>
       <div className="mt-3 flex flex-wrap items-center justify-between gap-3 px-1 text-xs text-bark-soft">
         <span>
