@@ -24,8 +24,8 @@ export function About() {
             happen to share a name and a love of long-grained rice.
           </p>
           <p>
-            This atlas exists to give those parallels a place to live — an
-            editorial archive rather than a recipe site. Each entry is a small
+            This archive exists to give those parallels a place to live — an
+            editorial reference rather than a recipe site. Each entry is a small
             essay: what the dish is, where it came from, what makes it unmistakable,
             and which restaurants are still cooking it the way it's supposed to
             be cooked. The map is the index. The motifs are mnemonic. The
@@ -44,6 +44,21 @@ export function About() {
             the easiest way in.
           </p>
         </div>
+
+        <hr className="my-12 border-line" />
+
+        <p className="text-bark-soft">
+          A project by{' '}
+          <a
+            href="https://samooh.com/?ref=biriyani.wiki"
+            target="_blank"
+            rel="noopener"
+            className="font-medium text-bark underline underline-offset-4 decoration-saffron decoration-2"
+          >
+            Samooh
+          </a>{' '}
+          — a community for Indian builders.
+        </p>
       </section>
     </main>
   )

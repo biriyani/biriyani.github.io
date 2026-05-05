@@ -52,13 +52,32 @@ export function Footer() {
     <footer className="container-page mt-24 border-t border-line py-8 text-xs text-bark-soft">
       <div className="flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
         <p>
-          Biriyani — a visual archive of India's biriyanis.{' '}
+          A project by{' '}
+          <a
+            href="https://samooh.com/?ref=biriyani.wiki"
+            target="_blank"
+            rel="noopener"
+            className="font-medium text-bark underline-offset-4 hover:underline"
+          >
+            Samooh
+          </a>{' '}
+          — a community for Indian builders.{' '}
           <Link to="/about" className="underline-offset-4 hover:underline">
             About the project
           </Link>
+          .
         </p>
         <p className="opacity-70">
-          State boundaries: <a href="https://github.com/datameet/maps" className="underline-offset-4 hover:underline" target="_blank" rel="noopener">DataMeet</a> · CC-BY 4.0
+          State boundaries:{' '}
+          <a
+            href="https://github.com/datameet/maps"
+            className="underline-offset-4 hover:underline"
+            target="_blank"
+            rel="noopener"
+          >
+            DataMeet
+          </a>{' '}
+          · CC-BY 4.0
         </p>
       </div>
     </footer>
