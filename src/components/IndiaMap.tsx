@@ -169,22 +169,23 @@ export function IndiaMap({ selected, onSelect }: Props) {
       },
     })
 
+    // Pad less on small canvases so India fills more of the visible area.
+    const fitPadding = () => (map.getCanvas().clientWidth < 520 ? 16 : 36)
+
     // Refit the whole subcontinent on resize so the silhouette never gets
     // cropped at any breakpoint. (Skipped while a single state is selected —
     // we don't want to undo the zoom-in on a window resize.)
     const refit = () => {
       if (!onSelectRef.current) return
-      // Read latest selected via ref-style (bound below via closure capture).
-      // Implemented as: just check whether any feature has dimmed=true.
       const anyDimmed = (geojsonRef.current?.features ?? []).some((f) => {
         const fs = map.getFeatureState({ source: 'states', id: f.id as number })
         return fs?.dimmed === true || fs?.selected === true
       })
       if (!anyDimmed) {
-        map.fitBounds(INDIA_BOUNDS, { padding: 36, animate: false, linear: true })
+        map.fitBounds(INDIA_BOUNDS, { padding: fitPadding(), animate: false, linear: true })
       }
     }
-    map.fitBounds(INDIA_BOUNDS, { padding: 36, animate: false, linear: true })
+    map.fitBounds(INDIA_BOUNDS, { padding: fitPadding(), animate: false, linear: true })
     map.on('resize', refit)
 
     map.on('mousemove', 'states-fill', (e) => {
@@ -255,14 +256,15 @@ export function IndiaMap({ selected, onSelect }: Props) {
         if (isSel) selectedFeatures.push(f)
       }
 
+      const small = map.getCanvas().clientWidth < 520
       if (selectedFeatures.length) {
         const bbox = bboxOfFeatures(selectedFeatures)
         // maxZoom keeps tiny states (Delhi, Goa) from over-zooming into a
         // pixelated polygon; padding leaves comfortable margin around the
         // silhouette.
-        map.fitBounds(bbox, { padding: 60, maxZoom: 6, duration: 700, linear: false })
+        map.fitBounds(bbox, { padding: small ? 28 : 60, maxZoom: 6, duration: 700, linear: false })
       } else {
-        map.fitBounds(INDIA_BOUNDS, { padding: 36, duration: 600, linear: false })
+        map.fitBounds(INDIA_BOUNDS, { padding: small ? 16 : 36, duration: 600, linear: false })
       }
     }
     if (map.isStyleLoaded() && map.getSource('states')) {
@@ -274,7 +276,7 @@ export function IndiaMap({ selected, onSelect }: Props) {
 
   return (
     <div className="india-map relative w-full">
-      <div className="relative aspect-[5/5] w-full sm:aspect-[6/5] md:aspect-[7/5]">
+      <div className="relative aspect-[4/5] w-full sm:aspect-[6/5] md:aspect-[7/5]">
         <MapcnMap
           ref={(m) => {
             mapRef.current = m

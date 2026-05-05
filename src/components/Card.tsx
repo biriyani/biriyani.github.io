@@ -31,7 +31,7 @@ export function Card({ entry, eager = false }: { entry: Biriyani; eager?: boolea
         className="absolute left-0 right-0 top-0 h-[3px]"
         style={{ background: entry.accent }}
       />
-      <div className="flex flex-1 flex-col gap-2 p-5">
+      <div className="flex flex-1 flex-col gap-2 p-5 text-center sm:text-left">
         <div className="kicker" style={{ color: entry.accent }}>
           {entry.region}
         </div>
@@ -39,7 +39,7 @@ export function Card({ entry, eager = false }: { entry: Biriyani; eager?: boolea
           {entry.name.replace(/\s*Biriyani\s*$/i, '')}
         </h3>
         <p className="text-sm text-bark-soft leading-snug">{entry.tagline}</p>
-        <div className="mt-auto flex flex-wrap gap-1.5 pt-3">
+        <div className="mt-auto flex flex-wrap justify-center gap-1.5 pt-3 sm:justify-start">
           <Tag>{entry.style}</Tag>
         </div>
       </div>

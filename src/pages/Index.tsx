@@ -91,7 +91,7 @@ export function Index() {
         aria-labelledby="grid-heading"
       >
         <div className="mb-6 flex flex-col gap-4 md:flex-row md:items-end md:justify-between">
-          <div>
+          <div className="text-center md:text-left">
             <span className="kicker">The atlas</span>
             <h2 id="grid-heading" className="mt-1 font-serif text-3xl md:text-4xl">
               {filtered.length} {filtered.length === 1 ? 'variety' : 'varieties'}
