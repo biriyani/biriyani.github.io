@@ -45,7 +45,7 @@ export function Detail() {
       >
         {showMotif ? (
           <div
-            className="relative aspect-[16/8] w-full p-8 md:p-12 flex flex-col justify-between"
+            className="relative aspect-[4/5] w-full p-7 sm:aspect-[16/8] sm:p-8 md:p-12 flex flex-col justify-between"
             style={{ background: entry.accent, color: '#fffaf0' }}
           >
             <div className="flex items-end gap-6">
@@ -67,7 +67,7 @@ export function Detail() {
           </div>
         ) : (
           <>
-            <div className="relative aspect-[16/8] w-full overflow-hidden bg-cream-soft">
+            <div className="relative aspect-[4/5] w-full overflow-hidden bg-cream-soft sm:aspect-[16/8]">
               <img
                 src={entry.image}
                 alt={entry.name}
@@ -78,16 +78,16 @@ export function Detail() {
                 aria-hidden
                 className="absolute inset-0 pointer-events-none"
                 style={{
-                  background: `linear-gradient(180deg, transparent 35%, rgba(0,0,0,0.55) 100%)`,
+                  background: `linear-gradient(180deg, transparent 55%, rgba(0,0,0,0.6) 100%)`,
                 }}
               />
             </div>
-            <div className="absolute inset-x-0 bottom-0 px-6 pb-7 md:px-10 md:pb-10">
+            <div className="absolute inset-x-0 bottom-0 px-5 pb-5 sm:px-6 sm:pb-7 md:px-10 md:pb-10">
               <div className="kicker" style={{ color: '#fffaf0' }}>
                 {entry.region}
               </div>
               <h1
-                className="mt-2 max-w-3xl font-serif leading-[1.02]"
+                className="mt-2 max-w-3xl font-serif text-[1.9rem] leading-[1.02] sm:text-[2.4rem] md:text-[clamp(2.4rem,1rem+4vw,4.4rem)]"
                 style={{ color: '#fffaf0', textShadow: '0 2px 18px rgba(0,0,0,0.35)' }}
               >
                 {entry.name}
