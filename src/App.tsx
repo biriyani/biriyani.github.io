@@ -1,5 +1,5 @@
 import { useEffect } from 'react'
-import { Route, Routes, useLocation } from 'react-router-dom'
+import { Route, Routes, useLocation, useNavigationType } from 'react-router-dom'
 import { Footer, Nav } from '@/components/Nav'
 import { Index } from '@/pages/Index'
 import { Detail } from '@/pages/Detail'
@@ -28,9 +28,26 @@ function GAPageView() {
   return null
 }
 
+// Reset the window scroll on every forward navigation (PUSH/REPLACE) so
+// detail pages always open from the top — including links from the
+// "Also from {region}" trio at the bottom of another detail page. POP
+// (browser back/forward) keeps its native scroll-restoration. Hash links
+// also pass through so anchor jumps still work.
+function ScrollToTop() {
+  const { pathname, hash } = useLocation()
+  const navType = useNavigationType()
+  useEffect(() => {
+    if (navType === 'POP') return
+    if (hash) return
+    window.scrollTo({ top: 0, left: 0, behavior: 'instant' })
+  }, [pathname, hash, navType])
+  return null
+}
+
 export default function App() {
   return (
     <>
+      <ScrollToTop />
       <GAPageView />
       <Nav />
       <Routes>
