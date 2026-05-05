@@ -74,12 +74,6 @@ export function Index() {
         <p className="mt-4 max-w-2xl text-base text-bark-soft md:mt-5 md:text-lg">
           Most people outside India know one biriyani. India cooks it in dozens —
           smoky dum, citrus-lit pulao, leaf-wrapped parcels, bamboo-roasted, fish-laced.
-          <span className="hidden sm:inline">
-            {' '}Hover a state on the map, or type to find a variety.
-          </span>
-          <span className="sm:hidden">
-            {' '}Tap a state on the map, or type to find a variety.
-          </span>
         </p>
       </section>
 
