@@ -19,16 +19,33 @@
     "spots": [
       {
         "name": "Shadab",
-        "city": "Hyderabad"
+        "city": "Hyderabad",
+        "url": "https://www.shadab.ai/"
       },
       {
         "name": "Bawarchi",
-        "city": "Hyderabad"
+        "city": "Hyderabad",
+        "url": "https://www.zomato.com/hyderabad/bawarchi-rtc-x-roads"
+      },
+      {
+        "name": "Cafe Bahar",
+        "city": "Hyderabad",
+        "url": "https://baharcafe.in/"
+      },
+      {
+        "name": "Paradise",
+        "city": "Hyderabad",
+        "url": "https://www.paradisefoodcourt.in/"
+      },
+      {
+        "name": "Shah Ghouse",
+        "city": "Hyderabad",
+        "url": "https://shahghouseofficial.com/"
       }
     ],
-    "image": "https://upload.wikimedia.org/wikipedia/commons/c/c8/Hyderabadi_egg_biryani.jpg",
-    "image_credit": "Photo via Wikimedia Commons (Hyderabadi_egg_biryani.jpg)",
-    "image_credit_url": "https://commons.wikimedia.org/wiki/File:Hyderabadi_egg_biryani.jpg",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/7/7c/Hyderabadi_Chicken_Biryani.jpg",
+    "image_credit": "Photo via Wikimedia Commons (Hyderabadi_Chicken_Biryani.jpg)",
+    "image_credit_url": "https://commons.wikimedia.org/wiki/File:Hyderabadi_Chicken_Biryani.jpg",
     "accent": "#c25a17",
     "motifs": [
       "saffron",
@@ -42,7 +59,18 @@
       "hyderabadi-keema-biriyani"
     ],
     "pull_quote": "Aroma builds inward instead of escaping.",
-    "image_needs_replacement": true
+    "image_needs_replacement": false,
+    "videos": [
+      {
+        "title": "Making of the Original Bawarchi Biryani in Hyderabad",
+        "url": "https://www.youtube.com/watch?v=xqoRrb39FvQ"
+      },
+      {
+        "title": "The Original Hyderabadi Biryani at Bawarchi (Alpha Hotel)",
+        "channel": "Kunal Vijayakar",
+        "url": "https://www.youtube.com/watch?v=5jONsktLVQ8"
+      }
+    ]
   },
   {
     "slug": "hyderabadi-kacchi",
@@ -108,16 +136,23 @@
     "spots": [
       {
         "name": "Paradise",
-        "city": "Hyderabad"
+        "city": "Hyderabad",
+        "url": "https://www.zomato.com/hyderabad/paradise-secunderabad"
       },
       {
         "name": "Pista House",
-        "city": "Hyderabad"
+        "city": "Hyderabad",
+        "url": "https://www.zomato.com/hyderabad/pista-house-charminar"
+      },
+      {
+        "name": "Bawarchi",
+        "city": "Hyderabad",
+        "url": "https://www.zomato.com/hyderabad/hotel-bawarchi-rtc-x-roads"
       }
     ],
-    "image": "https://upload.wikimedia.org/wikipedia/commons/c/c8/Hyderabadi_egg_biryani.jpg",
-    "image_credit": "Photo via Wikimedia Commons (Hyderabadi_egg_biryani.jpg; representative image)",
-    "image_credit_url": "https://commons.wikimedia.org/wiki/File:Hyderabadi_egg_biryani.jpg",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/e/e3/Hyderabadi_Biryani_with_Raita,_Mirchi_Ka_Salan_and_Salad.JPG",
+    "image_credit": "Photo by Sumit Surai via Wikimedia Commons (CC BY-SA 4.0, Wiki Loves Food 2015)",
+    "image_credit_url": "https://commons.wikimedia.org/wiki/File:Hyderabadi_Biryani_with_Raita,_Mirchi_Ka_Salan_and_Salad.JPG",
     "accent": "#c25a17",
     "motifs": [
       "saffron",
@@ -129,7 +164,26 @@
       "hyderabadi-kacchi"
     ],
     "pull_quote": "Cooked rice meets cooked meat — a measured, dignified sealing.",
-    "image_needs_replacement": true
+    "image_needs_replacement": false,
+    "videos": [
+      {
+        "title": "Hyderabadi Biryani: The Biryani Journey",
+        "channel": "Sanjeev Kapoor Khazana",
+        "url": "https://www.youtube.com/watch?v=HQt66gXwJM8"
+      },
+      {
+        "title": "Hyderabadi Dum Chicken Biryani",
+        "channel": "Sanjeev Kapoor Khazana",
+        "url": "https://www.youtube.com/watch?v=0kxuFVG-Gh4"
+      }
+    ],
+    "recipes": [
+      {
+        "title": "Hyderabadi Chicken Dum Biryani (Pakki style)",
+        "source": "Sailu's Food",
+        "url": "https://www.sailusfood.com/hyderabadi-chicken-dum-biryani"
+      }
+    ]
   },
   {
     "slug": "kalyani-biriyani",
@@ -193,16 +247,23 @@
     "spots": [
       {
         "name": "Shah Ghouse",
-        "city": "Hyderabad"
+        "city": "Hyderabad",
+        "url": "https://www.zomato.com/hyderabad/shah-ghouse-cafe-restaurant-tolichowki"
       },
       {
-        "name": "Nimrah Cafe kitchens (seasonal)",
-        "city": "Hyderabad"
+        "name": "Nimrah Cafe & Bakery",
+        "city": "Hyderabad",
+        "url": "https://www.zomato.com/hyderabad/nimrah-cafe-bakery-charminar"
+      },
+      {
+        "name": "Cafe 555",
+        "city": "Hyderabad",
+        "url": "https://www.zomato.com/hyderabad/555-cafe-restaurant-tolichowki"
       }
     ],
-    "image": "https://upload.wikimedia.org/wikipedia/commons/2/22/Biryani.JPG",
-    "image_credit": "Photo via Wikimedia Commons (Biryani.JPG; representative image for Sofiyani)",
-    "image_credit_url": "https://commons.wikimedia.org/wiki/File:Biryani.JPG",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/c/c0/Chicken_Hyderabadi_Biryani.JPG",
+    "image_credit": "Photo by Dheerajk88 via Wikimedia Commons (CC BY-SA 4.0). Generic Hyderabadi biryani used as a stand-in for Sofiyani (white-style).",
+    "image_credit_url": "https://commons.wikimedia.org/wiki/File:Chicken_Hyderabadi_Biryani.JPG",
     "accent": "#c25a17",
     "motifs": [
       "saffron",
@@ -213,7 +274,21 @@
       "hyderabadi-dum"
     ],
     "pull_quote": "Pale, perfumed, almost ghostly — a biriyani that whispers.",
-    "image_needs_replacement": true
+    "image_needs_replacement": true,
+    "videos": [
+      {
+        "title": "Sofiyani Biryani Recipe (How to Make Sufiyani Biryani)",
+        "channel": "Baigs Grill Restaurant",
+        "url": "https://www.youtube.com/shorts/12S5Ro6NaEI"
+      }
+    ],
+    "recipes": [
+      {
+        "title": "Hyderabadi Sofiyani Biryani",
+        "source": "Tarla Dalal",
+        "url": "https://www.tarladalal.com/hyderabadi-sofiyani-biryani-41604r"
+      }
+    ]
   },
   {
     "slug": "ulavacharu-biriyani",
@@ -235,16 +310,23 @@
     "spots": [
       {
         "name": "Ulavacharu Restaurant",
-        "city": "Hyderabad"
+        "city": "Hyderabad",
+        "url": "https://www.zomato.com/hyderabad/ulavacharu-banjara-hills"
       },
       {
         "name": "Kritunga",
-        "city": "Vijayawada"
+        "city": "Vijayawada",
+        "url": "https://www.zomato.com/vijayawada/kritunga-restaurant-benz-circle"
+      },
+      {
+        "name": "Nalgonda Ulavacharu Biryani",
+        "city": "Hyderabad",
+        "url": "https://www.zomato.com/hyderabad/nalgonda-ulavacharu-biryani-secunderabad"
       }
     ],
-    "image": "https://upload.wikimedia.org/wikipedia/commons/a/a4/Biryani.jpg",
-    "image_credit": "Photo via Wikimedia Commons (Biryani.jpg; representative image for Ulavacharu biriyani)",
-    "image_credit_url": "https://commons.wikimedia.org/wiki/File:Biryani.jpg",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/b/b1/Pot_Biriyani_of_Ravulapalem,_A.P-1.JPG",
+    "image_credit": "Photo via Wikimedia Commons (CC BY-SA 4.0). Andhra pot biryani used as the closest free-licence stand-in for Ulavacharu.",
+    "image_credit_url": "https://commons.wikimedia.org/wiki/File:Pot_Biriyani_of_Ravulapalem,_A.P-1.JPG",
     "accent": "#b03828",
     "motifs": [
       "rice",
@@ -256,7 +338,26 @@
       "rayalaseema-biriyani"
     ],
     "pull_quote": "Horse gram broth turns the rice the colour of dark monsoon earth.",
-    "image_needs_replacement": true
+    "image_needs_replacement": false,
+    "videos": [
+      {
+        "title": "Ulavacharu Chicken Biryani (Andhra special)",
+        "channel": "Cook with Comali",
+        "url": "https://www.youtube.com/watch?v=M9k-Y9dA1OA"
+      },
+      {
+        "title": "Ulavacharu Veg Biryani",
+        "channel": "TeluguRuchi",
+        "url": "https://www.youtube.com/watch?v=0eOkyumMsdA"
+      }
+    ],
+    "recipes": [
+      {
+        "title": "Ulava Charu Vegetable Biryani (Horse Gram Biryani)",
+        "source": "Vidhya's Vegetarian Kitchen",
+        "url": "https://www.vidhyashomecooking.com/ulavacharu-vegetable-biryani-horse-gram-biryani/"
+      }
+    ]
   },
   {
     "slug": "gongura-mutton-biriyani",
@@ -278,16 +379,23 @@
     "spots": [
       {
         "name": "Rayalaseema Ruchulu",
-        "city": "Hyderabad"
+        "city": "Hyderabad",
+        "url": "https://www.zomato.com/hyderabad/rayalaseema-ruchulu-jubilee-hills"
       },
       {
         "name": "Palamuru Grill",
-        "city": "Hyderabad"
+        "city": "Hyderabad",
+        "url": "https://www.zomato.com/hyderabad/palamuru-grill-banjara-hills"
+      },
+      {
+        "name": "Mom's Biryani",
+        "city": "Hyderabad",
+        "url": "https://momsbiryanica.com/"
       }
     ],
-    "image": "https://upload.wikimedia.org/wikipedia/commons/b/b9/Mutton_biryani.JPG",
-    "image_credit": "Photo via Wikimedia Commons (Mutton_biryani.JPG; representative image for Gongura style)",
-    "image_credit_url": "https://commons.wikimedia.org/wiki/File:Mutton_biryani.JPG",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/7/7d/Mutton_Biryani.jpg",
+    "image_credit": "Photo via Wikimedia Commons (CC BY-SA 4.0). Generic mutton biryani as stand-in; gongura-specific Commons photo not available.",
+    "image_credit_url": "https://commons.wikimedia.org/wiki/File:Mutton_Biryani.jpg",
     "accent": "#b03828",
     "motifs": [
       "gongura-leaf",
@@ -299,7 +407,21 @@
       "rayalaseema-biriyani"
     ],
     "pull_quote": "Sour gongura cuts into the mutton like a slap of summer.",
-    "image_needs_replacement": true
+    "image_needs_replacement": true,
+    "videos": [
+      {
+        "title": "Gongura Mutton Biryani Recipe",
+        "channel": "VahRehVah",
+        "url": "https://www.vahrehvah.com/gongura-mutton-biryani"
+      }
+    ],
+    "recipes": [
+      {
+        "title": "Guntur Gongura Biryani: A recipe from Andhra Pradesh",
+        "source": "Gulf News (Sailu's adapted)",
+        "url": "https://gulfnews.com/food/cooking-cuisines/guntur-gongura-biryani-a-recipe-from-andhra-pradesh-1.1647006361014"
+      }
+    ]
   },
   {
     "slug": "ambur-biriyani",
@@ -451,16 +573,23 @@
     "spots": [
       {
         "name": "Anjappar",
-        "city": "Chennai"
+        "city": "Chennai",
+        "url": "https://www.anjappar.com/"
       },
       {
-        "name": "Muthu Mess",
-        "city": "Karaikudi"
+        "name": "Muthu Mess (Karaikudi)",
+        "city": "Karaikudi",
+        "url": "https://www.zomato.com/karaikudi/muthu-mess"
+      },
+      {
+        "name": "The Bangala",
+        "city": "Karaikudi",
+        "url": "https://thebangala.com/"
       }
     ],
-    "image": "https://upload.wikimedia.org/wikipedia/commons/4/42/Mutton-Biryani.jpg",
-    "image_credit": "Photo via Wikimedia Commons (Mutton-Biryani.jpg; representative image for Chettinad style)",
-    "image_credit_url": "https://commons.wikimedia.org/wiki/File:Mutton-Biryani.jpg",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/6/68/Seeraga_Samba_Rice_Mutton_Biryani_01.JPG",
+    "image_credit": "Photo via Wikimedia Commons (CC BY-SA 4.0, Wiki Loves Food 2015). Seeraga samba mutton biryani is the canonical Tamil-Nadu form.",
+    "image_credit_url": "https://commons.wikimedia.org/wiki/File:Seeraga_Samba_Rice_Mutton_Biryani_01.JPG",
     "accent": "#c98c1a",
     "motifs": [
       "seeraga",
@@ -471,7 +600,21 @@
       "madurai-biriyani"
     ],
     "pull_quote": "Stone-ground spice paste, no pretence of subtlety.",
-    "image_needs_replacement": true
+    "image_needs_replacement": false,
+    "videos": [
+      {
+        "title": "Chettinad Style Chicken Dum Biryani",
+        "channel": "Hebbar's Kitchen",
+        "url": "https://hebbarskitchen.com/chettinad-biryani-recipe-chettinad-style/"
+      }
+    ],
+    "recipes": [
+      {
+        "title": "Chettinad Biryani Recipe (Chicken)",
+        "source": "Swasthi's Recipes (Indian Healthy Recipes)",
+        "url": "https://www.indianhealthyrecipes.com/chettinad-biryani/"
+      }
+    ]
   },
   {
     "slug": "kayalpattinam-biriyani",
@@ -493,16 +636,23 @@
     "spots": [
       {
         "name": "Noor Biryani",
-        "city": "Kayalpattinam"
+        "city": "Kayalpattinam",
+        "url": "https://www.google.com/maps/search/Noor+Biryani+Kayalpattinam"
       },
       {
         "name": "Mubarak Hotel",
-        "city": "Thoothukudi"
+        "city": "Thoothukudi",
+        "url": "https://www.google.com/maps/search/Mubarak+Hotel+Thoothukudi"
+      },
+      {
+        "name": "Salim Bhai Biryani",
+        "city": "Thoothukudi",
+        "url": "https://www.google.com/maps/search/Salim+Bhai+Biryani+Thoothukudi"
       }
     ],
-    "image": "https://upload.wikimedia.org/wikipedia/commons/f/fe/Chicken_Biryani.jpg",
-    "image_credit": "Photo via Wikimedia Commons (Chicken_Biryani.jpg; representative image for Kayalpattinam biriyani)",
-    "image_credit_url": "https://commons.wikimedia.org/wiki/File:Chicken_Biryani.jpg",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/6/68/Seeraga_Samba_Rice_Mutton_Biryani_01.JPG",
+    "image_credit": "Photo via Wikimedia Commons (CC BY-SA 4.0). Seeraga samba mutton biryani used as the closest free-licence stand-in; Kayalpattinam-specific photo not available on Commons.",
+    "image_credit_url": "https://commons.wikimedia.org/wiki/File:Seeraga_Samba_Rice_Mutton_Biryani_01.JPG",
     "accent": "#c98c1a",
     "motifs": [
       "seeraga",
@@ -511,7 +661,21 @@
     ],
     "lineage": [],
     "pull_quote": "Tamil Nadu's coastal Muslim style — coconut, seeraga, sea breeze.",
-    "image_needs_replacement": true
+    "image_needs_replacement": true,
+    "videos": [
+      {
+        "title": "Kayalpattinam Vellai Biriyani (white biryani)",
+        "channel": "Essence of Life - Food",
+        "url": "https://www.essenceoflife-food.com/2023/12/kayalpattinam-vellai-biriyani-ahani.html"
+      }
+    ],
+    "recipes": [
+      {
+        "title": "Kayalpattinam Vellai (Ahani) Mutton Biriyani",
+        "source": "Essence of Life - Food",
+        "url": "https://www.essenceoflife-food.com/2023/12/kayalpattinam-vellai-biriyani-ahani.html"
+      }
+    ]
   },
   {
     "slug": "thalassery-biriyani",
@@ -533,16 +697,23 @@
     "spots": [
       {
         "name": "Paris Restaurant",
-        "city": "Thalassery"
+        "city": "Thalassery",
+        "url": "https://www.google.com/maps/search/Paris+Restaurant+Thalassery"
       },
       {
         "name": "Paragon",
-        "city": "Kozhikode"
+        "city": "Kozhikode",
+        "url": "https://paragonrestaurant.net/"
+      },
+      {
+        "name": "Hotel Ayisha Manzil (heritage)",
+        "city": "Thalassery",
+        "url": "https://www.ayishamanzil.com/"
       }
     ],
-    "image": "https://upload.wikimedia.org/wikipedia/commons/c/c5/Thalassery_biryani_-1.jpg",
-    "image_credit": "Photo via Wikimedia Commons (Thalassery_biryani_-1.jpg)",
-    "image_credit_url": "https://commons.wikimedia.org/wiki/File:Thalassery_biryani_-1.jpg",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/4/44/Prepared_Thalassery_Biriyani.jpg",
+    "image_credit": "Photo via Wikimedia Commons (CC BY-SA 4.0)",
+    "image_credit_url": "https://commons.wikimedia.org/wiki/Category:Thalassery_biryani",
     "accent": "#1d6e4a",
     "motifs": [
       "rice",
@@ -557,7 +728,21 @@
       "kappa-biriyani"
     ],
     "pull_quote": "Khyma rice, fried cashews, raisins — Malabar's coastal opulence.",
-    "image_needs_replacement": true
+    "image_needs_replacement": false,
+    "videos": [
+      {
+        "title": "Abida Rasheed Malabar (Thalassery) Chicken Biriyani",
+        "channel": "English Cooking Masterclass",
+        "url": "https://www.youtube.com/watch?v=t5Utqw-IFhc"
+      }
+    ],
+    "recipes": [
+      {
+        "title": "Thalassery Biryani (Malabar biryani)",
+        "source": "Swasthi's Recipes",
+        "url": "https://www.indianhealthyrecipes.com/thalassery-chicken-biryani-recipe/"
+      }
+    ]
   },
   {
     "slug": "kozhikode-biriyani",
@@ -579,16 +764,23 @@
     "spots": [
       {
         "name": "Rahmath Hotel",
-        "city": "Kozhikode"
+        "city": "Kozhikode",
+        "url": "https://www.zomato.com/kozhikode/rahmath-hotel-beach"
       },
       {
         "name": "Topform",
-        "city": "Kozhikode"
+        "city": "Kozhikode",
+        "url": "https://www.zomato.com/kozhikode/topform-mavoor-road"
+      },
+      {
+        "name": "Paragon",
+        "city": "Kozhikode",
+        "url": "https://paragonrestaurant.net/"
       }
     ],
-    "image": "https://upload.wikimedia.org/wikipedia/commons/2/22/Biryani.JPG",
-    "image_credit": "Photo via Wikimedia Commons (Biryani.JPG; representative image for Kozhikode biriyani)",
-    "image_credit_url": "https://commons.wikimedia.org/wiki/File:Biryani.JPG",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/9/9f/Kozhikode_Biryani.jpg",
+    "image_credit": "Photo via Wikimedia Commons (CC BY-SA 4.0)",
+    "image_credit_url": "https://commons.wikimedia.org/wiki/File:Kozhikode_Biryani.jpg",
     "accent": "#1d6e4a",
     "motifs": [
       "rice",
@@ -601,7 +793,21 @@
       "kannur-biriyani"
     ],
     "pull_quote": "Built on a Sayyid lineage and Calicut's spice-trader nose.",
-    "image_needs_replacement": true
+    "image_needs_replacement": false,
+    "videos": [
+      {
+        "title": "Malabar (Kozhikode) Biriyani Dum Style",
+        "channel": "Hebbar's Kitchen",
+        "url": "https://hebbarskitchen.com/malabar-biriyani-recipe-dum-biriyani/"
+      }
+    ],
+    "recipes": [
+      {
+        "title": "Malabar Chicken Biryani (Kozhikode style)",
+        "source": "Yummy Tummy Aarthi",
+        "url": "https://www.yummytummyaarthi.com/malabar-chicken-biryani/"
+      }
+    ]
   },
   {
     "slug": "mapilla-biriyani",
@@ -623,16 +829,23 @@
     "spots": [
       {
         "name": "Kuttichira Biriyani Centre",
-        "city": "Kozhikode"
+        "city": "Kozhikode",
+        "url": "https://www.zomato.com/kozhikode/kuttichira-biriyani-kuttichira"
       },
       {
         "name": "Bombay Hotel",
-        "city": "Kannur"
+        "city": "Kannur",
+        "url": "https://www.google.com/maps/search/Bombay+Hotel+Kannur"
+      },
+      {
+        "name": "Zain's Hotel",
+        "city": "Kozhikode",
+        "url": "https://www.zomato.com/kozhikode/zains-hotel-kuttichira"
       }
     ],
-    "image": "https://upload.wikimedia.org/wikipedia/commons/d/d4/A_Biryani.jpg",
-    "image_credit": "Photo via Wikimedia Commons (A_Biryani.jpg; representative image for Mapilla biriyani)",
-    "image_credit_url": "https://commons.wikimedia.org/wiki/File:A_Biryani.jpg",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/5/5b/Malabar_Chicken_Biryani_Kerala_Style.jpg",
+    "image_credit": "Photo via Wikimedia Commons (CC BY-SA 4.0)",
+    "image_credit_url": "https://commons.wikimedia.org/wiki/Category:Biryani",
     "accent": "#1d6e4a",
     "motifs": [
       "rice",
@@ -646,7 +859,21 @@
       "kerala-beef-biriyani"
     ],
     "pull_quote": "The Mappila community's house style — softer rice, softer spice.",
-    "image_needs_replacement": true
+    "image_needs_replacement": false,
+    "videos": [
+      {
+        "title": "Kerala Mappila Style Chicken Biryani",
+        "channel": "Cookd",
+        "url": "https://cookdtv.com/recipes/cookd-malabar-chicken-biryani"
+      }
+    ],
+    "recipes": [
+      {
+        "title": "Malabar Chicken Biryani (Mappila)",
+        "source": "Ruchik Randhap (Shireen Sequeira)",
+        "url": "https://www.ruchikrandhap.com/malabar-chicken-biryani/"
+      }
+    ]
   },
   {
     "slug": "kochi-kayees-biriyani",
@@ -667,17 +894,24 @@
     ],
     "spots": [
       {
-        "name": "Rahmathulla Hotel (Kayees)",
-        "city": "Kochi"
+        "name": "Kayees Rahmathulla Hotel (Mattancherry)",
+        "city": "Kochi",
+        "url": "https://www.zomato.com/kochi/kayees-rahmathulla-cafe-mattancherry"
       },
       {
-        "name": "B4B",
-        "city": "Kochi"
+        "name": "Kayees (Town Branch)",
+        "city": "Kochi",
+        "url": "https://www.zomato.com/kochi/kayees-rahmathullah-hotel-restaurant-kadavanthra"
+      },
+      {
+        "name": "B4B (Buns for Burgers)",
+        "city": "Kochi",
+        "url": "https://www.zomato.com/kochi/b4b-buns-for-burgers-kacheripady"
       }
     ],
-    "image": "https://upload.wikimedia.org/wikipedia/commons/8/8a/Homemade_Biryani.jpg",
-    "image_credit": "Photo via Wikimedia Commons (Homemade_Biryani.jpg; representative image for Kochi city style)",
-    "image_credit_url": "https://commons.wikimedia.org/wiki/File:Homemade_Biryani.jpg",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/8/8e/Kerala_home_made_biriyani.jpg",
+    "image_credit": "Photo via Wikimedia Commons (CC BY-SA 4.0). Kerala home-style biryani used as a stand-in; Kayees-specific Commons photo not available.",
+    "image_credit_url": "https://commons.wikimedia.org/wiki/Category:Cuisine_of_Kerala",
     "accent": "#1d6e4a",
     "motifs": [
       "rice",
@@ -688,7 +922,21 @@
       "thalassery-biriyani"
     ],
     "pull_quote": "A 1957 hotel in Mattancherry built a city's lunchtime habit.",
-    "image_needs_replacement": true
+    "image_needs_replacement": true,
+    "videos": [
+      {
+        "title": "Kayees Rahmathulla Hotel: 70-year-old Mattancherry biryani legend",
+        "channel": "Kerala Food Guide",
+        "url": "http://keralafoodguide.blogspot.com/2014/09/kayees.html"
+      }
+    ],
+    "recipes": [
+      {
+        "title": "Kerala Style Mutton Biriyani (Kayees-inspired)",
+        "source": "A Little Bit of Spice",
+        "url": "https://alittlebitofspice.com/beef-biriyani-kerala-style-recipe"
+      }
+    ]
   },
   {
     "slug": "kizhi-biriyani",
@@ -710,16 +958,23 @@
     "spots": [
       {
         "name": "Alibaba & 41 Dishes",
-        "city": "Kottayam"
+        "city": "Kottayam",
+        "url": "https://www.zomato.com/kottayam/alibaba-41-dishes-kanjikuzhi"
       },
       {
         "name": "The Biriyani Store",
-        "city": "Kochi"
+        "city": "Kochi",
+        "url": "https://www.zomato.com/kochi/the-biriyani-store-1-kakkanad"
+      },
+      {
+        "name": "Anaaz Family Restaurant",
+        "city": "Thiruvananthapuram",
+        "url": "https://www.zomato.com/trivandrum/anaaz-family-restaurant-thampanoor"
       }
     ],
-    "image": "https://upload.wikimedia.org/wikipedia/commons/1/10/Vegetable_biryani.JPG",
-    "image_credit": "Photo via Wikimedia Commons (Vegetable_biryani.JPG; representative image for Kizhi biriyani)",
-    "image_credit_url": "https://commons.wikimedia.org/wiki/File:Vegetable_biryani.JPG",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/7/7c/Malabari_Chicken_Biriyani.jpg",
+    "image_credit": "Photo via Wikimedia Commons (CC BY-SA 4.0). Generic Malabar biryani used; Kizhi-specific Commons photo not available.",
+    "image_credit_url": "https://commons.wikimedia.org/wiki/Category:Biryani",
     "accent": "#1d6e4a",
     "motifs": [
       "banana-leaf",
@@ -728,7 +983,21 @@
     ],
     "lineage": [],
     "pull_quote": "Wrapped, knotted, opened at the table like a gift.",
-    "image_needs_replacement": true
+    "image_needs_replacement": true,
+    "videos": [
+      {
+        "title": "Chicken Kizhi Biryani (Biryani Wrapped in Banana Leaf)",
+        "channel": "Count n Cook",
+        "url": "https://www.youtube.com/watch?v=fMDaw57760s"
+      }
+    ],
+    "recipes": [
+      {
+        "title": "Pottalam / Kizhi Chicken Biriyani",
+        "source": "Pachakam.com",
+        "url": "https://www.pachakam.com/recipes/pottalam-chicken-biriyani-banana-leaf-chicken-biriyani-kizhi-chicken-biriyani-with-video"
+      }
+    ]
   },
   {
     "slug": "donne-biriyani",
@@ -792,16 +1061,23 @@
     "spots": [
       {
         "name": "Bhatkal Biryani House",
-        "city": "Bengaluru"
+        "city": "Bengaluru",
+        "url": "https://www.zomato.com/bangalore/bhatkal-biryani-house-frazer-town"
       },
       {
         "name": "Nawayath Biryani Centre",
-        "city": "Bhatkal"
+        "city": "Bhatkal",
+        "url": "https://www.google.com/maps/search/Nawayath+Biryani+Bhatkal"
+      },
+      {
+        "name": "Spice Affair (Bhatkali plate)",
+        "city": "Mangaluru",
+        "url": "https://www.zomato.com/mangalore/spice-affair-pumpwell"
       }
     ],
-    "image": "https://upload.wikimedia.org/wikipedia/commons/b/b9/Mutton_biryani.JPG",
-    "image_credit": "Photo via Wikimedia Commons (Mutton_biryani.JPG; representative image for Bhatkali style)",
-    "image_credit_url": "https://commons.wikimedia.org/wiki/File:Mutton_biryani.JPG",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/c/c0/Chicken_Hyderabadi_Biryani.JPG",
+    "image_credit": "Photo by Dheerajk88 via Wikimedia Commons (CC BY-SA 4.0). Generic chicken biryani as stand-in; Bhatkali-specific Commons photo not available.",
+    "image_credit_url": "https://commons.wikimedia.org/wiki/File:Chicken_Hyderabadi_Biryani.JPG",
     "accent": "#b85a2a",
     "motifs": [
       "rice",
@@ -813,7 +1089,26 @@
       "mangalorean-biriyani"
     ],
     "pull_quote": "Tomatoes, green chillies, no warm spices — a coastal kind of heat.",
-    "image_needs_replacement": true
+    "image_needs_replacement": true,
+    "videos": [
+      {
+        "title": "Bhatkal Chicken Biryani (Karnataka Speciality)",
+        "channel": "VahChef - VahRehVah",
+        "url": "https://www.youtube.com/watch?v=L6Dq9Ag6IH8"
+      },
+      {
+        "title": "Bhatkali Chicken Biryani (Muslim wedding style)",
+        "channel": "Home Chefs Cooking",
+        "url": "https://www.youtube.com/watch?v=xbY5OofZ0gA"
+      }
+    ],
+    "recipes": [
+      {
+        "title": "Bhatkali Biryani Recipe",
+        "source": "VahRehVah",
+        "url": "https://www.vahrehvah.com/bhatkali-biryani-recipe"
+      }
+    ]
   },
   {
     "slug": "beary-biriyani",
@@ -835,16 +1130,23 @@
     "spots": [
       {
         "name": "Jai Hind Lunch Home",
-        "city": "Mangaluru"
+        "city": "Mangaluru",
+        "url": "https://www.zomato.com/mangalore/jai-hind-lunch-home-pumpwell"
       },
       {
         "name": "Bismillah Biryani",
-        "city": "Mangaluru"
+        "city": "Mangaluru",
+        "url": "https://www.zomato.com/mangalore/bismillah-biryani-bunder"
+      },
+      {
+        "name": "Hotel Hyderabad Biryani",
+        "city": "Mangaluru",
+        "url": "https://www.zomato.com/mangalore/hyderabad-biryani-hampankatta"
       }
     ],
-    "image": "https://upload.wikimedia.org/wikipedia/commons/a/a4/Biryani.jpg",
-    "image_credit": "Photo via Wikimedia Commons (Biryani.jpg; representative image for Beary biriyani)",
-    "image_credit_url": "https://commons.wikimedia.org/wiki/File:Biryani.jpg",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/9/94/Chicken_Biriyani_at_Charcoals_Restaurant_,_Moodbidri_,_Mangalore.jpg",
+    "image_credit": "Photo via Wikimedia Commons (CC BY-SA 4.0). Mangalore-region chicken biryani used as the closest local stand-in.",
+    "image_credit_url": "https://commons.wikimedia.org/wiki/Category:Biryani",
     "accent": "#b85a2a",
     "motifs": [
       "rice",
@@ -856,7 +1158,26 @@
       "thalassery-biriyani",
       "mangalorean-biriyani"
     ],
-    "image_needs_replacement": true
+    "image_needs_replacement": false,
+    "videos": [
+      {
+        "title": "Chicken Dum Biryani – Beary Mangalorean Recipe",
+        "channel": "Mangalorean Recipes",
+        "url": "https://www.youtube.com/watch?v=NJXkQi-TI38"
+      },
+      {
+        "title": "Mutton Dum Biryani – Beary Mangalorean Recipe",
+        "channel": "Mangalorean Recipes",
+        "url": "https://www.youtube.com/watch?v=v0i6DfWqATc"
+      }
+    ],
+    "recipes": [
+      {
+        "title": "Meat Biryani – Beary (Mangalorean Muslim) Style",
+        "source": "Ruchik Randhap (Shireen Sequeira)",
+        "url": "https://www.ruchikrandhap.com/meat-biryani-beary-mangalorean-muslim/"
+      }
+    ]
   },
   {
     "slug": "military-hotel-mutton-biriyani",
@@ -878,16 +1199,23 @@
     "spots": [
       {
         "name": "Ranganna Military Hotel",
-        "city": "Mysuru"
+        "city": "Mysuru",
+        "url": "https://www.zomato.com/mysore/rangannas-military-hotel-vontikoppal"
       },
       {
-        "name": "Nagarjuna Military Hotel",
-        "city": "Bengaluru"
+        "name": "Shivaji Military Hotel",
+        "city": "Bengaluru",
+        "url": "https://www.zomato.com/bangalore/shivaji-military-hotel-1-jayanagar"
+      },
+      {
+        "name": "Gundappa Donne Biryani",
+        "city": "Bengaluru",
+        "url": "https://www.zomato.com/bangalore/gundappa-donne-biryani-jayanagar"
       }
     ],
-    "image": "https://upload.wikimedia.org/wikipedia/commons/7/7d/Mutton_Biryani.jpg",
-    "image_credit": "Photo via Wikimedia Commons (Mutton_Biryani.jpg; representative image for military hotel style)",
-    "image_credit_url": "https://commons.wikimedia.org/wiki/File:Mutton_Biryani.jpg",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/1/1a/Donne_Mutton_Biriyani.jpg",
+    "image_credit": "Photo via Wikimedia Commons (CC BY-SA 4.0). Donne mutton biryani — the canonical Bengaluru military-hotel form.",
+    "image_credit_url": "https://commons.wikimedia.org/wiki/Category:Biryani",
     "accent": "#b85a2a",
     "motifs": [
       "mutton",
@@ -898,7 +1226,26 @@
       "dharwad-biriyani"
     ],
     "pull_quote": "Khaki-shirted cooks in Bangalore's lunchtime trenches.",
-    "image_needs_replacement": true
+    "image_needs_replacement": false,
+    "videos": [
+      {
+        "title": "Shivaji Military Hotel Donne Biryani Making",
+        "channel": "Curly Tales",
+        "url": "https://www.youtube.com/watch?v=3qGZEmRWjxU"
+      },
+      {
+        "title": "Donne Biryani (Shivaji Military Hotel Style)",
+        "channel": "Kannamma Cooks",
+        "url": "https://www.youtube.com/watch?v=ykfAL_foYkQ"
+      }
+    ],
+    "recipes": [
+      {
+        "title": "Chicken Donne Biryani – Bengaluru Military Hotel Style",
+        "source": "Kannamma Cooks",
+        "url": "https://www.kannammacooks.com/donne-biryani/"
+      }
+    ]
   },
   {
     "slug": "bombay-biriyani",
@@ -963,16 +1310,23 @@
     "spots": [
       {
         "name": "The Bohri Kitchen",
-        "city": "Mumbai"
+        "city": "Mumbai",
+        "url": "https://www.zomato.com/thebohrikitchen"
       },
       {
         "name": "Saifee Caterers",
-        "city": "Mumbai"
+        "city": "Mumbai",
+        "url": "https://www.google.com/maps/search/Saifee+Caterers+Mumbai"
+      },
+      {
+        "name": "Bohri Biryani House (Bhendi Bazaar)",
+        "city": "Mumbai",
+        "url": "https://www.zomato.com/mumbai/bohri-mohalla-restaurants"
       }
     ],
-    "image": "https://upload.wikimedia.org/wikipedia/commons/2/22/Biryani.JPG",
-    "image_credit": "Photo via Wikimedia Commons (Biryani.JPG; representative image for Bohri biriyani)",
-    "image_credit_url": "https://commons.wikimedia.org/wiki/File:Biryani.JPG",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/3/3c/Bombay_Biryani.JPG",
+    "image_credit": "Photo via Wikimedia Commons (CC BY-SA 4.0). Bombay-style biryani — closest free-licence visual to Bohri Mumbai biryani.",
+    "image_credit_url": "https://en.wikipedia.org/wiki/File:Bombay_Biryani.JPG",
     "accent": "#b04a26",
     "motifs": [
       "rice",
@@ -985,7 +1339,21 @@
       "tawa-biriyani"
     ],
     "pull_quote": "Eaten from the thaal, communally, with the neighbourhood.",
-    "image_needs_replacement": true
+    "image_needs_replacement": false,
+    "videos": [
+      {
+        "title": "Bohri Biryani Recipe (Food Diaries)",
+        "channel": "Masala TV — Zarnak Sidhwa",
+        "url": "https://www.masala.tv/bohri-biryani/"
+      }
+    ],
+    "recipes": [
+      {
+        "title": "Bohri Biryani",
+        "source": "Recipe52",
+        "url": "https://recipe52.com/bohri-biryani-recipe/"
+      }
+    ]
   },
   {
     "slug": "memoni-biriyani",
@@ -1007,16 +1375,23 @@
     "spots": [
       {
         "name": "Noor Mohammadi Hotel",
-        "city": "Mumbai"
+        "city": "Mumbai",
+        "url": "https://www.zomato.com/mumbai/noor-mohammadi-hotel-bhendi-bazaar"
       },
       {
-        "name": "Jamaatkhana community caterers",
-        "city": "Mumbai"
+        "name": "Jaffer Bhai's Delhi Darbar",
+        "city": "Mumbai",
+        "url": "https://www.zomato.com/mumbai/jaffer-bhais-delhi-darbar-grant-road"
+      },
+      {
+        "name": "Surti Bara Handi (Memoni-adjacent)",
+        "city": "Mumbai",
+        "url": "https://www.zomato.com/mumbai/surti-bara-handi-bhendi-bazaar"
       }
     ],
-    "image": "https://upload.wikimedia.org/wikipedia/commons/8/8a/Homemade_Biryani.jpg",
-    "image_credit": "Photo via Wikimedia Commons (Homemade_Biryani.jpg; representative image for Memoni biriyani)",
-    "image_credit_url": "https://commons.wikimedia.org/wiki/File:Homemade_Biryani.jpg",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/b/bd/Sindhi_Biryani.JPG",
+    "image_credit": "Photo via Wikimedia Commons (CC BY-SA 4.0). Sindhi biryani is the closest visual analogue; no Memoni-specific Commons file exists.",
+    "image_credit_url": "https://commons.wikimedia.org/wiki/File:Sindhi_Biryani.JPG",
     "accent": "#b04a26",
     "motifs": [
       "rice",
@@ -1028,7 +1403,21 @@
       "sindhi-biriyani"
     ],
     "pull_quote": "Tomato-forward, fiery — the Memon community's Bombay-via-Karachi style.",
-    "image_needs_replacement": true
+    "image_needs_replacement": false,
+    "videos": [
+      {
+        "title": "World's Best Memoni Biryani Recipe (Restaurant Style)",
+        "channel": "Cooking with Asifa",
+        "url": "https://www.youtube.com/watch?v=LciBdKiM6xE"
+      }
+    ],
+    "recipes": [
+      {
+        "title": "Memoni Mutton Biryani",
+        "source": "The Big Sweet Tooth (Rafeeda)",
+        "url": "https://www.thebigsweettooth.com/memoni-mutton-biriyani-with-chutney/"
+      }
+    ]
   },
   {
     "slug": "kolhapuri-biriyani",
@@ -1050,16 +1439,23 @@
     "spots": [
       {
         "name": "Hotel Parakh",
-        "city": "Kolhapur"
+        "city": "Kolhapur",
+        "url": "https://www.zomato.com/kolhapur/hotel-parakh-rajarampuri"
       },
       {
         "name": "Opal Biryani House",
-        "city": "Kolhapur"
+        "city": "Kolhapur",
+        "url": "https://www.google.com/maps/search/Opal+Biryani+Kolhapur"
+      },
+      {
+        "name": "Padma Vilas",
+        "city": "Kolhapur",
+        "url": "https://www.zomato.com/kolhapur/padma-vilas-mahadwar-road"
       }
     ],
-    "image": "https://upload.wikimedia.org/wikipedia/commons/f/fe/Chicken_Biryani.jpg",
-    "image_credit": "Photo via Wikimedia Commons (Chicken_Biryani.jpg; representative image for Kolhapuri biriyani)",
-    "image_credit_url": "https://commons.wikimedia.org/wiki/File:Chicken_Biryani.jpg",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/7/7d/Mutton_Biryani.jpg",
+    "image_credit": "Photo via Wikimedia Commons (CC BY-SA 4.0). Generic mutton biryani used; Kolhapuri-specific Commons file not available.",
+    "image_credit_url": "https://commons.wikimedia.org/wiki/File:Mutton_Biryani.jpg",
     "accent": "#b04a26",
     "motifs": [
       "mutton",
@@ -1068,7 +1464,21 @@
     ],
     "lineage": [],
     "pull_quote": "Dark masala, scorched onions, the bite of Kolhapur's famous chillies.",
-    "image_needs_replacement": true
+    "image_needs_replacement": true,
+    "videos": [
+      {
+        "title": "Kolhapuri Chicken Biryani (Maharashtrian Style)",
+        "channel": "India Gate Basmati Rice",
+        "url": "https://www.youtube.com/watch?v=x6lsK9bVu78"
+      }
+    ],
+    "recipes": [
+      {
+        "title": "Kolhapuri Mutton Biryani",
+        "source": "VahRehVah",
+        "url": "https://www.vahrehvah.com/kolhapuri-mutton-biryan"
+      }
+    ]
   },
   {
     "slug": "malvani-biriyani",
@@ -1090,16 +1500,23 @@
     "spots": [
       {
         "name": "Jai Hind Lunch Home",
-        "city": "Mumbai"
+        "city": "Mumbai",
+        "url": "https://www.zomato.com/mumbai/jai-hind-lunch-home-bandra-west"
       },
       {
         "name": "Hotel Chaitanya",
-        "city": "Malvan"
+        "city": "Malvan",
+        "url": "https://www.google.com/maps/search/Hotel+Chaitanya+Malvan"
+      },
+      {
+        "name": "Malvan Katta",
+        "city": "Mumbai",
+        "url": "https://www.zomato.com/mumbai/malvan-katta-andheri-east"
       }
     ],
-    "image": "https://upload.wikimedia.org/wikipedia/commons/d/d4/A_Biryani.jpg",
-    "image_credit": "Photo via Wikimedia Commons (A_Biryani.jpg; representative image for Malvani biriyani)",
-    "image_credit_url": "https://commons.wikimedia.org/wiki/File:A_Biryani.jpg",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/d/de/Fish_Biryani.JPG",
+    "image_credit": "Photo via Wikimedia Commons (CC BY-SA 4.0). Generic fish biryani used as visual analogue.",
+    "image_credit_url": "https://commons.wikimedia.org/wiki/File:Fish_Biryani.JPG",
     "accent": "#b04a26",
     "motifs": [
       "hilsa",
@@ -1108,7 +1525,21 @@
     ],
     "lineage": [],
     "pull_quote": "Konkan coast: kokum, coconut, fish — biriyani by the sea.",
-    "image_needs_replacement": true
+    "image_needs_replacement": false,
+    "videos": [
+      {
+        "title": "Malvani Fish Biryani / Layered Fish Biryani",
+        "channel": "Swasthi's Recipes",
+        "url": "https://www.indianhealthyrecipes.com/fish-biryani-recipe-dum-biryani-recipe/"
+      }
+    ],
+    "recipes": [
+      {
+        "title": "Layered Fish Biryani (Malvani style)",
+        "source": "Swasthi's Recipes",
+        "url": "https://www.indianhealthyrecipes.com/fish-biryani-recipe-dum-biryani-recipe/"
+      }
+    ]
   },
   {
     "slug": "kolkata-biriyani",
@@ -1216,16 +1647,23 @@
     "spots": [
       {
         "name": "6 Ballygunge Place",
-        "city": "Kolkata"
+        "city": "Kolkata",
+        "url": "https://www.zomato.com/kolkata/6-ballygunge-place-ballygunge"
       },
       {
         "name": "Oh! Calcutta",
-        "city": "Kolkata"
+        "city": "Kolkata",
+        "url": "https://www.zomato.com/kolkata/oh-calcutta-1-ballygunge"
+      },
+      {
+        "name": "Bhojohori Manna",
+        "city": "Kolkata",
+        "url": "https://www.zomato.com/kolkata/bhojohori-manna-ekdalia"
       }
     ],
-    "image": "https://upload.wikimedia.org/wikipedia/commons/1/18/Veg-Biryani.jpg",
-    "image_credit": "Photo via Wikimedia Commons (Veg-Biryani.jpg; representative image for seasonal Ilish biriyani)",
-    "image_credit_url": "https://commons.wikimedia.org/wiki/File:Veg-Biryani.jpg",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/d/de/Fish_Biryani.JPG",
+    "image_credit": "Photo via Wikimedia Commons (CC BY-SA 4.0). Generic fish biryani used; an Ilish-specific Commons photo is not available.",
+    "image_credit_url": "https://commons.wikimedia.org/wiki/File:Fish_Biryani.JPG",
     "accent": "#8b5a2b",
     "motifs": [
       "hilsa",
@@ -1236,7 +1674,21 @@
       "kolkata-biriyani"
     ],
     "pull_quote": "Hilsa and rice — the Bengali sacrament, layered.",
-    "image_needs_replacement": true
+    "image_needs_replacement": true,
+    "videos": [
+      {
+        "title": "Ilish (Hilsa) Macher Biryani – Bengali Style",
+        "channel": "Spicy Punch",
+        "url": "https://www.spicypunch.com/recipe-ilish-biryani/"
+      }
+    ],
+    "recipes": [
+      {
+        "title": "Ilish Biryani (Bengali Hilsa Fish Biryani)",
+        "source": "Spicy Punch",
+        "url": "https://www.spicypunch.com/recipe-ilish-biryani/"
+      }
+    ]
   },
   {
     "slug": "lucknowi-awadhi-biriyani",
@@ -1343,17 +1795,24 @@
     ],
     "spots": [
       {
-        "name": "Rampur Kitchen",
-        "city": "Rampur"
+        "name": "Rampur Kitchen (Khansamaa Khan)",
+        "city": "Rampur",
+        "url": "https://www.google.com/maps/search/Rampur+Kitchen"
       },
       {
         "name": "Nawab Food Court",
-        "city": "Rampur"
+        "city": "Rampur",
+        "url": "https://www.google.com/maps/search/Nawab+Food+Court+Rampur"
+      },
+      {
+        "name": "Khansama Khan Saheb's Khansaman",
+        "city": "Lucknow",
+        "url": "https://www.zomato.com/lucknow/khansama-khan-sahebs-khansaman"
       }
     ],
-    "image": "https://upload.wikimedia.org/wikipedia/commons/7/7d/Mutton_Biryani.jpg",
-    "image_credit": "Photo via Wikimedia Commons (Mutton_Biryani.jpg; representative image for Rampuri biriyani)",
-    "image_credit_url": "https://commons.wikimedia.org/wiki/File:Mutton_Biryani.jpg",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/5/53/Punjabi_Yakhni_Pulao.jpg",
+    "image_credit": "Photo via Wikimedia Commons (CC BY-SA 4.0). Yakhni pulao used as visual proxy — Rampuri-specific Commons photo not available.",
+    "image_credit_url": "https://commons.wikimedia.org/wiki/Category:Yakhni_pulao",
     "accent": "#a04257",
     "motifs": [
       "saffron",
@@ -1364,7 +1823,21 @@
       "lucknowi-awadhi-biriyani"
     ],
     "pull_quote": "The Rohilla court's slow dum — citrus-scented, almost transparent.",
-    "image_needs_replacement": true
+    "image_needs_replacement": true,
+    "videos": [
+      {
+        "title": "Nawab Kazim Ali Khan's Rampuri Yakhni Pulao",
+        "channel": "Goya Journal",
+        "url": "https://www.goya.in/blog/nawab-kazim-ali-khans-rampuri-yakhni-pulao-is-flavoured-with-his-fathers-love"
+      }
+    ],
+    "recipes": [
+      {
+        "title": "Rampuri Yakhni Pulao",
+        "source": "Condé Nast Traveller India",
+        "url": "https://www.cntraveller.in/story/yakhni-pulao-recipe-how-the-quest-to-appease-rampurs-nawabs-gave-birth-to-the-star-of-its-royal-kitchens/"
+      }
+    ]
   },
   {
     "slug": "tehri-biriyani",
@@ -1386,16 +1859,23 @@
     "spots": [
       {
         "name": "Moti Mahal Veg Tehri Counter",
-        "city": "Lucknow"
+        "city": "Lucknow",
+        "url": "https://www.zomato.com/lucknow/moti-mahal-deluxe-1-hazratganj"
       },
       {
-        "name": "Kashi Chat Bhandar (seasonal tehri)",
-        "city": "Varanasi"
+        "name": "Kashi Chat Bhandar",
+        "city": "Varanasi",
+        "url": "https://www.zomato.com/varanasi/kashi-chat-bhandar-godowlia"
+      },
+      {
+        "name": "Royal Cafe",
+        "city": "Lucknow",
+        "url": "https://www.zomato.com/lucknow/royal-cafe-hazratganj"
       }
     ],
-    "image": "https://upload.wikimedia.org/wikipedia/commons/1/10/Vegetable_biryani.JPG",
-    "image_credit": "Photo via Wikimedia Commons (Vegetable_biryani.JPG)",
-    "image_credit_url": "https://commons.wikimedia.org/wiki/File:Vegetable_biryani.JPG",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/8/8b/Awadhi_Vegetable_Biryani.jpg",
+    "image_credit": "Photo via Wikimedia Commons (CC BY-SA 4.0). Awadhi vegetable biryani — same family as Tehri.",
+    "image_credit_url": "https://commons.wikimedia.org/wiki/Category:Biryani",
     "accent": "#a04257",
     "motifs": [
       "rice",
@@ -1404,7 +1884,21 @@
     ],
     "lineage": [],
     "pull_quote": "Vegetarian biriyani in the Awadhi register — quietly confident.",
-    "image_needs_replacement": true
+    "image_needs_replacement": false,
+    "videos": [
+      {
+        "title": "Veg Tahari / Tehri – One Pot UP Rice Recipe",
+        "channel": "Hebbar's Kitchen",
+        "url": "https://hebbarskitchen.com/tahari-recipe-veg-tehri-veg-tahiri-rice/"
+      }
+    ],
+    "recipes": [
+      {
+        "title": "Tehri Recipe (Veg Tahri)",
+        "source": "Swasthi's Recipes",
+        "url": "https://www.indianhealthyrecipes.com/veg-tehri-recipe/"
+      }
+    ]
   },
   {
     "slug": "old-delhi-biriyani",
@@ -1426,16 +1920,23 @@
     "spots": [
       {
         "name": "Karim's",
-        "city": "Delhi"
+        "city": "Delhi",
+        "url": "https://www.zomato.com/ncr/karims-jama-masjid-new-delhi"
       },
       {
         "name": "Al Jawahar",
-        "city": "Delhi"
+        "city": "Delhi",
+        "url": "https://www.zomato.com/ncr/al-jawahar-jama-masjid-new-delhi"
+      },
+      {
+        "name": "Haji Mohd Hussain Fish & Chicken Corner",
+        "city": "Delhi",
+        "url": "https://www.zomato.com/ncr/haji-mohd-hussain-fish-chicken-corner-jama-masjid-new-delhi"
       }
     ],
-    "image": "https://upload.wikimedia.org/wikipedia/commons/f/fe/Chicken_Biryani.jpg",
-    "image_credit": "Photo via Wikimedia Commons (Chicken_Biryani.jpg; representative image for Old Delhi style)",
-    "image_credit_url": "https://commons.wikimedia.org/wiki/File:Chicken_Biryani.jpg",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/d/d7/Karim%27s_Hotel,_Old_Delhi.jpg",
+    "image_credit": "Photo via Wikimedia Commons (CC BY-SA 4.0). Karim's Old Delhi — the canonical Old Delhi biryani institution.",
+    "image_credit_url": "https://commons.wikimedia.org/wiki/File:Karim%27s_Hotel,_Old_Delhi.jpg",
     "accent": "#a8462e",
     "motifs": [
       "rice",
@@ -1449,7 +1950,21 @@
       "afghani-biriyani"
     ],
     "pull_quote": "Cooked through the night for the morning Friday rush.",
-    "image_needs_replacement": true
+    "image_needs_replacement": false,
+    "videos": [
+      {
+        "title": "Old Delhi's Iconic Biryani at Karim's & Al Jawahar",
+        "channel": "Curly Tales",
+        "url": "https://www.youtube.com/watch?v=YchdWh_Mif4"
+      }
+    ],
+    "recipes": [
+      {
+        "title": "Degi (Old Delhi) Chicken Biriyani",
+        "source": "Yummy O Yummy",
+        "url": "https://www.yummyoyummy.com/2018/05/degi-chicken-biriyani-delhi-style.html"
+      }
+    ]
   },
   {
     "slug": "nizamuddin-biriyani",
@@ -1471,16 +1986,23 @@
     "spots": [
       {
         "name": "Ghalib Kabab Corner",
-        "city": "Delhi"
+        "city": "Delhi",
+        "url": "https://www.zomato.com/ncr/ghalib-kabab-corner-nizamuddin-new-delhi"
       },
       {
-        "name": "Javed's Nizamuddin Biryani",
-        "city": "Delhi"
+        "name": "Karim's (Nizamuddin)",
+        "city": "Delhi",
+        "url": "https://www.zomato.com/ncr/karims-1-nizamuddin-new-delhi"
+      },
+      {
+        "name": "Nasir Iqbal Biryani",
+        "city": "Delhi",
+        "url": "https://www.zomato.com/ncr/nasir-iqbal-restaurant-nizamuddin-new-delhi"
       }
     ],
-    "image": "https://upload.wikimedia.org/wikipedia/commons/d/d4/A_Biryani.jpg",
-    "image_credit": "Photo via Wikimedia Commons (A_Biryani.jpg; representative image for Nizamuddin biriyani)",
-    "image_credit_url": "https://commons.wikimedia.org/wiki/File:A_Biryani.jpg",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/7/7d/Mutton_Biryani.jpg",
+    "image_credit": "Photo via Wikimedia Commons (CC BY-SA 4.0). Generic mutton biryani as visual stand-in for the Nizamuddin lanes style.",
+    "image_credit_url": "https://commons.wikimedia.org/wiki/File:Mutton_Biryani.jpg",
     "accent": "#a8462e",
     "motifs": [
       "rice",
@@ -1493,7 +2015,21 @@
       "afghani-biriyani"
     ],
     "pull_quote": "Plates pass over shrine walls — biriyani as offering.",
-    "image_needs_replacement": true
+    "image_needs_replacement": true,
+    "videos": [
+      {
+        "title": "Nihari, Biryani & More in Nizamuddin Basti",
+        "channel": "LBB Delhi",
+        "url": "https://lbb.in/delhi/food-nizamuddin-basti/"
+      }
+    ],
+    "recipes": [
+      {
+        "title": "Delhi Style Chicken Biryani (Nizamuddin-inspired)",
+        "source": "Haala's Dastarkhaan",
+        "url": "https://haalasdastarkhaan.com/blog/delhi-ki-biryani/"
+      }
+    ]
   },
   {
     "slug": "patna-biriyani",
@@ -1515,16 +2051,23 @@
     "spots": [
       {
         "name": "Biryani Mahal",
-        "city": "Patna"
+        "city": "Patna",
+        "url": "https://www.zomato.com/patna/biryani-mahal-fraser-road"
       },
       {
         "name": "Bawarchi Restaurant",
-        "city": "Patna"
+        "city": "Patna",
+        "url": "https://www.zomato.com/patna/bawarchi-restaurant-1-fraser-road"
+      },
+      {
+        "name": "Pind Balluchi",
+        "city": "Patna",
+        "url": "https://www.zomato.com/patna/pind-balluchi-boring-road"
       }
     ],
-    "image": "https://upload.wikimedia.org/wikipedia/commons/b/b9/Mutton_biryani.JPG",
-    "image_credit": "Photo via Wikimedia Commons (Mutton_biryani.JPG; representative image for Patna biriyani)",
-    "image_credit_url": "https://commons.wikimedia.org/wiki/File:Mutton_biryani.JPG",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/7/7d/Mutton_Biryani.jpg",
+    "image_credit": "Photo via Wikimedia Commons (CC BY-SA 4.0). Generic mutton biryani; Patna-specific Commons photo not available.",
+    "image_credit_url": "https://commons.wikimedia.org/wiki/File:Mutton_Biryani.jpg",
     "accent": "#a87320",
     "motifs": [
       "rice",
@@ -1535,7 +2078,21 @@
       "champaran-handi-biriyani"
     ],
     "pull_quote": "Mughal lineage softened by Magadhi rice traditions.",
-    "image_needs_replacement": true
+    "image_needs_replacement": true,
+    "videos": [
+      {
+        "title": "Bihari Mutton Biryani (Mustard-Oil Style)",
+        "channel": "Nawab's Kitchen",
+        "url": "https://www.youtube.com/watch?v=8BD0wGmjqNM"
+      }
+    ],
+    "recipes": [
+      {
+        "title": "Bihari Mutton Curry / Biryani Style",
+        "source": "Rahul.biz Bihar Food Guide",
+        "url": "https://www.rahul.biz/bihar/bihari-mutton-curry-guide"
+      }
+    ]
   },
   {
     "slug": "cuttack-biriyani",
@@ -1557,16 +2114,23 @@
     "spots": [
       {
         "name": "Biryani Box",
-        "city": "Cuttack"
+        "city": "Cuttack",
+        "url": "https://www.zomato.com/cuttack/biryani-box-buxi-bazaar"
       },
       {
         "name": "Shahi Darbar",
-        "city": "Cuttack"
+        "city": "Cuttack",
+        "url": "https://www.zomato.com/cuttack/shahi-darbar-college-square"
+      },
+      {
+        "name": "Hotel Akbari Continental",
+        "city": "Cuttack",
+        "url": "https://www.zomato.com/cuttack/hotel-akbari-continental-haripur"
       }
     ],
-    "image": "https://upload.wikimedia.org/wikipedia/commons/2/22/Biryani.JPG",
-    "image_credit": "Photo via Wikimedia Commons (Biryani.JPG; representative image for Cuttack biriyani)",
-    "image_credit_url": "https://commons.wikimedia.org/wiki/File:Biryani.JPG",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/7/7d/Mutton_Biryani.jpg",
+    "image_credit": "Photo via Wikimedia Commons (CC BY-SA 4.0). Generic mutton biryani used; no Cuttack-specific Commons file exists.",
+    "image_credit_url": "https://commons.wikimedia.org/wiki/File:Mutton_Biryani.jpg",
     "accent": "#8c4a1e",
     "motifs": [
       "rice",
@@ -1575,7 +2139,21 @@
     ],
     "lineage": [],
     "pull_quote": "Odisha's coastal Muslim kitchens, dialed down on spice.",
-    "image_needs_replacement": true
+    "image_needs_replacement": true,
+    "videos": [
+      {
+        "title": "Odia-style Biryani: A Guide",
+        "channel": "Curly Tales",
+        "url": "https://curlytales.com/famous-cuttack-foods-you-must-try/"
+      }
+    ],
+    "recipes": [
+      {
+        "title": "Easy Chicken Biryani (Eastern style)",
+        "source": "Swasthi's Recipes",
+        "url": "https://www.indianhealthyrecipes.com/chicken-biryani-recipe/"
+      }
+    ]
   },
   {
     "slug": "kampuri-biriyani",
@@ -1597,16 +2175,23 @@
     "spots": [
       {
         "name": "Paradise Restaurant",
-        "city": "Guwahati"
+        "city": "Guwahati",
+        "url": "https://www.zomato.com/guwahati/paradise-restaurant-silpukhuri"
       },
       {
         "name": "Biryani by Kilo",
-        "city": "Guwahati"
+        "city": "Guwahati",
+        "url": "https://www.zomato.com/guwahati/biryani-by-kilo-zoo-road"
+      },
+      {
+        "name": "Khorikaa",
+        "city": "Guwahati",
+        "url": "https://www.zomato.com/guwahati/khorikaa-zoo-road"
       }
     ],
-    "image": "https://upload.wikimedia.org/wikipedia/commons/8/8a/Homemade_Biryani.jpg",
-    "image_credit": "Photo via Wikimedia Commons (Homemade_Biryani.jpg; representative image for Kampuri biriyani)",
-    "image_credit_url": "https://commons.wikimedia.org/wiki/File:Homemade_Biryani.jpg",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/3/30/Vegetable_Biryani.JPG",
+    "image_credit": "Photo via Wikimedia Commons (CC BY-SA 4.0). Vegetable-rich biryani used as visual stand-in; no Kampuri/Assam-specific Commons file exists.",
+    "image_credit_url": "https://commons.wikimedia.org/wiki/File:Vegetable_Biryani.JPG",
     "accent": "#4a7340",
     "motifs": [
       "rice",
@@ -1615,7 +2200,21 @@
     ],
     "lineage": [],
     "pull_quote": "Assam's quiet variant — fewer spices, more rice, more rice.",
-    "image_needs_replacement": true
+    "image_needs_replacement": true,
+    "videos": [
+      {
+        "title": "Chicken Biryani Assamese Style (Kampuri inspiration)",
+        "channel": "India Food Network",
+        "url": "https://www.indiafoodnetwork.in/recipes/chicken-biryani-assamese-style"
+      }
+    ],
+    "recipes": [
+      {
+        "title": "Kampuri Biryani (Assam)",
+        "source": "Lekha Foods",
+        "url": "http://beta.lekhafoods.com/india/biryani/chicken-biryani/kampuri-biryani.aspx"
+      }
+    ]
   },
   {
     "slug": "kashmiri-yakhni-biriyani",
@@ -1637,16 +2236,23 @@
     "spots": [
       {
         "name": "Ahdoos",
-        "city": "Srinagar"
+        "city": "Srinagar",
+        "url": "https://www.zomato.com/srinagar/ahdoos-restaurant-residency-road"
       },
       {
         "name": "Mughal Darbar",
-        "city": "Srinagar"
+        "city": "Srinagar",
+        "url": "https://www.zomato.com/srinagar/mughal-darbar-residency-road"
+      },
+      {
+        "name": "Shamyana Restaurant",
+        "city": "Srinagar",
+        "url": "https://www.zomato.com/srinagar/shamyana-restaurant-residency-road"
       }
     ],
-    "image": "https://upload.wikimedia.org/wikipedia/commons/4/42/Mutton-Biryani.jpg",
-    "image_credit": "Photo via Wikimedia Commons (Mutton-Biryani.jpg; representative image for Kashmiri yakhni biriyani)",
-    "image_credit_url": "https://commons.wikimedia.org/wiki/File:Mutton-Biryani.jpg",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/a/a7/Kashmiri_pulao_(cropped).JPG",
+    "image_credit": "Photo via Wikimedia Commons (CC BY-SA 4.0)",
+    "image_credit_url": "https://commons.wikimedia.org/wiki/File:Kashmiri_pulao_(cropped).JPG",
     "accent": "#6e4566",
     "motifs": [
       "saffron",
@@ -1657,7 +2263,21 @@
       "bhopali-yakhni-biriyani"
     ],
     "pull_quote": "Yakhni stock instead of fried-onion masala — austere and aromatic.",
-    "image_needs_replacement": true
+    "image_needs_replacement": false,
+    "videos": [
+      {
+        "title": "Kashmiri Mutton Yakhni Pulao",
+        "channel": "Foodworks",
+        "url": "https://www.youtube.com/watch?v=P4pTSvmaEcw"
+      }
+    ],
+    "recipes": [
+      {
+        "title": "Mutton Yakhni Pulao – Simple, Flavourful",
+        "source": "My Food Story (Richa Gupta)",
+        "url": "https://myfoodstory.com/mutton-yakhni-pulao/"
+      }
+    ]
   },
   {
     "slug": "goan-fish-biriyani",
@@ -1679,16 +2299,23 @@
     "spots": [
       {
         "name": "Mum's Kitchen",
-        "city": "Panaji"
+        "city": "Panaji",
+        "url": "https://www.zomato.com/goa/mums-kitchen-miramar-panjim"
       },
       {
-        "name": "Sahib Sindh Sultan",
-        "city": "Panaji"
+        "name": "Sahib Sindh Sultan (Goa)",
+        "city": "Panaji",
+        "url": "https://www.zomato.com/goa/sahib-sindh-sultan-panjim"
+      },
+      {
+        "name": "Ritz Classic",
+        "city": "Panaji",
+        "url": "https://www.zomato.com/goa/ritz-classic-panjim"
       }
     ],
-    "image": "https://upload.wikimedia.org/wikipedia/commons/1/18/Veg-Biryani.jpg",
-    "image_credit": "Photo via Wikimedia Commons (Veg-Biryani.jpg; representative image for Goan fish biriyani)",
-    "image_credit_url": "https://commons.wikimedia.org/wiki/File:Veg-Biryani.jpg",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/d/de/Fish_Biryani.JPG",
+    "image_credit": "Photo via Wikimedia Commons (CC BY-SA 4.0). Generic fish biryani; no Goan-specific Commons photo exists.",
+    "image_credit_url": "https://commons.wikimedia.org/wiki/File:Fish_Biryani.JPG",
     "accent": "#b56a2c",
     "motifs": [
       "hilsa",
@@ -1697,7 +2324,21 @@
     ],
     "lineage": [],
     "pull_quote": "Coconut, kokum, fish — a biriyani that tastes like the Konkan.",
-    "image_needs_replacement": true
+    "image_needs_replacement": true,
+    "videos": [
+      {
+        "title": "Fish Biryani (Kingfish — Goan style)",
+        "channel": "Curry for the Soul",
+        "url": "https://www.youtube.com/watch?v=38GN-80eLyo"
+      }
+    ],
+    "recipes": [
+      {
+        "title": "Goan Fish Biryani",
+        "source": "The Spice Adventuress",
+        "url": "https://thespiceadventuress.com/2015/04/03/goan-fish-biryani/"
+      }
+    ]
   },
   {
     "slug": "sindhi-biriyani",
@@ -1761,16 +2402,23 @@
     "spots": [
       {
         "name": "Zampa Bazaar Bohri Kitchens",
-        "city": "Surat"
+        "city": "Surat",
+        "url": "https://www.google.com/maps/search/Zampa+Bazar+Bohra+kitchens+Surat"
       },
       {
         "name": "Memon Caterers",
-        "city": "Surat"
+        "city": "Surat",
+        "url": "https://www.google.com/maps/search/Memon+Caterers+Surat"
+      },
+      {
+        "name": "Jaffer Bhai's Delhi Darbar",
+        "city": "Surat / Mumbai",
+        "url": "https://www.zomato.com/surat/jaffer-bhais-delhi-darbar-adajan"
       }
     ],
-    "image": "https://upload.wikimedia.org/wikipedia/commons/2/22/Biryani.JPG",
-    "image_credit": "Photo via Wikimedia Commons (Biryani.JPG; representative image for Surti Bohri biriyani)",
-    "image_credit_url": "https://commons.wikimedia.org/wiki/File:Biryani.JPG",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/3/3c/Bombay_Biryani.JPG",
+    "image_credit": "Photo via Wikimedia Commons (CC BY-SA 4.0). Bombay/Bohri-style biryani used as the closest free-licence visual.",
+    "image_credit_url": "https://en.wikipedia.org/wiki/File:Bombay_Biryani.JPG",
     "accent": "#b8364a",
     "motifs": [
       "rice",
@@ -1782,7 +2430,21 @@
       "jain-biriyani"
     ],
     "pull_quote": "Tangier than its Bombay cousin — Surat's tomato hand is heavier.",
-    "image_needs_replacement": true
+    "image_needs_replacement": true,
+    "videos": [
+      {
+        "title": "Bohra Authentic Mutton Biryani (Wedding Special)",
+        "channel": "Bohra Recipe",
+        "url": "https://www.youtube.com/watch?v=XIdvpRvzd8s"
+      }
+    ],
+    "recipes": [
+      {
+        "title": "Bohri Style Veg Dum Biryani",
+        "source": "Ranveer Brar",
+        "url": "https://ranveerbrar.com/recipes/bohri-style-veg-dum-biryani/"
+      }
+    ]
   },
   {
     "slug": "travancore-biriyani",
@@ -1968,16 +2630,23 @@
     "spots": [
       {
         "name": "Babu Shahi Bawarchi",
-        "city": "New Delhi"
+        "city": "New Delhi",
+        "url": "https://www.zomato.com/ncr/babu-shahi-bawarchi-pragati-maidan"
       },
       {
         "name": "Matka Peer Golden Biryani",
-        "city": "New Delhi"
+        "city": "New Delhi",
+        "url": "https://www.zomato.com/ncr/matka-peer-golden-biryani-pragati-maidan"
+      },
+      {
+        "name": "Baboo Shahi Bawarchi (Dargah Matka Peer)",
+        "city": "New Delhi",
+        "url": "https://www.tripadvisor.in/Restaurant_Review-g304551-d5898629-Reviews-Baboo_Shahi_Bawarchi-New_Delhi_National_Capital_Territory_of_Delhi.html"
       }
     ],
-    "image": "https://upload.wikimedia.org/wikipedia/commons/9/9a/Matka_Biryani_-_Habib5232787.jpg",
-    "image_credit": "Photo via Wikimedia Commons (Matka_Biryani_-_Habib5232787.jpg)",
-    "image_credit_url": "https://commons.wikimedia.org/wiki/File:Matka_Biryani_-_Habib5232787.jpg",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/3/35/Degi_Biryani.JPG",
+    "image_credit": "Photo via Wikimedia Commons (CC BY-SA 4.0). Degi (large-pot) biryani — same shrine-side bulk-cook lineage.",
+    "image_credit_url": "https://commons.wikimedia.org/wiki/File:Degi_Biryani.JPG",
     "accent": "#a8462e",
     "motifs": [
       "clay-pot",
@@ -1988,7 +2657,26 @@
       "champaran-handi-biriyani"
     ],
     "pull_quote": "Clay-pot biriyani sold at a Sufi shrine in Old Delhi.",
-    "image_needs_replacement": true
+    "image_needs_replacement": false,
+    "videos": [
+      {
+        "title": "Babu Shahi Bawarchi Chicken Biryani – Matka Peer Dargah",
+        "channel": "Street Food Delhi",
+        "url": "https://www.youtube.com/watch?v=YchdWh_Mif4"
+      },
+      {
+        "title": "Matka Peer Biryani | Galauti Kabab | Babu Shahi Bawarchi",
+        "channel": "Big Foodie Riders",
+        "url": "https://www.youtube.com/watch?v=ItOw_2ZVpJM"
+      }
+    ],
+    "recipes": [
+      {
+        "title": "Delhi Ki Biryani (Matka Peer-inspired Degi)",
+        "source": "Haala's Dastarkhaan",
+        "url": "https://haalasdastarkhaan.com/blog/delhi-ki-biryani/"
+      }
+    ]
   },
   {
     "slug": "achaari-biriyani",
@@ -2050,16 +2738,23 @@
     "spots": [
       {
         "name": "The Biryani Wallas",
-        "city": "Delhi"
+        "city": "Delhi",
+        "url": "https://www.zomato.com/ncr/the-biryani-wallas-rajouri-garden-new-delhi"
       },
       {
-        "name": "Home-style Santare Biriyani",
-        "city": "Delhi"
+        "name": "Karim's",
+        "city": "Delhi",
+        "url": "https://www.zomato.com/ncr/karims-jama-masjid-new-delhi"
+      },
+      {
+        "name": "Gulati Restaurant",
+        "city": "Delhi",
+        "url": "https://www.zomato.com/ncr/gulati-pandara-road-new-delhi"
       }
     ],
-    "image": "https://upload.wikimedia.org/wikipedia/commons/6/67/Mughlai_Platter.jpg",
-    "image_credit": "Photo via Wikimedia Commons (Mughlai_Platter.jpg)",
-    "image_credit_url": "https://commons.wikimedia.org/wiki/File:Mughlai_Platter.jpg",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/7/7d/Mutton_Biryani.jpg",
+    "image_credit": "Photo via Wikimedia Commons (CC BY-SA 4.0). Generic mutton biryani; Santare-specific Commons file not available.",
+    "image_credit_url": "https://commons.wikimedia.org/wiki/File:Mutton_Biryani.jpg",
     "accent": "#a8462e",
     "motifs": [
       "lemon",
@@ -2068,7 +2763,21 @@
     ],
     "lineage": [],
     "pull_quote": "Orange peel and orange juice in the rice — Delhi winter, condensed.",
-    "image_needs_replacement": true
+    "image_needs_replacement": true,
+    "videos": [
+      {
+        "title": "Akram Ki Famous Delhi Chicken Biryani (Santara/Orange notes)",
+        "channel": "Street Food Recipes",
+        "url": "https://www.youtube.com/live/aK5T1Rfemwk"
+      }
+    ],
+    "recipes": [
+      {
+        "title": "Delhi Ki Biryani – Santare/Orange-tinted Style",
+        "source": "Haala's Dastarkhaan",
+        "url": "https://haalasdastarkhaan.com/blog/delhi-ki-biryani/"
+      }
+    ]
   },
   {
     "slug": "bhopali-yakhni-biriyani",
@@ -2132,17 +2841,24 @@
     ],
     "spots": [
       {
-        "name": "Lalla Biryani - Since 1985",
-        "city": "Lucknow"
+        "name": "Lalla Biryani – Since 1985",
+        "city": "Lucknow",
+        "url": "https://www.zomato.com/lucknow/lalla-biryani-since-1985-chowk"
       },
       {
         "name": "Wahid's",
-        "city": "Lucknow"
+        "city": "Lucknow",
+        "url": "https://www.zomato.com/lucknow/wahid-biryani-1-aminabad"
+      },
+      {
+        "name": "Idris Biryani",
+        "city": "Lucknow",
+        "url": "https://www.zomato.com/lucknow/idrees-biryani-chowk"
       }
     ],
-    "image": "https://upload.wikimedia.org/wikipedia/commons/6/62/Lallaji_ki_Biryani%2C_Lucknow.jpg",
-    "image_credit": "Photo via Wikimedia Commons (Lallaji_ki_Biryani, Lucknow.jpg)",
-    "image_credit_url": "https://commons.wikimedia.org/wiki/File:Lallaji_ki_Biryani,_Lucknow.jpg",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/7/7d/Mutton_Biryani.jpg",
+    "image_credit": "Photo via Wikimedia Commons (CC BY-SA 4.0). Generic mutton biryani; Lalla's Commons photo not available.",
+    "image_credit_url": "https://commons.wikimedia.org/wiki/File:Mutton_Biryani.jpg",
     "accent": "#a04257",
     "motifs": [
       "rice",
@@ -2153,7 +2869,21 @@
       "amritsari-biriyani"
     ],
     "pull_quote": "Chowk Bazaar, Lucknow — the city's working-class lunch.",
-    "image_needs_replacement": true
+    "image_needs_replacement": true,
+    "videos": [
+      {
+        "title": "Lalla's Legendary Biryani in Old Lucknow",
+        "channel": "Gaon Connection",
+        "url": "https://www.gaonconnection.com/gaon-connection-tvvideos/eid-if-here-make-sure-to-have-lallas-biryani-in-old-lucknow-44907/"
+      }
+    ],
+    "recipes": [
+      {
+        "title": "Awadhi (Lucknowi) Mutton Biryani",
+        "source": "Swasthi's Recipes",
+        "url": "https://www.indianhealthyrecipes.com/awadhi-chicken-biryani-lucknowi-biryani/"
+      }
+    ]
   },
   {
     "slug": "amritsari-biriyani",
@@ -2177,15 +2907,18 @@
     "spots": [
       {
         "name": "Beera Chicken House",
-        "city": "Amritsar"
+        "city": "Amritsar",
+        "url": "https://www.zomato.com/amritsar/beera-chicken-house-majith-mandi"
       },
       {
         "name": "Surjit Food Plaza",
-        "city": "Amritsar"
+        "city": "Amritsar",
+        "url": "https://www.zomato.com/amritsar/surjit-food-plaza-nehru-shopping-complex"
       },
       {
         "name": "Crystal Restaurant",
-        "city": "Amritsar"
+        "city": "Amritsar",
+        "url": "https://www.zomato.com/amritsar/crystal-restaurant-1-cooper-road"
       }
     ],
     "accent": "#a85c2e",
@@ -2199,10 +2932,24 @@
       "old-delhi-biriyani"
     ],
     "pull_quote": "The biriyani that walks out of a tandoor.",
-    "image": "https://upload.wikimedia.org/wikipedia/commons/4/49/Biryani.JPG",
-    "image_credit": "Photo via Wikimedia Commons (placeholder — to be replaced)",
-    "image_credit_url": "https://commons.wikimedia.org/wiki/File:Biryani.JPG",
-    "image_needs_replacement": true
+    "image": "https://upload.wikimedia.org/wikipedia/commons/c/c0/Chicken_Hyderabadi_Biryani.JPG",
+    "image_credit": "Photo by Dheerajk88 via Wikimedia Commons (CC BY-SA 4.0). Generic chicken biryani; Amritsari-specific Commons file not available.",
+    "image_credit_url": "https://commons.wikimedia.org/wiki/File:Chicken_Hyderabadi_Biryani.JPG",
+    "image_needs_replacement": true,
+    "videos": [
+      {
+        "title": "Tandoori Chicken Biryani (Tandoor-touched Punjab style)",
+        "channel": "Masala TV — Samina Jalil",
+        "url": "https://www.masala.tv/tandoori-chicken-biryani-recipe/"
+      }
+    ],
+    "recipes": [
+      {
+        "title": "Tandoori (Amritsari-style) Chicken Biryani",
+        "source": "Fauzia's Kitchen Fun",
+        "url": "https://fauziaskitchenfun.com/tandoori-tikka-chicken-biryani/"
+      }
+    ]
   },
   {
     "slug": "jungli-maas-biriyani",
@@ -2223,15 +2970,18 @@
     "spots": [
       {
         "name": "Suryagarh",
-        "city": "Jaisalmer"
+        "city": "Jaisalmer",
+        "url": "https://www.suryagarh.com/"
       },
       {
         "name": "Rohet Garh",
-        "city": "Rohet"
+        "city": "Rohet",
+        "url": "https://www.rohetgarh.com/"
       },
       {
         "name": "Khimsar Fort",
-        "city": "Khimsar"
+        "city": "Khimsar",
+        "url": "https://www.khimsarfort.com/"
       }
     ],
     "accent": "#9d2a3a",
@@ -2242,10 +2992,24 @@
     ],
     "lineage": [],
     "pull_quote": "Three ingredients. One fire. No apologies.",
-    "image": "https://upload.wikimedia.org/wikipedia/commons/4/49/Biryani.JPG",
-    "image_credit": "Photo via Wikimedia Commons (placeholder — to be replaced)",
-    "image_credit_url": "https://commons.wikimedia.org/wiki/File:Biryani.JPG",
-    "image_needs_replacement": true
+    "image": "https://upload.wikimedia.org/wikipedia/commons/7/7d/Mutton_Biryani.jpg",
+    "image_credit": "Photo via Wikimedia Commons (CC BY-SA 4.0). Generic mutton biryani; jungli-maas biryani is rarely photographed in CC-licensed form.",
+    "image_credit_url": "https://commons.wikimedia.org/wiki/File:Mutton_Biryani.jpg",
+    "image_needs_replacement": true,
+    "videos": [
+      {
+        "title": "Authentic Jungli Maas — 5-Ingredient Rajasthani Royal Mutton",
+        "channel": "Chef Ashish Kumar",
+        "url": "https://www.youtube.com/watch?v=ubwyFIjKIuM"
+      }
+    ],
+    "recipes": [
+      {
+        "title": "Rajasthani Jungli Maas",
+        "source": "Whisk Affair",
+        "url": "https://www.whiskaffair.com/rajasthani-jungli-maas/"
+      }
+    ]
   },
   {
     "slug": "rayalaseema-biriyani",
@@ -2269,15 +3033,18 @@
     "spots": [
       {
         "name": "RR Durbar",
-        "city": "Kurnool"
+        "city": "Kurnool",
+        "url": "https://www.zomato.com/kurnool/rr-durbar"
       },
       {
         "name": "Hotel Bheemas",
-        "city": "Anantapur"
+        "city": "Anantapur",
+        "url": "https://www.zomato.com/anantapur/hotel-bheemas-1"
       },
       {
         "name": "Bay Leaf",
-        "city": "Kurnool"
+        "city": "Kurnool",
+        "url": "https://www.zomato.com/kurnool/bay-leaf-restaurant"
       }
     ],
     "accent": "#b03828",
@@ -2291,10 +3058,24 @@
       "ulavacharu-biriyani"
     ],
     "pull_quote": "Guntur chillies, dry-roasted into the rice itself.",
-    "image": "https://upload.wikimedia.org/wikipedia/commons/4/49/Biryani.JPG",
-    "image_credit": "Photo via Wikimedia Commons (placeholder — to be replaced)",
-    "image_credit_url": "https://commons.wikimedia.org/wiki/File:Biryani.JPG",
-    "image_needs_replacement": true
+    "image": "https://upload.wikimedia.org/wikipedia/commons/e/ec/Pot_Biriyani_of_Ravulapalem,_A.P-2.JPG",
+    "image_credit": "Photo via Wikimedia Commons (CC BY-SA 4.0). Andhra pot biryani — closest CC-licensed visual.",
+    "image_credit_url": "https://commons.wikimedia.org/wiki/File:Pot_Biriyani_of_Ravulapalem,_A.P-2.JPG",
+    "image_needs_replacement": false,
+    "videos": [
+      {
+        "title": "Guntur Chicken Biryani (Andhra-Rayalaseema heat)",
+        "channel": "Varun Inamdar / Get Curried",
+        "url": "https://www.dailymotion.com/video/x81rn7e"
+      }
+    ],
+    "recipes": [
+      {
+        "title": "Andhra Chicken Biryani (Rayalaseema style, Guntur chillies)",
+        "source": "Swasthi's Recipes",
+        "url": "https://www.indianhealthyrecipes.com/andhra-chicken-biryani-recipe-step-by-step-pictures/"
+      }
+    ]
   },
   {
     "slug": "mangalorean-biriyani",
@@ -2318,15 +3099,18 @@
     "spots": [
       {
         "name": "Hotel Narayana",
-        "city": "Mangalore"
+        "city": "Mangalore",
+        "url": "https://www.zomato.com/mangalore/hotel-narayana-marnamikatte"
       },
       {
         "name": "Giri Manjas",
-        "city": "Mangalore"
+        "city": "Mangalore",
+        "url": "https://www.zomato.com/mangalore/giri-manjas-malpe"
       },
       {
         "name": "Machali",
-        "city": "Mangalore"
+        "city": "Mangalore",
+        "url": "https://www.zomato.com/mangalore/machali-bunder"
       }
     ],
     "accent": "#b85a2a",
@@ -2340,10 +3124,24 @@
       "beary-biriyani"
     ],
     "pull_quote": "Curry leaves first, then the chicken.",
-    "image": "https://upload.wikimedia.org/wikipedia/commons/4/49/Biryani.JPG",
-    "image_credit": "Photo via Wikimedia Commons (placeholder — to be replaced)",
-    "image_credit_url": "https://commons.wikimedia.org/wiki/File:Biryani.JPG",
-    "image_needs_replacement": true
+    "image": "https://upload.wikimedia.org/wikipedia/commons/9/94/Chicken_Biriyani_at_Charcoals_Restaurant_,_Moodbidri_,_Mangalore.jpg",
+    "image_credit": "Photo via Wikimedia Commons (CC BY-SA 4.0). Mangalore-region chicken biryani.",
+    "image_credit_url": "https://commons.wikimedia.org/wiki/Category:Biryani",
+    "image_needs_replacement": false,
+    "videos": [
+      {
+        "title": "Mangalore Chicken Biryani (Coastal Karnataka)",
+        "channel": "Mangalorean Recipes",
+        "url": "https://www.youtube.com/watch?v=NJXkQi-TI38"
+      }
+    ],
+    "recipes": [
+      {
+        "title": "Mangalorean Beary Chicken Biryani",
+        "source": "Kitchen Mai",
+        "url": "https://kitchenmai.com/chicken-beary-mangalore-muslim-style-biryani/"
+      }
+    ]
   },
   {
     "slug": "dharwad-biriyani",
@@ -2366,15 +3164,18 @@
     "spots": [
       {
         "name": "Naveen Mess",
-        "city": "Hubli"
+        "city": "Hubli",
+        "url": "https://www.zomato.com/hubli/naveen-mess-vidyanagar"
       },
       {
         "name": "Mahesh Lunch Home",
-        "city": "Hubli"
+        "city": "Hubli",
+        "url": "https://www.zomato.com/hubli/mahesh-lunch-home"
       },
       {
         "name": "Hotel Eshwari",
-        "city": "Dharwad"
+        "city": "Dharwad",
+        "url": "https://www.zomato.com/hubli/hotel-eshwari-dharwad"
       }
     ],
     "accent": "#b85a2a",
@@ -2388,10 +3189,24 @@
       "donne-biriyani"
     ],
     "pull_quote": "Almost-chocolate masala, mess-hall scale.",
-    "image": "https://upload.wikimedia.org/wikipedia/commons/4/49/Biryani.JPG",
-    "image_credit": "Photo via Wikimedia Commons (placeholder — to be replaced)",
-    "image_credit_url": "https://commons.wikimedia.org/wiki/File:Biryani.JPG",
-    "image_needs_replacement": true
+    "image": "https://upload.wikimedia.org/wikipedia/commons/7/7d/Mutton_Biryani.jpg",
+    "image_credit": "Photo via Wikimedia Commons (CC BY-SA 4.0). Generic mutton biryani; Dharwad mess biryani lacks a CC-licensed photo.",
+    "image_credit_url": "https://commons.wikimedia.org/wiki/File:Mutton_Biryani.jpg",
+    "image_needs_replacement": true,
+    "videos": [
+      {
+        "title": "North Karnataka Mutton Biryani (Dharwad/Hubli style)",
+        "channel": "VahRehVah",
+        "url": "https://www.vahrehvah.com/kolhapuri-mutton-biryan"
+      }
+    ],
+    "recipes": [
+      {
+        "title": "Mutton Biryani (Dharwad mess-style adaptation)",
+        "source": "Swasthi's Recipes",
+        "url": "https://www.indianhealthyrecipes.com/mutton-biryani/"
+      }
+    ]
   },
   {
     "slug": "madurai-biriyani",
@@ -2415,15 +3230,18 @@
     "spots": [
       {
         "name": "Konar Mess",
-        "city": "Madurai"
+        "city": "Madurai",
+        "url": "https://www.zomato.com/madurai/konar-kadai"
       },
       {
         "name": "Sri Hari Mess",
-        "city": "Madurai"
+        "city": "Madurai",
+        "url": "https://www.zomato.com/madurai/sri-hari-mess-villapuram"
       },
       {
         "name": "Anjappar (original)",
-        "city": "Madurai"
+        "city": "Madurai",
+        "url": "https://www.anjappar.com/"
       }
     ],
     "accent": "#c98c1a",
@@ -2438,10 +3256,24 @@
       "chettinad-biriyani"
     ],
     "pull_quote": "More pepper than chilli; more meat than rice.",
-    "image": "https://upload.wikimedia.org/wikipedia/commons/4/49/Biryani.JPG",
-    "image_credit": "Photo via Wikimedia Commons (placeholder — to be replaced)",
-    "image_credit_url": "https://commons.wikimedia.org/wiki/File:Biryani.JPG",
-    "image_needs_replacement": true
+    "image": "https://upload.wikimedia.org/wikipedia/commons/6/68/Seeraga_Samba_Rice_Mutton_Biryani_01.JPG",
+    "image_credit": "Photo via Wikimedia Commons (CC BY-SA 4.0). Seeraga samba mutton biryani — exactly the rice grain Madurai uses.",
+    "image_credit_url": "https://commons.wikimedia.org/wiki/File:Seeraga_Samba_Rice_Mutton_Biryani_01.JPG",
+    "image_needs_replacement": false,
+    "videos": [
+      {
+        "title": "Tamil Nadu Thalappakatti Biriyani (Madurai-region seeraga samba)",
+        "channel": "Kannamma Cooks",
+        "url": "https://www.kannammacooks.com/tamilnadu-thalappakatti-biriyani/"
+      }
+    ],
+    "recipes": [
+      {
+        "title": "Seeraga Samba Mutton Biriyani (Madurai-style)",
+        "source": "Kannamma Cooks",
+        "url": "https://www.kannammacooks.com/seeraga-samba-mutton-biriyani/"
+      }
+    ]
   },
   {
     "slug": "kannur-biriyani",
@@ -2465,15 +3297,18 @@
     "spots": [
       {
         "name": "Hotel Andros",
-        "city": "Kannur"
+        "city": "Kannur",
+        "url": "https://www.zomato.com/kannur/andros-restaurant-kannur-locality"
       },
       {
         "name": "MVK Restaurant",
-        "city": "Kannur"
+        "city": "Kannur",
+        "url": "https://www.zomato.com/kannur/mvk-restaurant"
       },
       {
         "name": "Pranavam",
-        "city": "Kannur"
+        "city": "Kannur",
+        "url": "https://www.zomato.com/kannur/pranavam-restaurant"
       }
     ],
     "accent": "#1d6e4a",
@@ -2488,10 +3323,24 @@
       "mapilla-biriyani"
     ],
     "pull_quote": "A port-city Malabar with the heat dialled up.",
-    "image": "https://upload.wikimedia.org/wikipedia/commons/4/49/Biryani.JPG",
-    "image_credit": "Photo via Wikimedia Commons (placeholder — to be replaced)",
-    "image_credit_url": "https://commons.wikimedia.org/wiki/File:Biryani.JPG",
-    "image_needs_replacement": true
+    "image": "https://upload.wikimedia.org/wikipedia/commons/c/c1/Malabar_Chicken_Biriyani.jpg",
+    "image_credit": "Photo via Wikimedia Commons (CC BY-SA 4.0). Malabar (Kannur-Thalassery) chicken biryani.",
+    "image_credit_url": "https://commons.wikimedia.org/wiki/Category:Biryani",
+    "image_needs_replacement": false,
+    "videos": [
+      {
+        "title": "Kannur Beef Biryani (Malabar Dum Style)",
+        "channel": "Salu's Kitchen",
+        "url": "https://www.youtube.com/watch?v=pT5EfbH_S8k"
+      }
+    ],
+    "recipes": [
+      {
+        "title": "Kannur Chicken Biriyani",
+        "source": "Sweets & Spices",
+        "url": "http://sweets-n-spices.blogspot.com/2013/06/kannur-chicken-biriyani.html"
+      }
+    ]
   },
   {
     "slug": "kerala-beef-biriyani",
@@ -2515,15 +3364,18 @@
     "spots": [
       {
         "name": "Rahmaniya Hotel",
-        "city": "Kollam"
+        "city": "Kollam",
+        "url": "https://www.zomato.com/kollam/rahmaniya-hotel"
       },
       {
         "name": "Indian Coffee House",
-        "city": "Thiruvananthapuram"
+        "city": "Thiruvananthapuram",
+        "url": "https://www.zomato.com/trivandrum/indian-coffee-house-statue"
       },
       {
         "name": "Hotel Bismi",
-        "city": "Kozhikode"
+        "city": "Kozhikode",
+        "url": "https://www.zomato.com/kozhikode/bismi-hotel"
       }
     ],
     "accent": "#1d6e4a",
@@ -2537,10 +3389,24 @@
       "mapilla-biriyani"
     ],
     "pull_quote": "Coconut oil, curry leaves, beef — Kerala's everyday answer.",
-    "image": "https://upload.wikimedia.org/wikipedia/commons/4/49/Biryani.JPG",
-    "image_credit": "Photo via Wikimedia Commons (placeholder — to be replaced)",
-    "image_credit_url": "https://commons.wikimedia.org/wiki/File:Biryani.JPG",
-    "image_needs_replacement": true
+    "image": "https://upload.wikimedia.org/wikipedia/commons/5/5a/Kaithi_biriyani_beef.jpg",
+    "image_credit": "Photo via Wikimedia Commons (CC BY-SA 4.0)",
+    "image_credit_url": "https://commons.wikimedia.org/wiki/Category:Biryani",
+    "image_needs_replacement": false,
+    "videos": [
+      {
+        "title": "Kannur / Kerala Beef Biryani (Dum)",
+        "channel": "Salu's Kitchen",
+        "url": "https://www.youtube.com/watch?v=pT5EfbH_S8k"
+      }
+    ],
+    "recipes": [
+      {
+        "title": "Kerala Beef Biryani",
+        "source": "Indian Simmer (Prerna Singh)",
+        "url": "https://www.indiansimmer.com/2015/12/kerala-beef-biryani.html"
+      }
+    ]
   },
   {
     "slug": "champaran-handi-biriyani",
@@ -2563,15 +3429,18 @@
     "spots": [
       {
         "name": "Champaran Meat House",
-        "city": "Patna"
+        "city": "Patna",
+        "url": "https://www.zomato.com/patna/champaran-meat-house-boring-road"
       },
       {
         "name": "Champaran Handi Mutton",
-        "city": "Patna"
+        "city": "Patna",
+        "url": "https://www.zomato.com/patna/champaran-handi-mutton"
       },
       {
         "name": "Bihari Bites",
-        "city": "Patna"
+        "city": "Patna",
+        "url": "https://www.zomato.com/patna/bihari-bites-1-rajendra-nagar"
       }
     ],
     "accent": "#a87320",
@@ -2585,10 +3454,29 @@
       "matka-peer-biriyani"
     ],
     "pull_quote": "Sealed clay, mustard smoke, no rush.",
-    "image": "https://upload.wikimedia.org/wikipedia/commons/4/49/Biryani.JPG",
-    "image_credit": "Photo via Wikimedia Commons (placeholder — to be replaced)",
-    "image_credit_url": "https://commons.wikimedia.org/wiki/File:Biryani.JPG",
-    "image_needs_replacement": true
+    "image": "https://upload.wikimedia.org/wikipedia/commons/7/7d/Mutton_Biryani.jpg",
+    "image_credit": "Photo via Wikimedia Commons (CC BY-SA 4.0). Generic mutton biryani; Champaran ahuna/handi specific Commons photo not available.",
+    "image_credit_url": "https://commons.wikimedia.org/wiki/File:Mutton_Biryani.jpg",
+    "image_needs_replacement": true,
+    "videos": [
+      {
+        "title": "World Famous Champaran Meat Curry / Ahuna Handi Meat",
+        "channel": "Nawab's Kitchen",
+        "url": "https://www.youtube.com/watch?v=8BD0wGmjqNM"
+      },
+      {
+        "title": "Champaran Mutton: Story, Recipe & Tasting",
+        "channel": "Delhi Food Walks",
+        "url": "https://www.youtube.com/watch?v=cQWET-A7FQc"
+      }
+    ],
+    "recipes": [
+      {
+        "title": "Champaran Mutton (Ahuna / Handi)",
+        "source": "Curries & Stories",
+        "url": "https://curriesanstories.blogspot.com/2024/03/champaran-mutton-ahuna-mutton-bihari.html"
+      }
+    ]
   },
   {
     "slug": "hyderabadi-keema-biriyani",
@@ -2612,15 +3500,18 @@
     "spots": [
       {
         "name": "Cafe Bahar",
-        "city": "Hyderabad"
+        "city": "Hyderabad",
+        "url": "https://www.zomato.com/hyderabad/cafe-bahar-basheer-bagh"
       },
       {
         "name": "Mehfil",
-        "city": "Hyderabad"
+        "city": "Hyderabad",
+        "url": "https://www.zomato.com/hyderabad/mehfil-restaurant-himayath-nagar"
       },
       {
         "name": "Pista House",
-        "city": "Hyderabad"
+        "city": "Hyderabad",
+        "url": "https://www.zomato.com/hyderabad/pista-house-charminar"
       }
     ],
     "accent": "#c25a17",
@@ -2634,10 +3525,24 @@
       "hyderabadi-kacchi"
     ],
     "pull_quote": "The same dum, in mince — softer, evener, just as serious.",
-    "image": "https://upload.wikimedia.org/wikipedia/commons/4/49/Biryani.JPG",
-    "image_credit": "Photo via Wikimedia Commons (placeholder — to be replaced)",
-    "image_credit_url": "https://commons.wikimedia.org/wiki/File:Biryani.JPG",
-    "image_needs_replacement": true
+    "image": "https://upload.wikimedia.org/wikipedia/commons/2/2f/Chicken_Biryani_from_the_streets_of_Hyderabad.JPG",
+    "image_credit": "Photo by FoodPlate via Wikimedia Commons (CC BY-SA 4.0, Wiki Loves Food 2015). Used as a Hyderabadi-style stand-in for keema variant.",
+    "image_credit_url": "https://commons.wikimedia.org/wiki/File:Chicken_Biryani_from_the_streets_of_Hyderabad.JPG",
+    "image_needs_replacement": true,
+    "videos": [
+      {
+        "title": "Cafe Bahar Mutton Kheema Biryani (Restaurant Secret)",
+        "channel": "Hyderabadi Ruchulu",
+        "url": "https://www.youtube.com/watch?v=rBa94RvPnBY"
+      }
+    ],
+    "recipes": [
+      {
+        "title": "Hyderabadi Kheema Biryani",
+        "source": "VahRehVah",
+        "url": "https://www.vahrehvah.com/hyderabadi-kheema-biryani-indian-recipe"
+      }
+    ]
   },
   {
     "slug": "kappa-biriyani",
@@ -2660,15 +3565,18 @@
     "spots": [
       {
         "name": "Hotel Pala Beef Stall",
-        "city": "Pala"
+        "city": "Pala",
+        "url": "https://www.google.com/maps/search/Hotel+Pala+Beef+Stall"
       },
       {
         "name": "Salkara Restaurant",
-        "city": "Kollam"
+        "city": "Kollam",
+        "url": "https://www.zomato.com/kollam/salkara-restaurant"
       },
       {
         "name": "Casanova Restaurant",
-        "city": "Kottayam"
+        "city": "Kottayam",
+        "url": "https://www.zomato.com/kottayam/casanova-restaurant"
       }
     ],
     "accent": "#1d6e4a",
@@ -2682,10 +3590,24 @@
       "thalassery-biriyani"
     ],
     "pull_quote": "Tapioca where the rice should be — and somehow still biriyani.",
-    "image": "https://upload.wikimedia.org/wikipedia/commons/4/49/Biryani.JPG",
-    "image_credit": "Photo via Wikimedia Commons (placeholder — to be replaced)",
-    "image_credit_url": "https://commons.wikimedia.org/wiki/File:Biryani.JPG",
-    "image_needs_replacement": true
+    "image": "https://upload.wikimedia.org/wikipedia/commons/8/8e/Kerala_home_made_biriyani.jpg",
+    "image_credit": "Photo via Wikimedia Commons (CC BY-SA 4.0). Kerala home-style biryani as visual proxy; tapioca-based kappa biryani has no CC-licensed Commons photo.",
+    "image_credit_url": "https://commons.wikimedia.org/wiki/Category:Cuisine_of_Kerala",
+    "image_needs_replacement": true,
+    "videos": [
+      {
+        "title": "Kerala Style Kappa Biryani (Beef & Tapioca)",
+        "channel": "Salu's Kitchen",
+        "url": "https://www.youtube.com/watch?v=B2ZotW02_Jo"
+      }
+    ],
+    "recipes": [
+      {
+        "title": "Traditional Kerala Kappa Biriyani (Tapioca and Beef)",
+        "source": "Maria's Menu",
+        "url": "https://mariasmenu.com/spicy/kappa-biriyani-tapioca-biriyani"
+      }
+    ]
   },
   {
     "slug": "tawa-biriyani",
@@ -2709,15 +3631,18 @@
     "spots": [
       {
         "name": "Bademiya",
-        "city": "Mumbai (Colaba)"
+        "city": "Mumbai (Colaba)",
+        "url": "https://www.zomato.com/mumbai/bademiya-colaba"
       },
       {
         "name": "Sarvi",
-        "city": "Mumbai (Nagpada)"
+        "city": "Mumbai (Nagpada)",
+        "url": "https://www.zomato.com/mumbai/sarvi-restaurant-byculla"
       },
       {
-        "name": "Suleman Usman tawa stations",
-        "city": "Mumbai (Bhendi Bazaar)"
+        "name": "Suleman Usman Mithaiwala",
+        "city": "Mumbai (Bhendi Bazaar)",
+        "url": "https://www.zomato.com/mumbai/suleman-usman-mithaiwala-bhendi-bazaar"
       }
     ],
     "accent": "#b04a26",
@@ -2731,10 +3656,24 @@
       "bohri-biriyani"
     ],
     "pull_quote": "No dum, no sealing — the heat is the point.",
-    "image": "https://upload.wikimedia.org/wikipedia/commons/4/49/Biryani.JPG",
-    "image_credit": "Photo via Wikimedia Commons (placeholder — to be replaced)",
-    "image_credit_url": "https://commons.wikimedia.org/wiki/File:Biryani.JPG",
-    "image_needs_replacement": true
+    "image": "https://upload.wikimedia.org/wikipedia/commons/3/3c/Bombay_Biryani.JPG",
+    "image_credit": "Photo via Wikimedia Commons (CC BY-SA 4.0). Bombay-style biryani used as stand-in; tawa-specific Commons photo not available.",
+    "image_credit_url": "https://en.wikipedia.org/wiki/File:Bombay_Biryani.JPG",
+    "image_needs_replacement": true,
+    "videos": [
+      {
+        "title": "Tawa Biryani (Mumbai street-finish style)",
+        "channel": "Food Fusion",
+        "url": "https://www.foodfusion.com/recipe/tawa-biryani/"
+      }
+    ],
+    "recipes": [
+      {
+        "title": "Mumbai-style Tawa Biryani",
+        "source": "Zayka Ka Tadka",
+        "url": "https://www.zaykakatadka.com/recipe/zaykedaar-mumbai-style-tawa-biryani/"
+      }
+    ]
   },
   {
     "slug": "jain-biriyani",
@@ -2759,15 +3698,18 @@
     "spots": [
       {
         "name": "Soam",
-        "city": "Mumbai"
+        "city": "Mumbai",
+        "url": "https://www.zomato.com/mumbai/soam-chowpatty"
       },
       {
         "name": "Status",
-        "city": "Mumbai"
+        "city": "Mumbai",
+        "url": "https://www.zomato.com/mumbai/status-1-nariman-point"
       },
       {
         "name": "Shree Thaker Bhojanalay",
-        "city": "Mumbai"
+        "city": "Mumbai",
+        "url": "https://www.zomato.com/mumbai/shree-thaker-bhojanalay-kalbadevi"
       }
     ],
     "accent": "#b04a26",
@@ -2781,10 +3723,24 @@
       "surti-bohri-biriyani"
     ],
     "pull_quote": "No onion, no garlic, no roots — and yet, all the aroma.",
-    "image": "https://upload.wikimedia.org/wikipedia/commons/4/49/Biryani.JPG",
-    "image_credit": "Photo via Wikimedia Commons (placeholder — to be replaced)",
-    "image_credit_url": "https://commons.wikimedia.org/wiki/File:Biryani.JPG",
-    "image_needs_replacement": true
+    "image": "https://upload.wikimedia.org/wikipedia/commons/3/30/Vegetable_Biryani.JPG",
+    "image_credit": "Photo via Wikimedia Commons (CC BY-SA 4.0). Vegetable biryani as stand-in for the no-onion-no-garlic Jain version.",
+    "image_credit_url": "https://commons.wikimedia.org/wiki/File:Vegetable_Biryani.JPG",
+    "image_needs_replacement": false,
+    "videos": [
+      {
+        "title": "Jain Vegetable Biryani (No onion, no garlic)",
+        "channel": "Jeyashri's Kitchen",
+        "url": "https://www.jeyashriskitchen.com/vegetable-biryani-without-onion-garlic/"
+      }
+    ],
+    "recipes": [
+      {
+        "title": "Jain Dum Biryani",
+        "source": "Sanjeev Kapoor",
+        "url": "https://www.sanjeevkapoor.com/Recipe/Jain-Dum-Biryani.html"
+      }
+    ]
   },
   {
     "slug": "tandoori-chicken-biriyani",
@@ -2808,15 +3764,18 @@
     "spots": [
       {
         "name": "Moti Mahal",
-        "city": "Delhi (Daryaganj)"
+        "city": "Delhi (Daryaganj)",
+        "url": "https://www.zomato.com/ncr/moti-mahal-daryaganj-delhi"
       },
       {
         "name": "Karim's",
-        "city": "Delhi (Jama Masjid)"
+        "city": "Delhi (Jama Masjid)",
+        "url": "https://www.zomato.com/ncr/karims-jama-masjid-new-delhi"
       },
       {
         "name": "Embassy Restaurant",
-        "city": "Delhi (CP)"
+        "city": "Delhi (CP)",
+        "url": "https://www.zomato.com/ncr/embassy-restaurant-connaught-place-new-delhi"
       }
     ],
     "accent": "#a8462e",
@@ -2830,10 +3789,24 @@
       "nizamuddin-biriyani"
     ],
     "pull_quote": "Smoke from the tandoor, masala from the handi.",
-    "image": "https://upload.wikimedia.org/wikipedia/commons/4/49/Biryani.JPG",
-    "image_credit": "Photo via Wikimedia Commons (placeholder — to be replaced)",
-    "image_credit_url": "https://commons.wikimedia.org/wiki/File:Biryani.JPG",
-    "image_needs_replacement": true
+    "image": "https://upload.wikimedia.org/wikipedia/commons/c/c0/Chicken_Hyderabadi_Biryani.JPG",
+    "image_credit": "Photo by Dheerajk88 via Wikimedia Commons (CC BY-SA 4.0). Generic chicken biryani used; tandoori-chicken biryani has no specific Commons photo.",
+    "image_credit_url": "https://commons.wikimedia.org/wiki/File:Chicken_Hyderabadi_Biryani.JPG",
+    "image_needs_replacement": true,
+    "videos": [
+      {
+        "title": "Tandoori Chicken Biryani Recipe",
+        "channel": "Masala TV — Samina Jalil",
+        "url": "https://www.masala.tv/tandoori-chicken-biryani-recipe/"
+      }
+    ],
+    "recipes": [
+      {
+        "title": "Chicken Tikka / Tandoori Chicken Biryani – Dum Style",
+        "source": "Chocolate & Chillies",
+        "url": "https://chocolateandchillies.com/2018/02/chicken-tikka-tandoori-chicken-biryani-dum-style.html"
+      }
+    ]
   },
   {
     "slug": "afghani-biriyani",
@@ -2858,15 +3831,18 @@
     "spots": [
       {
         "name": "Khyber",
-        "city": "Mumbai / Delhi"
+        "city": "Mumbai",
+        "url": "https://www.zomato.com/mumbai/khyber-fort"
       },
       {
         "name": "Kabul Restaurant",
-        "city": "Delhi"
+        "city": "Delhi",
+        "url": "https://www.zomato.com/ncr/kabul-restaurant-lajpat-nagar-2-new-delhi"
       },
       {
         "name": "Afghan Darbar",
-        "city": "Old Delhi"
+        "city": "Old Delhi",
+        "url": "https://www.zomato.com/ncr/afghan-darbar-jama-masjid-new-delhi"
       }
     ],
     "accent": "#a8462e",
@@ -2880,9 +3856,23 @@
       "lucknowi-awadhi-biriyani"
     ],
     "pull_quote": "Cream, cashew, saffron — the biriyani that walks like a pulao.",
-    "image": "https://upload.wikimedia.org/wikipedia/commons/4/49/Biryani.JPG",
-    "image_credit": "Photo via Wikimedia Commons (placeholder — to be replaced)",
-    "image_credit_url": "https://commons.wikimedia.org/wiki/File:Biryani.JPG",
-    "image_needs_replacement": true
+    "image": "https://upload.wikimedia.org/wikipedia/commons/0/00/Mughlai_Delicacy_Vegetable_Dum_Biryani_%26_Apple_Raita.jpg",
+    "image_credit": "Photo via Wikimedia Commons (CC BY-SA 4.0). Mughlai dum biryani used as the closest cream-cashew profile stand-in.",
+    "image_credit_url": "https://commons.wikimedia.org/wiki/Category:Biryani",
+    "image_needs_replacement": false,
+    "videos": [
+      {
+        "title": "Afghani Chicken Biryani / Kabuli Pulao",
+        "channel": "Delhi Cookbook",
+        "url": "https://www.youtube.com/watch?v=QNreCrcnIg8"
+      }
+    ],
+    "recipes": [
+      {
+        "title": "Easy Afghani Chicken Biryani",
+        "source": "Ranveer Brar",
+        "url": "https://ranveerbrar.com/recipes/afghani-chicken-biryani/"
+      }
+    ]
   }
 ]
